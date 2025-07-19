@@ -1,5 +1,4 @@
 import { useAlimenti } from "../../context/AlimentiContext";
-import { useValoriPer100 } from "../../context/ValoriContext";
 
 const giorni = ["Lunedì", "Martedì", "Mercoledì", "Giovedì", "Venerdì", "Sabato", "Domenica"];
 const pasti = ["Colazione", "Spuntino", "Pranzo", "Merenda", "Cena"];
@@ -11,19 +10,33 @@ const incrementiPerUnita = {
   pz: [1, 0.5, 0.25],
 };
 
-function calcolaTotali(alimenti, valoriPer100) {
+function calcolaTotali(alimenti) {
   let kcal = 0, pro = 0, carb = 0, fat = 0, fiber = 0;
+
   for (const a of alimenti) {
-    const info = valoriPer100[a.nome];
-    if (!info) continue;
-    const q = a.quantita;
-    kcal  += info.kcal  * q / 100;
-    pro   += info.pro   * q / 100;
-    carb  += info.carb  * q / 100;
-    fat   += info.fat   * q / 100;
-    fiber += info.fiber * q / 100;
+    const { quantity = 0, multiplier = 100, nutrients } = a;
+    if (
+      !nutrients ||
+      typeof nutrients.calories !== "number" ||
+      typeof nutrients.proteins !== "number" ||
+      typeof nutrients.carbs !== "number" ||
+      typeof nutrients.fats !== "number" ||
+      typeof nutrients.fibers !== "number"
+    ) {
+      continue;
+    }
+
+    const ratio = quantity / multiplier;
+
+    kcal  += nutrients.calories * ratio;
+    pro   += nutrients.proteins * ratio;
+    carb  += nutrients.carbs    * ratio;
+    fat   += nutrients.fats     * ratio;
+    fiber += nutrients.fibers   * ratio;
   }
+
   const kcalMacro = pro * 4 + carb * 4 + fat * 9 || 1;
+
   return { kcal, pro, carb, fat, fiber, kcalMacro };
 }
 
@@ -94,10 +107,8 @@ function TabellaPasto({ dati, totaliGiorno }) {
 
 export default function Planner({ giorno, setGiorno }) {
   const { settimana, dispatch } = useAlimenti();
-  const valoriPer100 = useValoriPer100();
   const alimentiGiorno = settimana[giorno] || [];
-
-  const totGiorno = calcolaTotali(settimana[giorno].flat().filter(a => a.attivo), valoriPer100);
+  const totGiorno = calcolaTotali(settimana[giorno].flat().filter(a => a.attivo));
 
   function rimuoviAlimento(pastoIdx, index) {
     dispatch({ type: "REMOVE_ALIMENTO", payload: { giorno, pasto: pastoIdx, index } });
@@ -109,7 +120,6 @@ export default function Planner({ giorno, setGiorno }) {
 
   return (
     <main className="col-span-6 bg-white rounded-lg shadow p-4">
-      {/* Duplica giorno */}
       <div className="mb-4 flex items-center gap-4">
         <span className="text-sm text-gray-600">Duplica questo giorno in:</span>
         <select
@@ -117,21 +127,15 @@ export default function Planner({ giorno, setGiorno }) {
           onChange={(e) => {
             const to = Number(e.target.value);
             if (!isNaN(to) && to !== giorno) {
-              dispatch({
-                type: "DUPLICA_GIORNO",
-                payload: { from: giorno, to }
-              });
+              dispatch({ type: "DUPLICA_GIORNO", payload: { from: giorno, to } });
             }
           }}
         >
           <option value="">Seleziona giorno...</option>
-          {giorni.map((g, i) =>
-            i !== giorno ? <option key={i} value={i}>{g}</option> : null
-          )}
+          {giorni.map((g, i) => i !== giorno && <option key={i} value={i}>{g}</option>)}
         </select>
       </div>
 
-      {/* Tabs giorno */}
       <div className="flex gap-2 mb-4">
         {giorni.map((nome, idx) => (
           <button
@@ -146,7 +150,7 @@ export default function Planner({ giorno, setGiorno }) {
 
       {pasti.map((nomePasto, pastoIdx) => {
         const alimenti = alimentiGiorno?.[pastoIdx] || [];
-        const totPasto = calcolaTotali(alimenti.filter(a => a.attivo), valoriPer100);
+        const totPasto = calcolaTotali(alimenti.filter(a => a.attivo));
 
         return (
           <section key={pastoIdx} className="mb-6">
@@ -157,22 +161,25 @@ export default function Planner({ giorno, setGiorno }) {
               <p className="text-gray-400 italic">Nessun alimento aggiunto</p>
             ) : (
               <ul className="text-sm text-gray-700 pl-4 space-y-3">
-                {alimenti.map((alimento, index) => {
-                  const info = valoriPer100[alimento.nome];
-                  const q = alimento.quantita;
-                  const kcal = info ? info.kcal * q / 100 : 0;
-                  const pro = info ? info.pro * q / 100 : 0;
-                  const carb = info ? info.carb * q / 100 : 0;
-                  const fat = info ? info.fat * q / 100 : 0;
-                  const fiber = info ? info.fiber * q / 100 : 0;
-                  const unita = alimento.unita;
-                  const incrementi = incrementiPerUnita[unita] || [];
+                {alimenti.map((a, index) => {
+                  const { name, quantity = 0, unit = "g", nutrients = {}, multiplier = 100 } = a;
+                  const { calories = 0, carbs = 0, proteins = 0, fats = 0, fibers = 0 } = nutrients;
+
+                  const ratio = quantity / multiplier;
+
+                  const kcal  = calories * ratio;
+                  const carb  = carbs    * ratio;
+                  const pro   = proteins * ratio;
+                  const fat   = fats     * ratio;
+                  const fiber = fibers   * ratio;
+
+                  const incrementi = incrementiPerUnita[unit] || [];
 
                   return (
                     <li key={index} className="flex flex-col gap-1">
                       <div className="flex justify-between items-center">
-                        <span className={alimento.attivo ? "" : "line-through text-gray-400"}>
-                          {alimento.nome} {alimento.quantita}{unita}
+                        <span className={a.attivo ? "" : "line-through text-gray-400"}>
+                          {name} {quantity}{unit}
                         </span>
                         <span className="text-xs font-mono text-right text-gray-500">
                           {`${kcal.toFixed(1)}  ${carb.toFixed(1)}  ${pro.toFixed(1)}  ${fat.toFixed(1)}  ${fiber.toFixed(1)}`}
@@ -181,10 +188,10 @@ export default function Planner({ giorno, setGiorno }) {
                           <button
                             onClick={() => toggleAttivo(pastoIdx, index)}
                             className={`w-5 h-5 rounded border flex items-center justify-center
-                              ${alimento.attivo ? "bg-green-500 border-green-500" : "bg-white border-gray-300"}`}
+                              ${a.attivo ? "bg-green-500 border-green-500" : "bg-white border-gray-300"}`}
                             title="Attiva/Disattiva"
                           >
-                            {alimento.attivo && <span className="text-white text-xs font-bold">✔</span>}
+                            {a.attivo && <span className="text-white text-xs font-bold">✔</span>}
                           </button>
                           <button
                             onClick={() => rimuoviAlimento(pastoIdx, index)}
@@ -199,36 +206,22 @@ export default function Planner({ giorno, setGiorno }) {
                         {incrementi.map((step, i) => (
                           <div key={i} className="flex gap-1">
                             <button
-                              onClick={() =>
-                                dispatch({
-                                  type: "MODIFY_QUANTITA",
-                                  payload: {
-                                    giorno,
-                                    pasto: pastoIdx,
-                                    index,
-                                    delta: step
-                                  }
-                                })
-                              }
+                              onClick={() => dispatch({
+                                type: "MODIFY_QUANTITA",
+                                payload: { giorno, pasto: pastoIdx, index, delta: step }
+                              })}
                               className="bg-blue-100 hover:bg-blue-200 text-xs px-2 py-1 rounded"
                             >
-                              +{step}{unita}
+                              +{step}{unit}
                             </button>
                             <button
-                              onClick={() =>
-                                dispatch({
-                                  type: "MODIFY_QUANTITA",
-                                  payload: {
-                                    giorno,
-                                    pasto: pastoIdx,
-                                    index,
-                                    delta: -step
-                                  }
-                                })
-                              }
+                              onClick={() => dispatch({
+                                type: "MODIFY_QUANTITA",
+                                payload: { giorno, pasto: pastoIdx, index, delta: -step }
+                              })}
                               className="bg-red-100 hover:bg-red-200 text-xs px-2 py-1 rounded"
                             >
-                              -{step}{unita}
+                              -{step}{unit}
                             </button>
                           </div>
                         ))}

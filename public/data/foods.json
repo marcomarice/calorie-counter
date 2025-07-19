@@ -1,0 +1,3962 @@
+[
+  {
+    "id": "a41b8ab9-5835-4814-b6f1-fd1df605cd9b",
+    "code": "pasta_ditali_rigati_lidl",
+    "name": "Ditali rigati (Lidl)",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "pasta",
+    "tags": [],
+    "nutrients": {
+      "calories": 350.0,
+      "carbs": 70.5,
+      "proteins": 12.5,
+      "fats": 1.2,
+      "fibers": 3.5,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "2b86f04e-b423-4297-85cb-3cd19640feaa",
+    "code": "pasta_tagliatelle_all'uovo_lidl",
+    "name": "Tagliatelle all'Uovo (Lidl)",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "pasta",
+    "tags": [],
+    "nutrients": {
+      "calories": 365.0,
+      "carbs": 68.0,
+      "proteins": 14.0,
+      "fats": 3.3,
+      "fibers": 3.4,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "8cef7c83-252b-4678-bdd9-62d90a8de797",
+    "code": "pasta_tagliolini_all'uovo_lidl",
+    "name": "Tagliolini all'Uovo (Lidl)",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "pasta",
+    "tags": [],
+    "nutrients": {
+      "calories": 288.0,
+      "carbs": 56.0,
+      "proteins": 12.0,
+      "fats": 2.0,
+      "fibers": 0.0,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "8a15c505-a6b1-4d2d-bd8c-cfefdf606b45",
+    "code": "pasta_gnochetti_di_patate_lidl",
+    "name": "Gnochetti di patate (Lidl)",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "pasta",
+    "tags": [],
+    "nutrients": {
+      "calories": 161.0,
+      "carbs": 35.0,
+      "proteins": 4.1,
+      "fats": 0.1,
+      "fibers": 2.0,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "2d390eda-7bd7-4630-a255-048b5750788c",
+    "code": "pasta_gnochetti_alla_tirolese_con_spinaci_lidl",
+    "name": "Gnochetti alla tirolese con spinaci (Lidl)",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "pasta",
+    "tags": [],
+    "nutrients": {
+      "calories": 153.0,
+      "carbs": 29.1,
+      "proteins": 4.9,
+      "fats": 1.4,
+      "fibers": 0.0,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "4f6269b0-9704-49a2-91f7-82affb1a4850",
+    "code": "pasta_wok_egg-noodles_lidl",
+    "name": "Wok egg-noodles (Lidl)",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "pasta",
+    "tags": [],
+    "nutrients": {
+      "calories": 366.0,
+      "carbs": 70.0,
+      "proteins": 14.0,
+      "fats": 2.6,
+      "fibers": 0.0,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "281e3a6a-0767-4f3c-abb3-d1289c39aea2",
+    "code": "rice_riso_baldo_integrale_bio_vivi_verde_coop",
+    "name": "Riso Baldo integrale bio Vivi Verde (Coop)",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "rice",
+    "tags": [],
+    "nutrients": {
+      "calories": 369.0,
+      "carbs": 79.0,
+      "proteins": 7.4,
+      "fats": 2.2,
+      "fibers": 1.8,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "0ce34839-15df-4aef-af87-495ec901569f",
+    "code": "rice_riso_ribe_parboiled_integrale_bio_lidl",
+    "name": "Riso ribe parboiled integrale bio (Lidl)",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "rice",
+    "tags": [],
+    "nutrients": {
+      "calories": 384.0,
+      "carbs": 70.0,
+      "proteins": 8.2,
+      "fats": 3.3,
+      "fibers": 2.5,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "993ca076-74d3-4004-ac28-50b7bfbe2981",
+    "code": "rice_riso_basmati_lidl",
+    "name": "Riso Basmati (Lidl)",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "rice",
+    "tags": [],
+    "nutrients": {
+      "calories": 354.0,
+      "carbs": 80.4,
+      "proteins": 6.7,
+      "fats": 0.4,
+      "fibers": 0.0,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "e841d7f2-cfbe-4538-952d-d6e696a519e1",
+    "code": "rice_riso_parboiled_lidl",
+    "name": "Riso Parboiled (Lidl)",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "rice",
+    "tags": [],
+    "nutrients": {
+      "calories": 354.0,
+      "carbs": 79.0,
+      "proteins": 7.3,
+      "fats": 0.8,
+      "fibers": 0.0,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "cfb01c21-1253-4b05-8aaa-a3c89998b98d",
+    "code": "rice_riso_ribe_lidl",
+    "name": "Riso Ribe (Lidl)",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "rice",
+    "tags": [],
+    "nutrients": {
+      "calories": 354.0,
+      "carbs": 80.0,
+      "proteins": 6.7,
+      "fats": 0.5,
+      "fibers": 0.0,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "5e35bb91-3ab2-4e5f-af9c-b0dd72da4e12",
+    "code": "rice_riso_originario_lidl",
+    "name": "Riso Originario (Lidl)",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "rice",
+    "tags": [],
+    "nutrients": {
+      "calories": 349.0,
+      "carbs": 78.0,
+      "proteins": 7.4,
+      "fats": 0.6,
+      "fibers": 0.0,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "5726a915-a417-4ee7-9664-0275ce70756d",
+    "code": "rice_riso_roma_lidl",
+    "name": "Riso Roma (Lidl)",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "rice",
+    "tags": [],
+    "nutrients": {
+      "calories": 349.0,
+      "carbs": 78.0,
+      "proteins": 7.4,
+      "fats": 0.6,
+      "fibers": 0.0,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "70b5ce14-a313-47d6-8ec9-f5d5ed93d9c6",
+    "code": "rice_riso_arborio_lidl",
+    "name": "Riso Arborio (Lidl)",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "rice",
+    "tags": [],
+    "nutrients": {
+      "calories": 349.0,
+      "carbs": 78.0,
+      "proteins": 7.4,
+      "fats": 0.6,
+      "fibers": 0.0,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "5f48ca64-4410-4790-b041-4d380455e257",
+    "code": "rice_glass_noodles_vitasia_lidl",
+    "name": "Glass Noodles Vitasia (Lidl)",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "rice",
+    "tags": [],
+    "nutrients": {
+      "calories": 341.0,
+      "carbs": 82.7,
+      "proteins": 0.4,
+      "fats": 0.4,
+      "fibers": 0.0,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "f802082a-b624-45ac-9995-3f7ee5ff6629",
+    "code": "rice_gallette_di_riso_bio_lidl",
+    "name": "Gallette di riso bio (Lidl)",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "rice",
+    "tags": [],
+    "nutrients": {
+      "calories": 378.0,
+      "carbs": 80.0,
+      "proteins": 8.4,
+      "fats": 2.2,
+      "fibers": 3.4,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "ae71e852-7f2b-4a39-90f5-a7dd755b8316",
+    "code": "rice_gallette_di_riso_giganti_carrefour",
+    "name": "Gallette di riso giganti (Carrefour)",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "rice",
+    "tags": [],
+    "nutrients": {
+      "calories": 384.0,
+      "carbs": 79.0,
+      "proteins": 7.8,
+      "fats": 3.2,
+      "fibers": 3.3,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "618137d1-94c4-425a-bb37-cca652d96264",
+    "code": "rice_gallette_di_mais_bio_lidl",
+    "name": "Gallette di mais bio (Lidl)",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "rice",
+    "tags": [],
+    "nutrients": {
+      "calories": 383.0,
+      "carbs": 84.8,
+      "proteins": 7.4,
+      "fats": 1.2,
+      "fibers": 1.9,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "c6aaf553-2493-4a3b-ad09-0a170c5edc85",
+    "code": "cereals_farro_perlato_lidl",
+    "name": "Farro perlato (Lidl)",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "cereals",
+    "tags": [],
+    "nutrients": {
+      "calories": 361.0,
+      "carbs": 71.1,
+      "proteins": 11.9,
+      "fats": 2.0,
+      "fibers": 5.6,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "26292edd-5534-4b2b-9a8f-79b08c39d5b2",
+    "code": "cereals_orzo_perlato_lidl",
+    "name": "Orzo perlato (Lidl)",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "cereals",
+    "tags": [],
+    "nutrients": {
+      "calories": 335.0,
+      "carbs": 66.0,
+      "proteins": 9.6,
+      "fats": 1.2,
+      "fibers": 11.0,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "7a2935c0-e5db-4348-a60e-7932e211b92d",
+    "code": "cereals_mais_per_popcorn_carrefour",
+    "name": "Mais per popcorn (Carrefour)",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "cereals",
+    "tags": [],
+    "nutrients": {
+      "calories": 375.0,
+      "carbs": 63.0,
+      "proteins": 13.0,
+      "fats": 4.5,
+      "fibers": 15.0,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "3fe2e560-0e3d-45a0-b07b-4f2a3a91c6d4",
+    "code": "cereals_fiocchi_d'avena_lidl",
+    "name": "Fiocchi d'avena (Lidl)",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "cereals",
+    "tags": [],
+    "nutrients": {
+      "calories": 372.0,
+      "carbs": 58.7,
+      "proteins": 13.5,
+      "fats": 7.0,
+      "fibers": 10.0,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "0dc7acb1-5c3b-4f24-985e-4e78ca08a298",
+    "code": "flours_and_derivatives_farina_di_grano_tenero_\"00\"_lidl",
+    "name": "Farina di grano tenero \"00\" (Lidl)",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "flours_and_derivatives",
+    "tags": [],
+    "nutrients": {
+      "calories": 339.0,
+      "carbs": 70.0,
+      "proteins": 12.0,
+      "fats": 0.9,
+      "fibers": 0.0,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "02ce1089-bc8c-4ebc-ab58-1a7ea5d79b45",
+    "code": "flours_and_derivatives_farina_di_riso_il_molino_chiavazza",
+    "name": "Farina di riso (il Molino Chiavazza)",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "flours_and_derivatives",
+    "tags": [],
+    "nutrients": {
+      "calories": 350.0,
+      "carbs": 78.0,
+      "proteins": 6.5,
+      "fats": 1.0,
+      "fibers": 1.5,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "d3da7d58-30f6-46c7-bab4-4a721cf692b1",
+    "code": "flours_and_derivatives_farina_d'avena_molino_rossetto",
+    "name": "Farina d'avena (Molino Rossetto)",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "flours_and_derivatives",
+    "tags": [],
+    "nutrients": {
+      "calories": 389.0,
+      "carbs": 66.0,
+      "proteins": 14.0,
+      "fats": 7.0,
+      "fibers": 3.2,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "889e64c1-b7f4-4315-8640-2ad21bbb6370",
+    "code": "flours_and_derivatives_farina_di_ceci_lidl",
+    "name": "Farina di ceci (Lidl)",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "flours_and_derivatives",
+    "tags": [],
+    "nutrients": {
+      "calories": 355.0,
+      "carbs": 48.1,
+      "proteins": 21.3,
+      "fats": 6.6,
+      "fibers": 9.0,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "d161c980-2d92-4af1-970c-0d32358713c2",
+    "code": "flours_and_derivatives_polenta_istantanea_lidl",
+    "name": "Polenta istantanea (Lidl)",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "flours_and_derivatives",
+    "tags": [],
+    "nutrients": {
+      "calories": 346.0,
+      "carbs": 75.0,
+      "proteins": 7.5,
+      "fats": 1.0,
+      "fibers": 3.6,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "e9a322c6-2ee3-47c9-b31e-2bd07385f8f8",
+    "code": "flours_and_derivatives_polenta_veloce_carrefour",
+    "name": "Polenta veloce (Carrefour)",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "flours_and_derivatives",
+    "tags": [],
+    "nutrients": {
+      "calories": 346.0,
+      "carbs": 76.0,
+      "proteins": 6.7,
+      "fats": 1.0,
+      "fibers": 3.1,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "4a7bf455-e6dd-4412-aefc-7aef23cefaad",
+    "code": "flours_and_derivatives_polenta_ai_funghi_kania_lidl",
+    "name": "Polenta ai funghi Kania (Lidl)",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "flours_and_derivatives",
+    "tags": [],
+    "nutrients": {
+      "calories": 340.0,
+      "carbs": 71.0,
+      "proteins": 9.3,
+      "fats": 1.0,
+      "fibers": 3.6,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "2aeccc07-5502-403c-b774-b7ce8bebc3e9",
+    "code": "flours_and_derivatives_couscous_lidl",
+    "name": "Couscous (Lidl)",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "flours_and_derivatives",
+    "tags": [],
+    "nutrients": {
+      "calories": 346.0,
+      "carbs": 71.0,
+      "proteins": 11.0,
+      "fats": 1.2,
+      "fibers": 5.0,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "bcf159ee-801f-473b-ab22-4387b572286b",
+    "code": "flours_and_derivatives_semolino_di_grano_duro_carrefour",
+    "name": "Semolino di grano duro (Carrefour)",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "flours_and_derivatives",
+    "tags": [],
+    "nutrients": {
+      "calories": 345.0,
+      "carbs": 67.0,
+      "proteins": 13.0,
+      "fats": 1.9,
+      "fibers": 4.1,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "f3d299d9-2ad2-4177-966c-c68285b61988",
+    "code": "breakfast_cereals_corn_flakes_crownfield_lidl",
+    "name": "Corn flakes Crownfield (Lidl)",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "breakfast_cereals",
+    "tags": [],
+    "nutrients": {
+      "calories": 379.0,
+      "carbs": 84.0,
+      "proteins": 7.3,
+      "fats": 0.8,
+      "fibers": 3.3,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "dccfdf49-9b07-4626-be5e-146ea1647b0d",
+    "code": "breakfast_cereals_special_flakes_crownfield_lidl",
+    "name": "Special flakes Crownfield (Lidl)",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "breakfast_cereals",
+    "tags": [],
+    "nutrients": {
+      "calories": 358.0,
+      "carbs": 66.2,
+      "proteins": 11.1,
+      "fats": 2.0,
+      "fibers": 15.5,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "f7c4f96b-0873-4f46-b121-c30d68eabdcc",
+    "code": "breakfast_cereals_bastoncini_di_crusca_coop",
+    "name": "Bastoncini di crusca (Coop)",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "breakfast_cereals",
+    "tags": [],
+    "nutrients": {
+      "calories": 316.0,
+      "carbs": 38.0,
+      "proteins": 15.0,
+      "fats": 4.2,
+      "fibers": 33.0,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "87d84a0e-ce86-45a8-ae6a-823559557e07",
+    "code": "breakfast_cereals_fibra_sticks_carrefour",
+    "name": "Fibra sticks (Carrefour)",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "breakfast_cereals",
+    "tags": [],
+    "nutrients": {
+      "calories": 314.0,
+      "carbs": 34.0,
+      "proteins": 17.0,
+      "fats": 4.0,
+      "fibers": 38.0,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "b5495a26-bb2c-4cf3-b122-8c6a306920e9",
+    "code": "legumes_fagioli_lidl",
+    "name": "Fagioli (Lidl)",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "legumes",
+    "tags": [],
+    "nutrients": {
+      "calories": 301.0,
+      "carbs": 43.5,
+      "proteins": 19.2,
+      "fats": 2.4,
+      "fibers": 14.4,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "e27b7503-84d6-4511-bcbc-5c09f34739f5",
+    "code": "legumes_fagioli_neri_calleris",
+    "name": "Fagioli neri Calleris",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "legumes",
+    "tags": [],
+    "nutrients": {
+      "calories": 291.0,
+      "carbs": 33.8,
+      "proteins": 20.2,
+      "fats": 2.0,
+      "fibers": 17.3,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "11912866-c0d2-411a-a579-b94b5e1c4419",
+    "code": "legumes_fagioli_all'occhio_calleris",
+    "name": "Fagioli all'occhio Calleris",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "legumes",
+    "tags": [],
+    "nutrients": {
+      "calories": 293.0,
+      "carbs": 50.9,
+      "proteins": 22.4,
+      "fats": 1.4,
+      "fibers": 12.7,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "bdc4b904-9572-4333-8706-1bcf3738461a",
+    "code": "legumes_lenticchie_rosse_lidl",
+    "name": "Lenticchie rosse (Lidl)",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "legumes",
+    "tags": [],
+    "nutrients": {
+      "calories": 344.0,
+      "carbs": 53.0,
+      "proteins": 25.0,
+      "fats": 1.1,
+      "fibers": 11.0,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "04f651ba-4eb0-4928-9acc-e3a0ac489990",
+    "code": "legumes_lenticchie_verdi_lidl",
+    "name": "Lenticchie verdi (Lidl)",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "legumes",
+    "tags": [],
+    "nutrients": {
+      "calories": 313.0,
+      "carbs": 39.7,
+      "proteins": 24.5,
+      "fats": 2.0,
+      "fibers": 18.9,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "2e48cf27-2da4-47fa-9049-dc1b0a5b6006",
+    "code": "legumes_fave_spezzate_calleris",
+    "name": "Fave spezzate Calleris",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "legumes",
+    "tags": [],
+    "nutrients": {
+      "calories": 341.0,
+      "carbs": 54.8,
+      "proteins": 27.2,
+      "fats": 3.0,
+      "fibers": 7.0,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "2d13f095-aca2-4201-aa39-5cb8429f18e3",
+    "code": "legumes_piselli_spezzati_calleris",
+    "name": "Piselli spezzati Calleris",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "legumes",
+    "tags": [],
+    "nutrients": {
+      "calories": 314.0,
+      "carbs": 45.7,
+      "proteins": 20.6,
+      "fats": 1.8,
+      "fibers": 16.3,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "4844ffee-4be7-4fdf-abe6-b5df22796882",
+    "code": "legumes_ceci_lidl",
+    "name": "Ceci (Lidl)",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "legumes",
+    "tags": [],
+    "nutrients": {
+      "calories": 357.0,
+      "carbs": 47.0,
+      "proteins": 21.0,
+      "fats": 6.3,
+      "fibers": 14.0,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "a61797df-7035-4e1c-a8b9-838acc63054b",
+    "code": "legumes_azuki_verdi_calleris",
+    "name": "Azuki verdi Calleris",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "legumes",
+    "tags": [],
+    "nutrients": {
+      "calories": 329.0,
+      "carbs": 62.9,
+      "proteins": 19.9,
+      "fats": 0.5,
+      "fibers": 12.7,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "3a7b98d4-5ac2-47d4-af6a-b4655cf1da4a",
+    "code": "low_fat_dairy_skyr_magro_lidl",
+    "name": "Skyr magro (Lidl)",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "low_fat_dairy",
+    "tags": [],
+    "nutrients": {
+      "calories": 62.0,
+      "carbs": 4.0,
+      "proteins": 11.0,
+      "fats": 0.2,
+      "fibers": 0.0,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "d8e459c3-4145-454f-8f82-bc55ca45f1e2",
+    "code": "low_fat_dairy_yogurt_greco_senza_grassi_lidl",
+    "name": "Yogurt greco senza grassi (Lidl)",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "low_fat_dairy",
+    "tags": [],
+    "nutrients": {
+      "calories": 58.0,
+      "carbs": 4.5,
+      "proteins": 10.0,
+      "fats": 0.0,
+      "fibers": 0.0,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "f8ca001d-7f90-4933-b083-854ebbf4b9b1",
+    "code": "cheese_ricotta_di_vacca",
+    "name": "Ricotta di vacca",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "cheese",
+    "tags": [],
+    "nutrients": {
+      "calories": 146.0,
+      "carbs": 3.5,
+      "proteins": 8.8,
+      "fats": 10.9,
+      "fibers": 0.0,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "c76453f0-6f2c-4225-a17b-7e573687cd54",
+    "code": "cheese_ricotta_di_pecora",
+    "name": "Ricotta di pecora",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "cheese",
+    "tags": [],
+    "nutrients": {
+      "calories": 157.0,
+      "carbs": 4.2,
+      "proteins": 9.5,
+      "fats": 11.5,
+      "fibers": 0.0,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "485202e4-9a4d-4ade-ae66-45b7e7e89b7b",
+    "code": "cheese_ricotta_fresca_lidl",
+    "name": "Ricotta fresca (Lidl)",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "cheese",
+    "tags": [],
+    "nutrients": {
+      "calories": 127.0,
+      "carbs": 3.9,
+      "proteins": 7.7,
+      "fats": 9.0,
+      "fibers": 0.0,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "23d48d29-2915-47d4-9616-cb5201cf3aa2",
+    "code": "cheese_bruss_di_pecora_brigasca",
+    "name": "Bruss di pecora brigasca",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "cheese",
+    "tags": [],
+    "nutrients": {
+      "calories": 255.0,
+      "carbs": 2.2,
+      "proteins": 9.5,
+      "fats": 23.4,
+      "fibers": 0.0,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "43244d8b-1ade-4305-95b0-d784f8b40a9e",
+    "code": "cheese_formaggio_alla_greca_lidl",
+    "name": "Formaggio alla greca (Lidl)",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "cheese",
+    "tags": [],
+    "nutrients": {
+      "calories": 256.0,
+      "carbs": 1.0,
+      "proteins": 18.0,
+      "fats": 20.0,
+      "fibers": 0.0,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "2a6ae4a0-fb03-4f99-86fc-4aa738f22630",
+    "code": "cheese_feta_dop_lidl",
+    "name": "Feta DOP (Lidl)",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "cheese",
+    "tags": [],
+    "nutrients": {
+      "calories": 309.0,
+      "carbs": 0.5,
+      "proteins": 18.0,
+      "fats": 26.0,
+      "fibers": 0.0,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "df12492d-468e-4393-a0d1-7693f51a1eac",
+    "code": "cheese_mix_grattugiato_fresco_lidl",
+    "name": "Mix grattugiato fresco (Lidl)",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "cheese",
+    "tags": [],
+    "nutrients": {
+      "calories": 355.0,
+      "carbs": 2.0,
+      "proteins": 35.0,
+      "fats": 23.0,
+      "fibers": 0.0,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "9b521f3e-1538-482f-8caa-5b8c4c3d8649",
+    "code": "cheese_mozzarella_grattugiata_lidl",
+    "name": "Mozzarella grattugiata (Lidl)",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "cheese",
+    "tags": [],
+    "nutrients": {
+      "calories": 332.0,
+      "carbs": 3.0,
+      "proteins": 23.0,
+      "fats": 25.0,
+      "fibers": 0.0,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "4347869e-9127-4089-8f30-cb2a2b26ea7e",
+    "code": "cheese_emmental_bavarese_grattugiato_lidl",
+    "name": "Emmental bavarese grattugiato (Lidl)",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "cheese",
+    "tags": [],
+    "nutrients": {
+      "calories": 376.0,
+      "carbs": 3.0,
+      "proteins": 28.0,
+      "fats": 28.0,
+      "fibers": 0.0,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "81fe5576-fcca-49fd-8da7-a75a67bd2693",
+    "code": "cheese_parmigiano_reggiano_dop_14_mesi_lidl",
+    "name": "Parmigiano Reggiano DOP 14 mesi (Lidl)",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "cheese",
+    "tags": [],
+    "nutrients": {
+      "calories": 402.0,
+      "carbs": 0.0,
+      "proteins": 32.0,
+      "fats": 30.0,
+      "fibers": 0.0,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "0a2e21a6-259a-4efa-a799-17f91440efeb",
+    "code": "cheese_grana_padano_dop_riserva_grattugiato_lidl",
+    "name": "Grana Padano DOP Riserva grattugiato (Lidl)",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "cheese",
+    "tags": [],
+    "nutrients": {
+      "calories": 398.0,
+      "carbs": 0.0,
+      "proteins": 33.0,
+      "fats": 29.0,
+      "fibers": 0.0,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "6bf0b3fd-9bd7-4b05-ba67-061c292f8dda",
+    "code": "cheese_formaggio_gouda_lidl",
+    "name": "Formaggio Gouda (Lidl)",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "cheese",
+    "tags": [],
+    "nutrients": {
+      "calories": 358.0,
+      "carbs": 0.0,
+      "proteins": 23.0,
+      "fats": 29.0,
+      "fibers": 0.0,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "6a428f61-ff5d-4df5-9f4a-3e7dd35224f5",
+    "code": "cheese_formaggio_edam_lidl",
+    "name": "Formaggio Edam (Lidl)",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "cheese",
+    "tags": [],
+    "nutrients": {
+      "calories": 312.0,
+      "carbs": 0.0,
+      "proteins": 25.0,
+      "fats": 23.0,
+      "fibers": 0.0,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "4bb74b3b-70c7-4a55-a6ca-f1952aa5f120",
+    "code": "eggs_and_derivatives_uova_con_guscio",
+    "name": "Uova con guscio",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "eggs_and_derivatives",
+    "tags": [],
+    "nutrients": {
+      "calories": 125.8,
+      "carbs": 0.6,
+      "proteins": 11.1,
+      "fats": 8.4,
+      "fibers": 0.0,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "cccc299f-013b-43d0-9f26-f18e5d7a6fa7",
+    "code": "eggs_and_derivatives_albume_d'uovo_lidl",
+    "name": "Albume d'uovo (Lidl)",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "eggs_and_derivatives",
+    "tags": [],
+    "nutrients": {
+      "calories": 43.0,
+      "carbs": 0.9,
+      "proteins": 9.8,
+      "fats": 0.0,
+      "fibers": 0.0,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "c547cea7-ec5c-4252-a0c3-e0d12154ee10",
+    "code": "fresh_vegetables_aglio_con_scarto",
+    "name": "Aglio con scarto",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "fresh_vegetables",
+    "tags": [],
+    "nutrients": {
+      "calories": 129.6,
+      "carbs": 28.8,
+      "proteins": 5.6,
+      "fats": 0.4,
+      "fibers": 1.8,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "c613eb47-be21-4e47-8c7f-93a038fe8f09",
+    "code": "fresh_vegetables_aglio",
+    "name": "Aglio",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "fresh_vegetables",
+    "tags": [],
+    "nutrients": {
+      "calories": 149.0,
+      "carbs": 33.1,
+      "proteins": 6.4,
+      "fats": 0.5,
+      "fibers": 2.1,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "14af30f4-809f-430f-99d7-1f5f0fed977d",
+    "code": "fresh_vegetables_cipolle_con_scarto",
+    "name": "Cipolle con scarto",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "fresh_vegetables",
+    "tags": [],
+    "nutrients": {
+      "calories": 37.8,
+      "carbs": 9.1,
+      "proteins": 0.8,
+      "fats": 0.0,
+      "fibers": 1.3,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "a2a91d8a-a2bd-49bf-b509-ca82a4a2ad7f",
+    "code": "fresh_vegetables_porro_con_scarto",
+    "name": "Porro con scarto",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "fresh_vegetables",
+    "tags": [],
+    "nutrients": {
+      "calories": 26.8,
+      "carbs": 6.2,
+      "proteins": 0.7,
+      "fats": 0.1,
+      "fibers": 0.8,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "2c3427e8-dca4-41b3-a0b3-cd3c88d6e568",
+    "code": "fresh_vegetables_carote_con_scarto",
+    "name": "Carote con scarto",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "fresh_vegetables",
+    "tags": [],
+    "nutrients": {
+      "calories": 36.5,
+      "carbs": 8.5,
+      "proteins": 0.8,
+      "fats": 0.0,
+      "fibers": 2.5,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "542c9ef3-ebf0-465a-a488-7acfd78d80e6",
+    "code": "fresh_vegetables_finocchi",
+    "name": "Finocchi",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "fresh_vegetables",
+    "tags": [],
+    "nutrients": {
+      "calories": 31.0,
+      "carbs": 7.3,
+      "proteins": 1.2,
+      "fats": 0.2,
+      "fibers": 3.1,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "98bcd005-15d4-4aa6-89d8-a2e53f95e426",
+    "code": "fresh_vegetables_patate_con_scarto",
+    "name": "Patate con scarto",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "fresh_vegetables",
+    "tags": [],
+    "nutrients": {
+      "calories": 77.0,
+      "carbs": 17.5,
+      "proteins": 2.0,
+      "fats": 0.0,
+      "fibers": 2.2,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "0b0ecb5a-1ceb-444f-a249-88a81080e498",
+    "code": "fresh_vegetables_cavolo_verza",
+    "name": "Cavolo verza",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "fresh_vegetables",
+    "tags": [],
+    "nutrients": {
+      "calories": 25.0,
+      "carbs": 3.8,
+      "proteins": 2.0,
+      "fats": 0.1,
+      "fibers": 2.9,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "460d2af0-f56d-4c3e-a2f0-c92112020619",
+    "code": "fresh_vegetables_cavolfiore",
+    "name": "Cavolfiore",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "fresh_vegetables",
+    "tags": [],
+    "nutrients": {
+      "calories": 25.0,
+      "carbs": 1.9,
+      "proteins": 1.9,
+      "fats": 0.3,
+      "fibers": 2.0,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "8eae1feb-5053-4881-b2e7-7eb6b3595d68",
+    "code": "fresh_vegetables_zucchine",
+    "name": "Zucchine",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "fresh_vegetables",
+    "tags": [],
+    "nutrients": {
+      "calories": 17.0,
+      "carbs": 3.5,
+      "proteins": 1.2,
+      "fats": 0.3,
+      "fibers": 1.0,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "2d1937e3-1a2c-44f2-af1d-6db5ab5baab1",
+    "code": "fresh_vegetables_zucchine_con_scarto",
+    "name": "Zucchine con scarto",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "fresh_vegetables",
+    "tags": [],
+    "nutrients": {
+      "calories": 16.1,
+      "carbs": 3.3,
+      "proteins": 1.1,
+      "fats": 0.3,
+      "fibers": 0.9,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "13641c1e-e444-40df-a816-85701c9c3461",
+    "code": "fresh_vegetables_pomodori",
+    "name": "Pomodori",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "fresh_vegetables",
+    "tags": [],
+    "nutrients": {
+      "calories": 18.0,
+      "carbs": 3.9,
+      "proteins": 0.9,
+      "fats": 0.2,
+      "fibers": 1.2,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "ff15d73f-7cf2-4814-ace7-dd16682bbf16",
+    "code": "fresh_vegetables_funghi",
+    "name": "Funghi",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "fresh_vegetables",
+    "tags": [],
+    "nutrients": {
+      "calories": 22.0,
+      "carbs": 3.3,
+      "proteins": 3.1,
+      "fats": 0.3,
+      "fibers": 1.0,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "7e705293-bfe6-4ac1-8f19-18cad2b8a27e",
+    "code": "pickled_vegetables_cetrioli_in_agrodolce_lidl",
+    "name": "Cetrioli in agrodolce (Lidl)",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "pickled_vegetables",
+    "tags": [],
+    "nutrients": {
+      "calories": 35.0,
+      "carbs": 7.1,
+      "proteins": 0.5,
+      "fats": 0.1,
+      "fibers": 0.0,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "5293b7b8-0bd3-4cb2-b02e-dbda3df572ee",
+    "code": "pickled_vegetables_cetrioli_speziati_in_agrodolce_lidl",
+    "name": "Cetrioli speziati in agrodolce (Lidl)",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "pickled_vegetables",
+    "tags": [],
+    "nutrients": {
+      "calories": 34.0,
+      "carbs": 5.5,
+      "proteins": 1.2,
+      "fats": 0.3,
+      "fibers": 0.0,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "9ca665d0-c322-4ca5-a28d-267bd2db0ac8",
+    "code": "pickled_vegetables_capperi_all'aceto_di_vino_lidl",
+    "name": "Capperi all'aceto di vino (Lidl)",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "pickled_vegetables",
+    "tags": [],
+    "nutrients": {
+      "calories": 23.0,
+      "carbs": 1.6,
+      "proteins": 1.8,
+      "fats": 0.3,
+      "fibers": 0.0,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "10de01d4-1bf5-42ae-9c53-1b080bd5b53a",
+    "code": "vegetable_preparations_purè_di_patate_lidl",
+    "name": "Purè di patate (Lidl)",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "vegetable_preparations",
+    "tags": [],
+    "nutrients": {
+      "calories": 62.0,
+      "carbs": 11.5,
+      "proteins": 2.2,
+      "fats": 0.6,
+      "fibers": 1.1,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "5df12ebf-95ec-4a27-8549-8f69c40ef136",
+    "code": "fresh_fruit_albicocca_con_scarto",
+    "name": "Albicocca con scarto",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "fresh_fruit",
+    "tags": [],
+    "nutrients": {
+      "calories": 15.8,
+      "carbs": 3.6,
+      "proteins": 0.5,
+      "fats": 1.0,
+      "fibers": 0.6,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "f80f26a0-d9f3-4159-b2b4-c3595160353b",
+    "code": "fresh_fruit_arancia_con_scarto",
+    "name": "Arancia con scarto",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "fresh_fruit",
+    "tags": [],
+    "nutrients": {
+      "calories": 34.3,
+      "carbs": 8.6,
+      "proteins": 0.6,
+      "fats": 0.1,
+      "fibers": 1.7,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "80cdc5f1-67d3-458c-86e2-75c993a8c8a2",
+    "code": "fresh_fruit_banana_con_scarto",
+    "name": "Banana con scarto",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "fresh_fruit",
+    "tags": [],
+    "nutrients": {
+      "calories": 57.0,
+      "carbs": 14.6,
+      "proteins": 0.7,
+      "fats": 0.2,
+      "fibers": 1.7,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "01afd74c-a38d-43d9-a2cc-ff88a64a71ac",
+    "code": "fresh_fruit_ciliege_con_scarto",
+    "name": "Ciliege con scarto",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "fresh_fruit",
+    "tags": [],
+    "nutrients": {
+      "calories": 58.0,
+      "carbs": 14.7,
+      "proteins": 1.0,
+      "fats": 0.2,
+      "fibers": 1.9,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "8ba994e0-82b5-4ef0-beee-7943c4eaec1b",
+    "code": "fresh_fruit_kiwi_con_scarto",
+    "name": "Kiwi con scarto",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "fresh_fruit",
+    "tags": [],
+    "nutrients": {
+      "calories": 46.4,
+      "carbs": 11.2,
+      "proteins": 0.8,
+      "fats": 0.4,
+      "fibers": 2.3,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "60d0923e-0dda-4b50-ac6a-95db4801bc12",
+    "code": "fresh_fruit_mela_con_scarto",
+    "name": "Mela con scarto",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "fresh_fruit",
+    "tags": [],
+    "nutrients": {
+      "calories": 46.8,
+      "carbs": 12.4,
+      "proteins": 0.3,
+      "fats": 0.2,
+      "fibers": 2.2,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "2da97a9b-2ba6-4544-8657-c06cef4e0e91",
+    "code": "fresh_fruit_pera_con_scarto",
+    "name": "Pera con scarto",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "fresh_fruit",
+    "tags": [],
+    "nutrients": {
+      "calories": 52.2,
+      "carbs": 13.9,
+      "proteins": 0.4,
+      "fats": 0.1,
+      "fibers": 2.8,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "57e6baf8-92ad-4a59-a266-db4095c7d83d",
+    "code": "fresh_fruit_melone_cantalupo_cantaloupe_con_scarto",
+    "name": "Melone Cantalupo (Cantaloupe) con scarto",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "fresh_fruit",
+    "tags": [],
+    "nutrients": {
+      "calories": 27.0,
+      "carbs": 7.0,
+      "proteins": 0.7,
+      "fats": 0.2,
+      "fibers": 0.7,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "19b3fafa-3aff-4f36-a629-e5976edf76e5",
+    "code": "fresh_fruit_melone_verde_honeydew_con_scarto",
+    "name": "Melone Verde (Honeydew) con scarto",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "fresh_fruit",
+    "tags": [],
+    "nutrients": {
+      "calories": 29.4,
+      "carbs": 7.4,
+      "proteins": 0.5,
+      "fats": 0.6,
+      "fibers": 0.1,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "ae6e2ed5-d1e6-46b3-a343-e2bbffc2fe47",
+    "code": "fresh_fruit_melone_giallo_casaba_con_scarto",
+    "name": "Melone Giallo (Casaba) con scarto",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "fresh_fruit",
+    "tags": [],
+    "nutrients": {
+      "calories": 28.8,
+      "carbs": 6.7,
+      "proteins": 1.1,
+      "fats": 0.1,
+      "fibers": 0.9,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "c7f24873-2cee-4388-8fe1-b63baafde3dc",
+    "code": "fresh_fruit_nettarina_con_scarto",
+    "name": "Nettarina con scarto",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "fresh_fruit",
+    "tags": [],
+    "nutrients": {
+      "calories": 40.0,
+      "carbs": 9.6,
+      "proteins": 1.0,
+      "fats": 0.3,
+      "fibers": 1.5,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "bba4d97d-5664-4e6c-847b-569679cccd47",
+    "code": "fresh_fruit_pesca_con_scarto",
+    "name": "Pesca con scarto",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "fresh_fruit",
+    "tags": [],
+    "nutrients": {
+      "calories": 37.4,
+      "carbs": 9.5,
+      "proteins": 0.9,
+      "fats": 0.3,
+      "fibers": 1.4,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "6caa28ed-fc7f-4577-b80b-a39aa84e49bc",
+    "code": "fresh_fruit_mango_con_scarto",
+    "name": "Mango con scarto",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "fresh_fruit",
+    "tags": [],
+    "nutrients": {
+      "calories": 70.3,
+      "carbs": 18.2,
+      "proteins": 1.0,
+      "fats": 0.4,
+      "fibers": 1.8,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "19f19718-c4d5-4e4e-8773-d009b7576709",
+    "code": "fresh_fruit_mirtilli",
+    "name": "Mirtilli",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "fresh_fruit",
+    "tags": [],
+    "nutrients": {
+      "calories": 57.0,
+      "carbs": 14.5,
+      "proteins": 0.7,
+      "fats": 0.3,
+      "fibers": 2.4,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "e596ab5f-1303-433c-a487-d383a3ec4f6c",
+    "code": "white_meat_petto_di_pollo_intero_lidl",
+    "name": "Petto di pollo intero (Lidl)",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "white_meat",
+    "tags": [],
+    "nutrients": {
+      "calories": 99.0,
+      "carbs": 0.0,
+      "proteins": 23.0,
+      "fats": 0.8,
+      "fibers": 0.0,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "d4d22bf1-04ef-440d-9510-1797f3ecdaa1",
+    "code": "white_meat_trancio_di_fesa_di_tacchino_lidl",
+    "name": "Trancio di fesa di tacchino (Lidl)",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "white_meat",
+    "tags": [],
+    "nutrients": {
+      "calories": 107.0,
+      "carbs": 0.0,
+      "proteins": 24.0,
+      "fats": 1.2,
+      "fibers": 0.0,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "092bf566-6dab-414c-bd8b-1fdaee59d19f",
+    "code": "red_meat_macinato_magro_lidl",
+    "name": "Macinato magro (Lidl)",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "red_meat",
+    "tags": [],
+    "nutrients": {
+      "calories": 147.0,
+      "carbs": 0.0,
+      "proteins": 21.0,
+      "fats": 6.9,
+      "fibers": 0.0,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "38ca8fc7-22e9-46cf-839b-e21e47da5da4",
+    "code": "lean_deli_meat_prosciutto_cotto_alta_qualità_sgrassato_lidl",
+    "name": "Prosciutto cotto alta qualità sgrassato (Lidl)",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "lean_deli_meat",
+    "tags": [],
+    "nutrients": {
+      "calories": 102.0,
+      "carbs": 1.1,
+      "proteins": 20.0,
+      "fats": 2.0,
+      "fibers": 0.0,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "11873768-4813-4683-91bd-14acf5ccd29d",
+    "code": "nuts_arachidi_con_guscio",
+    "name": "Arachidi con guscio",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "nuts",
+    "tags": [],
+    "nutrients": {
+      "calories": 388.7,
+      "carbs": 5.5,
+      "proteins": 18.8,
+      "fats": 32.5,
+      "fibers": 7.1,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "7aac78a1-acec-48a1-9aff-83e14a984ede",
+    "code": "nuts_mandorle_lidl",
+    "name": "Mandorle (Lidl)",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "nuts",
+    "tags": [],
+    "nutrients": {
+      "calories": 645.0,
+      "carbs": 5.4,
+      "proteins": 24.2,
+      "fats": 56.0,
+      "fibers": 11.2,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "40362ad4-9fe2-4c4c-8e45-5f7c027d7b65",
+    "code": "nuts_noci_sgusciate_lidl",
+    "name": "Noci sgusciate (Lidl)",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "nuts",
+    "tags": [],
+    "nutrients": {
+      "calories": 679.0,
+      "carbs": 8.1,
+      "proteins": 19.0,
+      "fats": 62.0,
+      "fibers": 6.3,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "21d6f0df-1cd0-4c33-8524-36503b47edbc",
+    "code": "nuts_noci_di_pecan_lidl",
+    "name": "Noci di pecan (Lidl)",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "nuts",
+    "tags": [],
+    "nutrients": {
+      "calories": 725.0,
+      "carbs": 4.2,
+      "proteins": 11.5,
+      "fats": 71.4,
+      "fibers": 10.0,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "581b5f73-4fc1-48bb-902c-793c754d6670",
+    "code": "nuts_noci_del_brasile_lidl",
+    "name": "Noci del Brasile (Lidl)",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "nuts",
+    "tags": [],
+    "nutrients": {
+      "calories": 697.0,
+      "carbs": 2.7,
+      "proteins": 16.9,
+      "fats": 66.5,
+      "fibers": 9.9,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "8fa45e45-9f58-47cb-8380-45c53f86b0ff",
+    "code": "nuts_anacardi_lidl",
+    "name": "Anacardi (Lidl)",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "nuts",
+    "tags": [],
+    "nutrients": {
+      "calories": 600.0,
+      "carbs": 19.8,
+      "proteins": 20.5,
+      "fats": 47.6,
+      "fibers": 5.2,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "4cc41188-d629-4aac-8b5a-e03b3a27803b",
+    "code": "nuts_nocciole_lidl",
+    "name": "Nocciole (Lidl)",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "nuts",
+    "tags": [],
+    "nutrients": {
+      "calories": 667.0,
+      "carbs": 5.0,
+      "proteins": 15.0,
+      "fats": 62.9,
+      "fibers": 10.2,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "4b524c05-cf3c-46e5-8bc0-cd6e0e8611f2",
+    "code": "nuts_nocciole_tritate_lidl",
+    "name": "Nocciole tritate (Lidl)",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "nuts",
+    "tags": [],
+    "nutrients": {
+      "calories": 674.0,
+      "carbs": 6.2,
+      "proteins": 17.6,
+      "fats": 61.8,
+      "fibers": 6.8,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "b90940d8-ec0a-438f-9a54-840611325fb9",
+    "code": "nuts_haselnusskerne_noisettes_lidl",
+    "name": "Haselnusskerne noisettes (Lidl)",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "nuts",
+    "tags": [],
+    "nutrients": {
+      "calories": 695.0,
+      "carbs": 5.4,
+      "proteins": 14.8,
+      "fats": 66.7,
+      "fibers": 7.0,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "ba3abd0c-d246-4f42-ac2e-0307facf5cb4",
+    "code": "nuts_hazelnuts_ground_lidl",
+    "name": "Hazelnuts ground (Lidl)",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "nuts",
+    "tags": [],
+    "nutrients": {
+      "calories": 676.0,
+      "carbs": 7.6,
+      "proteins": 13.2,
+      "fats": 64.1,
+      "fibers": 8.0,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "d2525f35-b011-4fce-9229-91aa1e12d8ef",
+    "code": "nuts_almond_blanched_e_chopped_lidl",
+    "name": "Almond blanched e chopped (Lidl)",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "nuts",
+    "tags": [],
+    "nutrients": {
+      "calories": 611.0,
+      "carbs": 5.7,
+      "proteins": 24.0,
+      "fats": 53.0,
+      "fibers": 11.4,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "9ea56978-85b0-43c8-a8be-eb198e514bee",
+    "code": "dried_fruit_prugne_secche_lidl",
+    "name": "Prugne secche (Lidl)",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "dried_fruit",
+    "tags": [],
+    "nutrients": {
+      "calories": 278.0,
+      "carbs": 66.0,
+      "proteins": 2.9,
+      "fats": 0.1,
+      "fibers": 8.8,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "5e0920ae-a00e-4549-a0e1-6e4b3dddfdc3",
+    "code": "dried_fruit_uvetta_lidl",
+    "name": "Uvetta (Lidl)",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "dried_fruit",
+    "tags": [],
+    "nutrients": {
+      "calories": 301.0,
+      "carbs": 70.0,
+      "proteins": 2.7,
+      "fats": 0.4,
+      "fibers": 3.5,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "173c3393-b62f-4b29-89f2-fe2e57376146",
+    "code": "syrupy_fruit_mezze_pesche_allo_sciroppo_lidl",
+    "name": "Mezze pesche allo sciroppo (Lidl)",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "syrupy_fruit",
+    "tags": [],
+    "nutrients": {
+      "calories": 67.0,
+      "carbs": 15.5,
+      "proteins": 0.4,
+      "fats": 0.0,
+      "fibers": 1.0,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "b9015118-a3ce-466f-9928-5a58de8f7f88",
+    "code": "seeds_semi_di_girasole_carrefour",
+    "name": "Semi di girasole (Carrefour)",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "seeds",
+    "tags": [],
+    "nutrients": {
+      "calories": 633.0,
+      "carbs": 6.5,
+      "proteins": 20.0,
+      "fats": 57.0,
+      "fibers": 7.7,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "dfeb8263-c1da-4f20-a61d-da3f2bf50675",
+    "code": "seeds_semi_di_lino_carrefour",
+    "name": "Semi di lino (Carrefour)",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "seeds",
+    "tags": [],
+    "nutrients": {
+      "calories": 509.0,
+      "carbs": 2.7,
+      "proteins": 21.0,
+      "fats": 41.0,
+      "fibers": 25.0,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "b10758dc-1dff-4490-bea0-f4b8db56ba26",
+    "code": "seeds_semi_di_lino_fondente_biologico_probios",
+    "name": "Semi di lino fondente biologico (Probios)",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "seeds",
+    "tags": [],
+    "nutrients": {
+      "calories": 483.0,
+      "carbs": 2.3,
+      "proteins": 23.0,
+      "fats": 36.0,
+      "fibers": 29.0,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "404c7a08-74be-4fd2-a446-173a36e2a996",
+    "code": "seeds_semi_di_sesamo_carrefour",
+    "name": "Semi di sesamo (Carrefour)",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "seeds",
+    "tags": [],
+    "nutrients": {
+      "calories": 612.0,
+      "carbs": 6.1,
+      "proteins": 22.0,
+      "fats": 53.0,
+      "fibers": 9.8,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "2e00b327-e58f-451c-97a6-d6a5fe344e26",
+    "code": "seeds_semi_di_zucca_carrefour",
+    "name": "Semi di zucca (Carrefour)",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "seeds",
+    "tags": [],
+    "nutrients": {
+      "calories": 578.0,
+      "carbs": 3.7,
+      "proteins": 34.0,
+      "fats": 46.0,
+      "fibers": 5.8,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "e8b27d24-5046-4d51-a6f1-9d50dcfa7e66",
+    "code": "seeds_semi_di_chia_carrefour",
+    "name": "Semi di chia (Carrefour)",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "seeds",
+    "tags": [],
+    "nutrients": {
+      "calories": 463.0,
+      "carbs": 2.6,
+      "proteins": 22.0,
+      "fats": 34.0,
+      "fibers": 30.0,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "7c87acc3-cf7e-4358-8564-55d1deedc245",
+    "code": "sweets_and_snacks_cacao_amaro_in_polvere_lidl",
+    "name": "Cacao amaro in polvere (Lidl)",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "sweets_and_snacks",
+    "tags": [],
+    "nutrients": {
+      "calories": 396.0,
+      "carbs": 14.3,
+      "proteins": 22.0,
+      "fats": 21.0,
+      "fibers": 31.0,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "f5eefa27-9660-4267-9700-ca70234c5b00",
+    "code": "sweets_and_snacks_gocce_di_cioccolato_fondente_lidl",
+    "name": "Gocce di cioccolato fondente (Lidl)",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "sweets_and_snacks",
+    "tags": [],
+    "nutrients": {
+      "calories": 520.0,
+      "carbs": 53.5,
+      "proteins": 6.3,
+      "fats": 29.4,
+      "fibers": 0.0,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "c1e8b215-c0cc-49b9-a721-d78e28a83d53",
+    "code": "jams_marmellata_di_albicocche_lidl",
+    "name": "Marmellata di albicocche (Lidl)",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "jams",
+    "tags": [],
+    "nutrients": {
+      "calories": 225.0,
+      "carbs": 54.2,
+      "proteins": 0.3,
+      "fats": 0.1,
+      "fibers": 0.0,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "9a841aea-e177-4015-949b-51ee09378183",
+    "code": "bread_pane_di_triora",
+    "name": "Pane di Triora",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "bread",
+    "tags": [],
+    "nutrients": {
+      "calories": 333.0,
+      "carbs": 75.8,
+      "proteins": 10.9,
+      "fats": 0.7,
+      "fibers": 4.0,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "a88787ea-49fb-47d1-8da6-9fc98073fc1e",
+    "code": "bread_rosetta_lidl",
+    "name": "Rosetta (Lidl)",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "bread",
+    "tags": [],
+    "nutrients": {
+      "calories": 284.0,
+      "carbs": 54.7,
+      "proteins": 9.6,
+      "fats": 2.1,
+      "fibers": 6.0,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "0e2e8337-89fa-4985-8ae7-0a8191b721c0",
+    "code": "bread_mantovana_lidl",
+    "name": "Mantovana (Lidl)",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "bread",
+    "tags": [],
+    "nutrients": {
+      "calories": 320.0,
+      "carbs": 55.4,
+      "proteins": 9.3,
+      "fats": 6.2,
+      "fibers": 0.0,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "68e65266-ce09-4344-837f-a7ef1a1bb203",
+    "code": "bread_pane_tondo_lidl",
+    "name": "Pane tondo (Lidl)",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "bread",
+    "tags": [],
+    "nutrients": {
+      "calories": 282.0,
+      "carbs": 55.4,
+      "proteins": 10.6,
+      "fats": 1.1,
+      "fibers": 0.0,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "67c80c44-982a-4d3b-95c2-bb7361040a17",
+    "code": "bread_panino_ai_semi_lidl",
+    "name": "Panino ai semi (Lidl)",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "bread",
+    "tags": [],
+    "nutrients": {
+      "calories": 282.0,
+      "carbs": 47.6,
+      "proteins": 9.7,
+      "fats": 4.6,
+      "fibers": 0.0,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "2e3d098f-f45d-4a9f-a722-089b6a637397",
+    "code": "bread_pane_alla_segale_lidl",
+    "name": "Pane alla segale (Lidl)",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "bread",
+    "tags": [],
+    "nutrients": {
+      "calories": 202.0,
+      "carbs": 37.8,
+      "proteins": 8.2,
+      "fats": 1.1,
+      "fibers": 6.0,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "43805b13-4536-42cb-9f81-1bfbfd099a39",
+    "code": "bread_pane_arabo_lidl",
+    "name": "Pane arabo (Lidl)",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "bread",
+    "tags": [],
+    "nutrients": {
+      "calories": 276.0,
+      "carbs": 48.7,
+      "proteins": 9.2,
+      "fats": 4.3,
+      "fibers": 0.0,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "7dd0681e-5582-49ac-8a1f-dca53f9e969d",
+    "code": "bread_baguette",
+    "name": "Baguette",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "bread",
+    "tags": [],
+    "nutrients": {
+      "calories": 274.0,
+      "carbs": 51.9,
+      "proteins": 8.8,
+      "fats": 3.0,
+      "fibers": 3.0,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "4f8bbfa2-0284-4b57-b380-56b49412e350",
+    "code": "bread_sandwich_american_style_classico_lidl",
+    "name": "Sandwich American Style Classico (Lidl)",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "bread",
+    "tags": [],
+    "nutrients": {
+      "calories": 264.0,
+      "carbs": 48.0,
+      "proteins": 7.5,
+      "fats": 4.0,
+      "fibers": 3.0,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "6574ea6f-6bf1-419d-8700-907a1bd3f01e",
+    "code": "dry_bakery_pangrattato_lidl",
+    "name": "Pangrattato (Lidl)",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "dry_bakery",
+    "tags": [],
+    "nutrients": {
+      "calories": 357.0,
+      "carbs": 70.0,
+      "proteins": 13.0,
+      "fats": 1.6,
+      "fibers": 4.0,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "6c41ff9f-f791-4dbb-b511-ff87ceb7530e",
+    "code": "dry_bakery_crackers_lidl",
+    "name": "Crackers (Lidl)",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "dry_bakery",
+    "tags": [],
+    "nutrients": {
+      "calories": 439.0,
+      "carbs": 72.0,
+      "proteins": 11.0,
+      "fats": 12.0,
+      "fibers": 2.4,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "3052cc93-7a0b-43a7-bf91-166decfc8a56",
+    "code": "dry_bakery_grissini_torinesi_lidl",
+    "name": "Grissini Torinesi (Lidl)",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "dry_bakery",
+    "tags": [],
+    "nutrients": {
+      "calories": 401.0,
+      "carbs": 74.0,
+      "proteins": 12.0,
+      "fats": 5.6,
+      "fibers": 3.2,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "fcb7441d-ebe0-46cf-ad63-114f6e0600d7",
+    "code": "fats_olio_ev_d'oliva_frantoio_nuvolone_[gr]",
+    "name": "Olio EV d'oliva Frantoio Nuvolone [gr]",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "fats",
+    "tags": [],
+    "nutrients": {
+      "calories": 824.0,
+      "carbs": 0.0,
+      "proteins": 0.0,
+      "fats": 91.6,
+      "fibers": 0.0,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "b7de9089-70af-43d9-aebd-664cb0f6a3d2",
+    "code": "fats_olio_di_semi_di_girasole_[gr]",
+    "name": "Olio di semi di girasole [gr]",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "fats",
+    "tags": [],
+    "nutrients": {
+      "calories": 883.0,
+      "carbs": 0.0,
+      "proteins": 0.0,
+      "fats": 100.0,
+      "fibers": 0.0,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "78c9601b-4692-47de-92d6-90e8663ddb22",
+    "code": "fats_burro_tedesco_lidl",
+    "name": "Burro tedesco (Lidl)",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "fats",
+    "tags": [],
+    "nutrients": {
+      "calories": 749.0,
+      "carbs": 1.0,
+      "proteins": 0.5,
+      "fats": 82.5,
+      "fibers": 0.0,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "26983bce-5f7e-4b42-9f0e-7f4cb1a91b2e",
+    "code": "fats_golden_hills_irish_butter_lidl",
+    "name": "Golden Hills irish butter (Lidl)",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "fats",
+    "tags": [],
+    "nutrients": {
+      "calories": 748.0,
+      "carbs": 0.7,
+      "proteins": 0.6,
+      "fats": 82.5,
+      "fibers": 0.0,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "efe0af9c-9361-4703-8976-930ef81af896",
+    "code": "fats_avocado",
+    "name": "Avocado",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "fats",
+    "tags": [],
+    "nutrients": {
+      "calories": 321.0,
+      "carbs": 17.1,
+      "proteins": 4.0,
+      "fats": 29.5,
+      "fibers": 13.5,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "8479d438-709d-475e-a367-be2ea5d72ca4",
+    "code": "fats_avocado_con_scarto",
+    "name": "Avocado con scarto",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "fats",
+    "tags": [],
+    "nutrients": {
+      "calories": 237.5,
+      "carbs": 12.6,
+      "proteins": 3.0,
+      "fats": 21.8,
+      "fibers": 10.0,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "e25e1f95-af7e-42e1-b601-a620c8f2d301",
+    "code": "sweeteners_natural_zucchero_di_canna_integrale_bio_carrefour_[gr]",
+    "name": "Zucchero di canna integrale bio (Carrefour) [gr]",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "sweeteners_natural",
+    "tags": [],
+    "nutrients": {
+      "calories": 387.0,
+      "carbs": 96.0,
+      "proteins": 0.6,
+      "fats": 0.0,
+      "fibers": 0.0,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "ea67952d-6911-45ce-901c-39ad33d848b9",
+    "code": "sweeteners_natural_zucchero_lidl",
+    "name": "Zucchero (Lidl)",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "sweeteners_natural",
+    "tags": [],
+    "nutrients": {
+      "calories": 400.0,
+      "carbs": 100.0,
+      "proteins": 0.0,
+      "fats": 0.0,
+      "fibers": 0.0,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "3a210953-f0b3-4beb-9bc5-40c421a83d4a",
+    "code": "sweeteners_natural_miele_[gr]",
+    "name": "Miele [gr]",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "sweeteners_natural",
+    "tags": [],
+    "nutrients": {
+      "calories": 314.0,
+      "carbs": 78.0,
+      "proteins": 0.0,
+      "fats": 0.0,
+      "fibers": 0.0,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "dbb1a79a-0173-46d1-984c-557d73faba57",
+    "code": "sweeteners_natural_miele_colle_di_nava",
+    "name": "Miele Colle di Nava",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "sweeteners_natural",
+    "tags": [],
+    "nutrients": {
+      "calories": 331.0,
+      "carbs": 82.5,
+      "proteins": 0.3,
+      "fats": 0.0,
+      "fibers": 0.0,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "fa516b0a-578b-42ac-9cd9-ff9c5e0dd081",
+    "code": "sweeteners_natural_miele_di_castagno_carrefour",
+    "name": "Miele di castagno (Carrefour)",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "sweeteners_natural",
+    "tags": [],
+    "nutrients": {
+      "calories": 314.0,
+      "carbs": 78.0,
+      "proteins": 0.0,
+      "fats": 0.0,
+      "fibers": 0.0,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "1f47a727-cceb-43c8-81ea-3f88de4d5b30",
+    "code": "sweeteners_natural_sirop_d'agave_bio_auchan",
+    "name": "Sirop d'agave Bio (Auchan)",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "sweeteners_natural",
+    "tags": [],
+    "nutrients": {
+      "calories": 300.0,
+      "carbs": 75.0,
+      "proteins": 0.0,
+      "fats": 0.0,
+      "fibers": 0.0,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "0104701d-8aca-4ffc-a023-a67b10d1a07c",
+    "code": "sweeteners_natural_sirop_agave_bio_carrefour",
+    "name": "Sirop agave Bio (Carrefour)",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "sweeteners_natural",
+    "tags": [],
+    "nutrients": {
+      "calories": 300.0,
+      "carbs": 75.0,
+      "proteins": 0.0,
+      "fats": 0.0,
+      "fibers": 0.0,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "65f67bf2-e52f-4ffe-93a2-ea45839bf5b6",
+    "code": "sauces_and_condiments_senape_delicata_carrefour",
+    "name": "Senape Delicata (Carrefour)",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "sauces_and_condiments",
+    "tags": [],
+    "nutrients": {
+      "calories": 91.0,
+      "carbs": 6.0,
+      "proteins": 5.2,
+      "fats": 4.5,
+      "fibers": 2.6,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "6d9b24c1-ce5d-4a4d-b420-1139ce14876b",
+    "code": "sauces_and_condiments_estragon_senf_wurzig-scharf_kania_lidl_austria",
+    "name": "Estragon Senf wurzig-scharf Kania (Lidl Austria)",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "sauces_and_condiments",
+    "tags": [],
+    "nutrients": {
+      "calories": 121.0,
+      "carbs": 5.4,
+      "proteins": 5.8,
+      "fats": 6.5,
+      "fibers": 6.0,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "2ca0acbb-6a19-4170-9df5-03e0a51c3fd2",
+    "code": "sauces_and_condiments_kremser_senf_mild-suss_kania_lidl_austria",
+    "name": "Kremser Senf mild-suss Kania (Lidl Austria)",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "sauces_and_condiments",
+    "tags": [],
+    "nutrients": {
+      "calories": 161.0,
+      "carbs": 16.0,
+      "proteins": 5.8,
+      "fats": 6.6,
+      "fibers": 6.0,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "3cdc4de3-15b3-4a01-8d75-2cccd42b47c0",
+    "code": "frozen_vegetables_spinaci_surgelati_lidl",
+    "name": "Spinaci surgelati (Lidl)",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "frozen_vegetables",
+    "tags": [],
+    "nutrients": {
+      "calories": 39.0,
+      "carbs": 3.6,
+      "proteins": 3.6,
+      "fats": 0.6,
+      "fibers": 2.4,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "b609928e-7916-4b4c-b28b-3e13c8604c7d",
+    "code": "frozen_vegetables_broccoli_surgelati_lidl",
+    "name": "Broccoli surgelati (Lidl)",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "frozen_vegetables",
+    "tags": [],
+    "nutrients": {
+      "calories": 20.0,
+      "carbs": 1.1,
+      "proteins": 2.2,
+      "fats": 0.0,
+      "fibers": 2.9,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "e2e8f47e-b683-4165-8855-db82b427018a",
+    "code": "frozen_vegetables_piselli_fini_surgelati_lidl",
+    "name": "Piselli fini surgelati (Lidl)",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "frozen_vegetables",
+    "tags": [],
+    "nutrients": {
+      "calories": 70.0,
+      "carbs": 6.1,
+      "proteins": 5.5,
+      "fats": 1.0,
+      "fibers": 7.3,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "768495ec-f8f1-4115-9df0-8c13f6c7b792",
+    "code": "frozen_vegetables_minestrone_16_verdure_surgelato_lidl",
+    "name": "Minestrone 16 verdure surgelato (Lidl)",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "frozen_vegetables",
+    "tags": [],
+    "nutrients": {
+      "calories": 51.0,
+      "carbs": 7.6,
+      "proteins": 2.6,
+      "fats": 0.0,
+      "fibers": 3.6,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "302e9370-180d-447e-8492-a145d3a697f7",
+    "code": "frozen_fruit_mirtilli_surgelati_lidl",
+    "name": "Mirtilli Surgelati (Lidl)",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "frozen_fruit",
+    "tags": [],
+    "nutrients": {
+      "calories": 49.0,
+      "carbs": 9.1,
+      "proteins": 0.9,
+      "fats": 0.2,
+      "fibers": 1.5,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "e14c5751-4421-4130-ae4d-31bfecff7c0a",
+    "code": "frozen_fruit_lamponi_surgelati_lidl",
+    "name": "Lamponi Surgelati (Lidl)",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "frozen_fruit",
+    "tags": [],
+    "nutrients": {
+      "calories": 49.0,
+      "carbs": 5.3,
+      "proteins": 1.3,
+      "fats": 0.3,
+      "fibers": 6.7,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "7c0c854e-c652-48dc-884e-d51adbbab692",
+    "code": "protein_powders_myprotein_soy_protein_isolate_no_aroma",
+    "name": "MyProtein Soy Protein Isolate no aroma",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "protein_powders",
+    "tags": [],
+    "nutrients": {
+      "calories": 387.0,
+      "carbs": 5.0,
+      "proteins": 90.0,
+      "fats": 0.5,
+      "fibers": 1.0,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "c38b3535-f23c-43b8-8edb-c23b8f8e9b47",
+    "code": "protein_powders_myprotein_soy_protein_isolate_salted_caramel",
+    "name": "MyProtein Soy Protein Isolate salted caramel",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "protein_powders",
+    "tags": [],
+    "nutrients": {
+      "calories": 348.0,
+      "carbs": 7.4,
+      "proteins": 81.0,
+      "fats": 1.4,
+      "fibers": 0.0,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "be1064e4-1bd0-4e0e-99a6-80860c434647",
+    "code": "protein_powders_myprotein_soy_protein_isolate_strawberry",
+    "name": "MyProtein Soy Protein Isolate strawberry",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "protein_powders",
+    "tags": [],
+    "nutrients": {
+      "calories": 330.0,
+      "carbs": 4.4,
+      "proteins": 80.0,
+      "fats": 1.3,
+      "fibers": 0.0,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "9e304035-096b-4e81-9f66-87c00333b6d4",
+    "code": "protein_powders_myprotein_soy_protein_isolate_strawberry_cream",
+    "name": "MyProtein Soy Protein Isolate strawberry cream",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "protein_powders",
+    "tags": [],
+    "nutrients": {
+      "calories": 390.0,
+      "carbs": 8.9,
+      "proteins": 87.0,
+      "fats": 0.5,
+      "fibers": 1.0,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "ef0f1667-5e99-4a2a-9b2b-ae5493365ee8",
+    "code": "protein_powders_myprotein_soy_protein_isolate_vanilla",
+    "name": "MyProtein Soy Protein Isolate vanilla",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "protein_powders",
+    "tags": [],
+    "nutrients": {
+      "calories": 333.0,
+      "carbs": 4.8,
+      "proteins": 81.0,
+      "fats": 1.4,
+      "fibers": 0.0,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "36c75933-4e3e-4b65-b720-d809c9667f9b",
+    "code": "protein_powders_myprotein_soy_protein_isolate_chocolate_smooth",
+    "name": "MyProtein Soy Protein Isolate chocolate smooth",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "protein_powders",
+    "tags": [],
+    "nutrients": {
+      "calories": 349.0,
+      "carbs": 7.8,
+      "proteins": 81.0,
+      "fats": 1.4,
+      "fibers": 0.0,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "30ec04e2-7815-49be-8abb-9ef6f4d60851",
+    "code": "protein_powders_myprotein_soy_protein_isolate_banoffee",
+    "name": "MyProtein Soy Protein Isolate banoffee",
+    "unit": "g",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "protein_powders",
+    "tags": [],
+    "nutrients": {
+      "calories": 376.0,
+      "carbs": 11.0,
+      "proteins": 79.0,
+      "fats": 1.0,
+      "fibers": 2.9,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "8f9787d8-b67b-405b-a014-791c60093f41",
+    "code": "fats_olio_ev_d'oliva_frantoio_nuvolone_[ml]",
+    "name": "Olio EV d'oliva Frantoio Nuvolone [ml]",
+    "unit": "ml",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "fats",
+    "tags": [],
+    "nutrients": {
+      "calories": 824.0,
+      "carbs": 0.0,
+      "proteins": 0.0,
+      "fats": 91.6,
+      "fibers": 0.0,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "3bca9b4e-4639-4f19-a1c4-8c85100d902c",
+    "code": "fats_olio_di_semi_di_girasole_[ml]",
+    "name": "Olio di semi di girasole [ml]",
+    "unit": "ml",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "fats",
+    "tags": [],
+    "nutrients": {
+      "calories": 800.0,
+      "carbs": 0.0,
+      "proteins": 0.0,
+      "fats": 90.7,
+      "fibers": 0.0,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "8e1a71f3-595b-490e-a549-31923e6812be",
+    "code": "sauces_and_condiments_aceto_di_vino_bianco_lidl",
+    "name": "Aceto di vino bianco (LIdl)",
+    "unit": "ml",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "sauces_and_condiments",
+    "tags": [],
+    "nutrients": {
+      "calories": 21.0,
+      "carbs": 0.5,
+      "proteins": 0.0,
+      "fats": 0.0,
+      "fibers": 0.0,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "d7073319-da1a-481f-a7f0-02cdbeac1bdf",
+    "code": "sauces_and_condiments_mosterd_senape_kania_medio_lidl",
+    "name": "Mosterd Senape Kania medio (Lidl)",
+    "unit": "ml",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "sauces_and_condiments",
+    "tags": [],
+    "nutrients": {
+      "calories": 102.0,
+      "carbs": 3.3,
+      "proteins": 5.2,
+      "fats": 5.7,
+      "fibers": 0.0,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "df5178d7-cfbe-4fa0-a9db-9fb22826c16c",
+    "code": "sauces_and_condiments_mosterd_senape_kania_piccante_lidl",
+    "name": "Mosterd Senape Kania piccante (Lidl)",
+    "unit": "ml",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "sauces_and_condiments",
+    "tags": [],
+    "nutrients": {
+      "calories": 110.0,
+      "carbs": 1.2,
+      "proteins": 6.0,
+      "fats": 7.3,
+      "fibers": 0.0,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "3d771200-1700-4f04-9f58-3ecae117992d",
+    "code": "milk_and_plant_drinks_latte_scremato_lidl",
+    "name": "Latte scremato (Lidl)",
+    "unit": "ml",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "milk_and_plant_drinks",
+    "tags": [],
+    "nutrients": {
+      "calories": 32.0,
+      "carbs": 4.8,
+      "proteins": 3.2,
+      "fats": 0.5,
+      "fibers": 0.0,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "c9157f8c-f53d-408d-a6a6-db2179317a08",
+    "code": "milk_and_plant_drinks_latte_scremato_senza_lattosio_lidl",
+    "name": "Latte scremato senza lattosio (Lidl)",
+    "unit": "ml",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "milk_and_plant_drinks",
+    "tags": [],
+    "nutrients": {
+      "calories": 34.0,
+      "carbs": 4.9,
+      "proteins": 3.3,
+      "fats": 0.5,
+      "fibers": 0.0,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "8b941d52-7149-4054-8fb6-3dc26dde61cf",
+    "code": "milk_and_plant_drinks_latte_intero_lidl",
+    "name": "Latte intero (Lidl)",
+    "unit": "ml",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "milk_and_plant_drinks",
+    "tags": [],
+    "nutrients": {
+      "calories": 64.0,
+      "carbs": 4.8,
+      "proteins": 3.2,
+      "fats": 3.6,
+      "fibers": 0.0,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "3a1977ca-6ae9-4b32-8c3b-d1a88c9eb760",
+    "code": "milk_and_plant_drinks_latte_intero_uht_latteria_lidl",
+    "name": "Latte intero UHT Latteria (Lidl)",
+    "unit": "ml",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "milk_and_plant_drinks",
+    "tags": [],
+    "nutrients": {
+      "calories": 65.0,
+      "carbs": 5.0,
+      "proteins": 3.2,
+      "fats": 3.6,
+      "fibers": 0.0,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "d8c17397-8d36-4c30-b652-cd1b8c8924b9",
+    "code": "milk_and_plant_drinks_bio_organic_bevanda_soia_lidl",
+    "name": "Bio Organic bevanda Soia (Lidl)",
+    "unit": "ml",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "milk_and_plant_drinks",
+    "tags": [],
+    "nutrients": {
+      "calories": 33.0,
+      "carbs": 1.0,
+      "proteins": 3.0,
+      "fats": 1.7,
+      "fibers": 0.0,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "64eb822e-fec2-4444-ae5e-47d286153a36",
+    "code": "milk_and_plant_drinks_bevanda_soia_con_calcio_e_vitamine_lidl",
+    "name": "Bevanda Soia con calcio e vitamine (Lidl)",
+    "unit": "ml",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "milk_and_plant_drinks",
+    "tags": [],
+    "nutrients": {
+      "calories": 40.0,
+      "carbs": 2.8,
+      "proteins": 3.0,
+      "fats": 1.8,
+      "fibers": 0.4,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "1d7e5bdb-c462-4e33-b1d5-4b2ef5e0fdf8",
+    "code": "milk_and_plant_drinks_bevanda_di_riso_lidl",
+    "name": "Bevanda di riso (Lidl)",
+    "unit": "ml",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "milk_and_plant_drinks",
+    "tags": [],
+    "nutrients": {
+      "calories": 61.0,
+      "carbs": 13.0,
+      "proteins": 0.2,
+      "fats": 0.9,
+      "fibers": 0.0,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "778b881b-a40e-4d17-bed3-54595190be77",
+    "code": "sweeteners_natural_miele_[ml]",
+    "name": "Miele [ml]",
+    "unit": "ml",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "sweeteners_natural",
+    "tags": [],
+    "nutrients": {
+      "calories": 816.4,
+      "carbs": 202.8,
+      "proteins": 0.0,
+      "fats": 0.0,
+      "fibers": 0.0,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "d71b57c0-7ae3-4a47-bce5-9ec98e166b8f",
+    "code": "sweeteners_natural_sirup_d'agave_bio_carrefour",
+    "name": "Sirup d'agave bio (Carrefour)",
+    "unit": "ml",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "sweeteners_natural",
+    "tags": [],
+    "nutrients": {
+      "calories": 420.0,
+      "carbs": 105.0,
+      "proteins": 0.0,
+      "fats": 0.0,
+      "fibers": 0.0,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "76322906-6f5b-4712-9df5-2916a0635a2b",
+    "code": "fresh_vegetables_insalata_mista_200gr_lidl",
+    "name": "Insalata Mista 200gr (Lidl)",
+    "unit": "pz",
+    "reference": "per_100",
+    "multiplier": 200,
+    "categoryId": "fresh_vegetables",
+    "tags": [],
+    "nutrients": {
+      "calories": 18.0,
+      "carbs": 1.3,
+      "proteins": 1.3,
+      "fats": 0.0,
+      "fibers": 2.9,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "10b57af6-64ff-46ba-9798-ca81b45dc31b",
+    "code": "fresh_vegetables_insalata_sfiziosa_150gr_lidl",
+    "name": "Insalata Sfiziosa 150gr (Lidl)",
+    "unit": "pz",
+    "reference": "per_100",
+    "multiplier": 150,
+    "categoryId": "fresh_vegetables",
+    "tags": [],
+    "nutrients": {
+      "calories": 23.0,
+      "carbs": 2.7,
+      "proteins": 1.3,
+      "fats": 0.0,
+      "fibers": 1.9,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "9c5fe0dc-7968-4b50-9c46-9a20a6e16367",
+    "code": "fresh_vegetables_insalata_ricca_200gr_lidl",
+    "name": "Insalata Ricca 200gr (Lidl)",
+    "unit": "pz",
+    "reference": "per_100",
+    "multiplier": 200,
+    "categoryId": "fresh_vegetables",
+    "tags": [],
+    "nutrients": {
+      "calories": 26.0,
+      "carbs": 3.3,
+      "proteins": 1.3,
+      "fats": 0.0,
+      "fibers": 3.0,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "6f8cb0df-0350-41c2-8cae-ccc7e3b78140",
+    "code": "fresh_vegetables_insalata_misticanza_125gr_lidl",
+    "name": "Insalata Misticanza 125gr (Lidl)",
+    "unit": "pz",
+    "reference": "per_100",
+    "multiplier": 125,
+    "categoryId": "fresh_vegetables",
+    "tags": [],
+    "nutrients": {
+      "calories": 21.0,
+      "carbs": 2.5,
+      "proteins": 1.6,
+      "fats": 0.0,
+      "fibers": 1.5,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "cb52ccf3-e09f-45ac-954a-8fa65e62f465",
+    "code": "fresh_vegetables_insalata_di_rucola_125gr_lidl",
+    "name": "Insalata di Rucola 125gr (Lidl)",
+    "unit": "pz",
+    "reference": "per_100",
+    "multiplier": 125,
+    "categoryId": "fresh_vegetables",
+    "tags": [],
+    "nutrients": {
+      "calories": 31.0,
+      "carbs": 3.9,
+      "proteins": 2.6,
+      "fats": 0.5,
+      "fibers": 0.9,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "8a8a0e3c-7e46-40b2-bcfc-51ee0caa9d70",
+    "code": "vegetable_preparations_purè_di_patate_125gr_lidl",
+    "name": "Purè di patate 125gr (Lidl)",
+    "unit": "pz",
+    "reference": "per_100",
+    "multiplier": 125,
+    "categoryId": "vegetable_preparations",
+    "tags": [],
+    "nutrients": {
+      "calories": 62.0,
+      "carbs": 11.5,
+      "proteins": 2.2,
+      "fats": 0.6,
+      "fibers": 1.1,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "c0513635-b712-4ebf-b1df-a366496f4c77",
+    "code": "eggs_and_derivatives_uovo_xl_73gr_lidl",
+    "name": "Uovo XL 73gr (Lidl)",
+    "unit": "pz",
+    "reference": "per_piece",
+    "multiplier": 1,
+    "categoryId": "eggs_and_derivatives",
+    "tags": [],
+    "nutrients": {
+      "calories": 91.9,
+      "carbs": 0.4,
+      "proteins": 8.1,
+      "fats": 6.1,
+      "fibers": 0.0,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "69068375-f6d1-47d5-9513-0d85a2daa83a",
+    "code": "canned_vegetables_pomodori_pelati_400gr_lidl",
+    "name": "Pomodori pelati 400gr (Lidl)",
+    "unit": "pz",
+    "reference": "per_100",
+    "multiplier": 400,
+    "categoryId": "canned_vegetables",
+    "tags": [],
+    "nutrients": {
+      "calories": 30.0,
+      "carbs": 4.9,
+      "proteins": 1.4,
+      "fats": 0.5,
+      "fibers": 0.0,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "0d31f300-d5e7-404f-928d-614a9b54f2d9",
+    "code": "canned_vegetables_polpa_di_pomodoro_400gr_lidl",
+    "name": "Polpa di pomodoro 400gr (Lidl)",
+    "unit": "pz",
+    "reference": "per_100",
+    "multiplier": 400,
+    "categoryId": "canned_vegetables",
+    "tags": [],
+    "nutrients": {
+      "calories": 26.0,
+      "carbs": 4.0,
+      "proteins": 1.3,
+      "fats": 0.2,
+      "fibers": 0.0,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "fe8545c4-f037-43e1-9295-7c1e10c9d511",
+    "code": "canned_vegetables_polpa_di_pomodoro_fine_400gr_lidl",
+    "name": "Polpa di pomodoro Fine 400gr (Lidl)",
+    "unit": "pz",
+    "reference": "per_100",
+    "multiplier": 400,
+    "categoryId": "canned_vegetables",
+    "tags": [],
+    "nutrients": {
+      "calories": 25.0,
+      "carbs": 4.0,
+      "proteins": 1.1,
+      "fats": 0.2,
+      "fibers": 0.0,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "1b8ba2c5-8e90-41a9-b3a3-78779ac18091",
+    "code": "canned_vegetables_fagiolini_verdi_fini_freshona_440gr_lidl",
+    "name": "Fagiolini verdi fini Freshona 440gr (Lidl)",
+    "unit": "pz",
+    "reference": "per_100",
+    "multiplier": 440,
+    "categoryId": "canned_vegetables",
+    "tags": [],
+    "nutrients": {
+      "calories": 24.0,
+      "carbs": 2.5,
+      "proteins": 1.6,
+      "fats": 0.2,
+      "fibers": 0.0,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "ec8c4803-1c75-4162-a80c-86132ddff1f0",
+    "code": "canned_vegetables_champignons_freshona_170gr_lidl",
+    "name": "Champignons Freshona 170gr (Lidl)",
+    "unit": "pz",
+    "reference": "per_100",
+    "multiplier": 170,
+    "categoryId": "canned_vegetables",
+    "tags": [],
+    "nutrients": {
+      "calories": 18.0,
+      "carbs": 0.2,
+      "proteins": 2.1,
+      "fats": 0.4,
+      "fibers": 0.0,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "9d98003c-8ead-4ea0-9ba5-efb2dcfa51d5",
+    "code": "canned_vegetables_funghetti_trifolati_baresa_180gr_lidl",
+    "name": "Funghetti trifolati Baresa 180gr (Lidl)",
+    "unit": "pz",
+    "reference": "per_100",
+    "multiplier": 180,
+    "categoryId": "canned_vegetables",
+    "tags": [],
+    "nutrients": {
+      "calories": 73.0,
+      "carbs": 1.2,
+      "proteins": 1.7,
+      "fats": 6.1,
+      "fibers": 0.0,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "15b52e87-5319-4930-b526-8b309d8ff146",
+    "code": "low_fat_dairy_skyr_magro_350gr_lidl",
+    "name": "Skyr magro 350gr (Lidl)",
+    "unit": "pz",
+    "reference": "per_100",
+    "multiplier": 350,
+    "categoryId": "low_fat_dairy",
+    "tags": [],
+    "nutrients": {
+      "calories": 62.0,
+      "carbs": 4.0,
+      "proteins": 11.0,
+      "fats": 0.2,
+      "fibers": 0.0,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "a53455a3-e1ea-4b5c-a54e-f541ea1ee08b",
+    "code": "low_fat_dairy_yogurt_greco_senza_grassi_200gr_lidl",
+    "name": "Yogurt greco senza grassi 200gr (Lidl)",
+    "unit": "pz",
+    "reference": "per_100",
+    "multiplier": 200,
+    "categoryId": "low_fat_dairy",
+    "tags": [],
+    "nutrients": {
+      "calories": 58.0,
+      "carbs": 4.5,
+      "proteins": 10.0,
+      "fats": 0.0,
+      "fibers": 0.0,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "76a1b43e-ce2a-462a-83a1-4501cb5ee592",
+    "code": "cheese_feta_dop_65gr_lidl",
+    "name": "Feta DOP 65gr (Lidl)",
+    "unit": "pz",
+    "reference": "per_100",
+    "multiplier": 65,
+    "categoryId": "cheese",
+    "tags": [],
+    "nutrients": {
+      "calories": 309.0,
+      "carbs": 0.5,
+      "proteins": 18.0,
+      "fats": 26.0,
+      "fibers": 0.0,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "6c78cfa5-837d-47ce-af2e-ab94a9a5172f",
+    "code": "cheese_fiocchi_di_latte_light_200gr_lidl",
+    "name": "Fiocchi di latte light 200gr (Lidl)",
+    "unit": "pz",
+    "reference": "per_100",
+    "multiplier": 200,
+    "categoryId": "cheese",
+    "tags": [],
+    "nutrients": {
+      "calories": 69.0,
+      "carbs": 3.1,
+      "proteins": 12.4,
+      "fats": 0.8,
+      "fibers": 0.0,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "bcce678e-42d1-4f76-b61f-2c172884f928",
+    "code": "cheese_fiocchi_di_latte_200gr_lidl",
+    "name": "Fiocchi di latte 200gr (Lidl)",
+    "unit": "pz",
+    "reference": "per_100",
+    "multiplier": 200,
+    "categoryId": "cheese",
+    "tags": [],
+    "nutrients": {
+      "calories": 98.0,
+      "carbs": 2.8,
+      "proteins": 11.5,
+      "fats": 4.5,
+      "fibers": 0.0,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "0a6271b2-8c35-46db-96d4-09cf9d3fee71",
+    "code": "cheese_fiocchi_di_latte_s_lattosio_200gr_lidl",
+    "name": "Fiocchi di latte s. lattosio 200gr (Lidl)",
+    "unit": "pz",
+    "reference": "per_100",
+    "multiplier": 200,
+    "categoryId": "cheese",
+    "tags": [],
+    "nutrients": {
+      "calories": 80.0,
+      "carbs": 3.0,
+      "proteins": 12.0,
+      "fats": 2.2,
+      "fibers": 0.0,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "c3cf2778-27ce-49cc-a885-85973e3a61f0",
+    "code": "cheese_formaggio_fresco_quark_senza_grassi_250gr_lidl",
+    "name": "Formaggio fresco Quark senza grassi 250gr (Lidl)",
+    "unit": "pz",
+    "reference": "per_100",
+    "multiplier": 250,
+    "categoryId": "cheese",
+    "tags": [],
+    "nutrients": {
+      "calories": 66.0,
+      "carbs": 4.1,
+      "proteins": 12.0,
+      "fats": 0.2,
+      "fibers": 0.0,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "33192d31-0797-4528-8e4f-6ee55edd98d0",
+    "code": "syrupy_fruit_mezze_pesche_allo_sciroppo_70gr_lidl",
+    "name": "Mezze pesche allo sciroppo 70gr (Lidl)",
+    "unit": "pz",
+    "reference": "per_100",
+    "multiplier": 70,
+    "categoryId": "syrupy_fruit",
+    "tags": [],
+    "nutrients": {
+      "calories": 67.0,
+      "carbs": 15.5,
+      "proteins": 0.4,
+      "fats": 0.0,
+      "fibers": 1.0,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "078b3508-3783-4ffb-9e84-1e3d41c00d64",
+    "code": "bread_rosetta_60gr_lidl",
+    "name": "Rosetta 60gr (Lidl)",
+    "unit": "pz",
+    "reference": "per_100",
+    "multiplier": 60,
+    "categoryId": "bread",
+    "tags": [],
+    "nutrients": {
+      "calories": 284.0,
+      "carbs": 54.7,
+      "proteins": 9.6,
+      "fats": 2.1,
+      "fibers": 6.0,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "e6900b01-1d44-4427-9233-001136c23f31",
+    "code": "bread_pane_tondo_60gr_lidl",
+    "name": "Pane tondo 60gr (Lidl)",
+    "unit": "pz",
+    "reference": "per_100",
+    "multiplier": 60,
+    "categoryId": "bread",
+    "tags": [],
+    "nutrients": {
+      "calories": 282.0,
+      "carbs": 55.4,
+      "proteins": 10.6,
+      "fats": 1.1,
+      "fibers": 0.0,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "92e6ea39-6979-4b8c-8687-6d6fdce4648f",
+    "code": "dry_bakery_crackers_25gr_lidl",
+    "name": "Crackers 25gr (Lidl)",
+    "unit": "pz",
+    "reference": "per_100",
+    "multiplier": 25,
+    "categoryId": "dry_bakery",
+    "tags": [],
+    "nutrients": {
+      "calories": 439.0,
+      "carbs": 72.0,
+      "proteins": 11.0,
+      "fats": 12.0,
+      "fibers": 2.4,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "0e37c5fa-f71c-4a1f-a94b-77600d03ecef",
+    "code": "dry_bakery_grissini_torinesi_100gr_lidl",
+    "name": "Grissini Torinesi 100gr (Lidl)",
+    "unit": "pz",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "dry_bakery",
+    "tags": [],
+    "nutrients": {
+      "calories": 401.0,
+      "carbs": 74.0,
+      "proteins": 12.0,
+      "fats": 5.6,
+      "fibers": 3.2,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "74e0bc82-43c9-47aa-b8f4-e9027c5444c1",
+    "code": "canned_fish_tonno_naturale_150gr_lidl",
+    "name": "Tonno naturale 150gr (Lidl)",
+    "unit": "pz",
+    "reference": "per_100",
+    "multiplier": 150,
+    "categoryId": "canned_fish",
+    "tags": [],
+    "nutrients": {
+      "calories": 116.0,
+      "carbs": 0.0,
+      "proteins": 26.0,
+      "fats": 1.3,
+      "fibers": 0.0,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "1f29c6d7-7a19-4cd9-bdcd-8f8cd2ab0060",
+    "code": "canned_fish_filetti_di_tonno_al_naturale_140gr_lidl",
+    "name": "Filetti di Tonno al naturale 140gr (Lidl)",
+    "unit": "pz",
+    "reference": "per_100",
+    "multiplier": 140,
+    "categoryId": "canned_fish",
+    "tags": [],
+    "nutrients": {
+      "calories": 141.0,
+      "carbs": 2.7,
+      "proteins": 32.0,
+      "fats": 0.0,
+      "fibers": 0.0,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "f3743f69-e338-46b1-b962-fa9826e3d421",
+    "code": "canned_fish_sardine_olio_di_semi_di_girasole_90gr_lidl",
+    "name": "Sardine olio di semi di girasole 90gr (Lidl)",
+    "unit": "pz",
+    "reference": "per_100",
+    "multiplier": 90,
+    "categoryId": "canned_fish",
+    "tags": [],
+    "nutrients": {
+      "calories": 207.0,
+      "carbs": 0.0,
+      "proteins": 26.3,
+      "fats": 11.3,
+      "fibers": 0.0,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "57b9c496-c08f-440c-a722-f6ed92bf9bca",
+    "code": "canned_fish_sardine_in_salsa_di_pomodoro_125gr_lidl",
+    "name": "Sardine in salsa di pomodoro 125gr (Lidl)",
+    "unit": "pz",
+    "reference": "per_100",
+    "multiplier": 125,
+    "categoryId": "canned_fish",
+    "tags": [],
+    "nutrients": {
+      "calories": 215.0,
+      "carbs": 3.1,
+      "proteins": 15.5,
+      "fats": 15.4,
+      "fibers": 0.0,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "64dbcfb8-c2a4-4db8-9e49-81d064cb1091",
+    "code": "canned_fish_filetti_di_sgombro_occhione_125gr_lidl",
+    "name": "Filetti di sgombro occhione 125gr (Lidl)",
+    "unit": "pz",
+    "reference": "per_100",
+    "multiplier": 125,
+    "categoryId": "canned_fish",
+    "tags": [],
+    "nutrients": {
+      "calories": 304.0,
+      "carbs": 0.0,
+      "proteins": 17.1,
+      "fats": 26.2,
+      "fibers": 0.0,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "e59c9fe6-a25d-4221-adec-431ef7f1cea8",
+    "code": "canned_fish_filetti_di_sgombro_grigliati_104gr_lidl",
+    "name": "Filetti di sgombro grigliati 104gr (Lidl)",
+    "unit": "pz",
+    "reference": "per_100",
+    "multiplier": 104,
+    "categoryId": "canned_fish",
+    "tags": [],
+    "nutrients": {
+      "calories": 149.0,
+      "carbs": 0.0,
+      "proteins": 25.0,
+      "fats": 4.5,
+      "fibers": 0.0,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "bdc310ca-e78c-4b22-ac1f-0c1c2c7948e9",
+    "code": "canned_fish_filetto_di_salmone_al_naturale_125gr_lidl",
+    "name": "Filetto di salmone al naturale 125gr (Lidl)",
+    "unit": "pz",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "canned_fish",
+    "tags": [],
+    "nutrients": {
+      "calories": 170.0,
+      "carbs": 0.0,
+      "proteins": 21.0,
+      "fats": 9.3,
+      "fibers": 0.0,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "6f47732b-8023-46ed-9f88-a1a5b46bbd7d",
+    "code": "canned_fish_filetti_acciughe_olio_oliva_sgocc_43gr_lidl",
+    "name": "Filetti acciughe olio oliva sgocc 43gr (Lidl)",
+    "unit": "pz",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "canned_fish",
+    "tags": [],
+    "nutrients": {
+      "calories": 227.0,
+      "carbs": 0.0,
+      "proteins": 24.3,
+      "fats": 14.0,
+      "fibers": 0.0,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "850b38e1-0ca2-4eb6-9762-9a07b49822bf",
+    "code": "canned_fish_filetti_acciughe_olio_oliva_80gr_lidl",
+    "name": "Filetti acciughe olio oliva 80gr (Lidl)",
+    "unit": "pz",
+    "reference": "per_100",
+    "multiplier": 100,
+    "categoryId": "canned_fish",
+    "tags": [],
+    "nutrients": {
+      "calories": 449.5,
+      "carbs": 0.0,
+      "proteins": 24.3,
+      "fats": 38.7,
+      "fibers": 0.0,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "87b818c7-007b-4638-b1b3-39c081ea16ed",
+    "code": "canned_fish_vongole_al_naturale_65gr_lidl",
+    "name": "Vongole al naturale 65gr (Lidl)",
+    "unit": "pz",
+    "reference": "per_100",
+    "multiplier": 65,
+    "categoryId": "canned_fish",
+    "tags": [],
+    "nutrients": {
+      "calories": 99.0,
+      "carbs": 3.0,
+      "proteins": 18.0,
+      "fats": 1.8,
+      "fibers": 0.0,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "c6116db2-b088-42cf-b048-0bbcd0ea3415",
+    "code": "sauces_and_condiments_il_dado_classico_knorr",
+    "name": "Il dado classico Knorr",
+    "unit": "pz",
+    "reference": "per_piece",
+    "multiplier": 1,
+    "categoryId": "sauces_and_condiments",
+    "tags": [],
+    "nutrients": {
+      "calories": 23.5,
+      "carbs": 0.2,
+      "proteins": 1.2,
+      "fats": 2.0,
+      "fibers": 0.0,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "9d95c721-7d52-47aa-bdd5-834da9cae243",
+    "code": "sauces_and_condiments_il_dado_vegetale_knorr",
+    "name": "Il dado vegetale Knorr",
+    "unit": "pz",
+    "reference": "per_piece",
+    "multiplier": 1,
+    "categoryId": "sauces_and_condiments",
+    "tags": [],
+    "nutrients": {
+      "calories": 30.0,
+      "carbs": 2.5,
+      "proteins": 2.5,
+      "fats": 2.5,
+      "fibers": 2.5,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "f19c00f8-4135-4905-b682-2338422bf105",
+    "code": "sauces_and_condiments_il_dado_delicato_knorr",
+    "name": "Il dado delicato Knorr",
+    "unit": "pz",
+    "reference": "per_piece",
+    "multiplier": 1,
+    "categoryId": "sauces_and_condiments",
+    "tags": [],
+    "nutrients": {
+      "calories": 25.0,
+      "carbs": 2.5,
+      "proteins": 2.5,
+      "fats": 2.5,
+      "fibers": 2.5,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "16d496ec-8518-4cbb-ab8c-76c8d10c313d",
+    "code": "sauces_and_condiments_il_dado_saporito_manzo_knorr",
+    "name": "Il dado saporito Manzo Knorr",
+    "unit": "pz",
+    "reference": "per_piece",
+    "multiplier": 1,
+    "categoryId": "sauces_and_condiments",
+    "tags": [],
+    "nutrients": {
+      "calories": 25.0,
+      "carbs": 2.5,
+      "proteins": 2.5,
+      "fats": 2.5,
+      "fibers": 2.5,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "4a021cd8-b6c3-4196-bdec-31770df87bb3",
+    "code": "sauces_and_condiments_il_mio_dado_classico_star_10gr",
+    "name": "Il mio dado classico Star 10gr",
+    "unit": "pz",
+    "reference": "per_100",
+    "multiplier": 10,
+    "categoryId": "sauces_and_condiments",
+    "tags": [],
+    "nutrients": {
+      "calories": 235.0,
+      "carbs": 1.7,
+      "proteins": 12.0,
+      "fats": 20.0,
+      "fibers": 0.2,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "9bd4dd29-1ac2-452b-8695-827717fa4962",
+    "code": "sauces_and_condiments_il_mio_dado_vegetale_star_10gr",
+    "name": "Il mio dado vegetale Star 10gr",
+    "unit": "pz",
+    "reference": "per_100",
+    "multiplier": 10,
+    "categoryId": "sauces_and_condiments",
+    "tags": [],
+    "nutrients": {
+      "calories": 271.0,
+      "carbs": 6.5,
+      "proteins": 9.0,
+      "fats": 23.0,
+      "fibers": 1.0,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "fef472aa-9edb-4caf-bc2a-bc90dfff9cdb",
+    "code": "sauces_and_condiments_il_dado_classico_maggi_10gr",
+    "name": "Il dado classico Maggi 10gr",
+    "unit": "pz",
+    "reference": "per_100",
+    "multiplier": 10,
+    "categoryId": "sauces_and_condiments",
+    "tags": [],
+    "nutrients": {
+      "calories": 241.0,
+      "carbs": 33.1,
+      "proteins": 2.3,
+      "fats": 11.0,
+      "fibers": 0.3,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "82af9538-429a-415b-a946-b202913336f2",
+    "code": "sauces_and_condiments_brodo_classico_kania_lidl",
+    "name": "Brodo classico Kania (Lidl)",
+    "unit": "pz",
+    "reference": "per_piece",
+    "multiplier": 1,
+    "categoryId": "sauces_and_condiments",
+    "tags": [],
+    "nutrients": {
+      "calories": 15.3,
+      "carbs": 2.2,
+      "proteins": 0.7,
+      "fats": 0.3,
+      "fibers": 0.0,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "70800e3d-b63c-4370-a32a-a4d43062d5f4",
+    "code": "sauces_and_condiments_brodo_vegetale_kania_lidl_11gr",
+    "name": "Brodo vegetale Kania (Lidl) 11gr",
+    "unit": "pz",
+    "reference": "per_100",
+    "multiplier": 11,
+    "categoryId": "sauces_and_condiments",
+    "tags": [],
+    "nutrients": {
+      "calories": 188.0,
+      "carbs": 2.6,
+      "proteins": 8.2,
+      "fats": 5.1,
+      "fibers": 0.0,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "e41c94c4-80f1-4ff4-a62c-7e0f18c8da63",
+    "code": "soup_preparations_crema_porcini_knorr",
+    "name": "Crema porcini Knorr",
+    "unit": "pz",
+    "reference": "per_piece",
+    "multiplier": 1,
+    "categoryId": "soup_preparations",
+    "tags": [],
+    "nutrients": {
+      "calories": 330.0,
+      "carbs": 40.5,
+      "proteins": 7.5,
+      "fats": 15.0,
+      "fibers": 3.7,
+      "sodium": 0.0
+    }
+  },
+  {
+    "id": "c0995804-e060-4cfc-9eed-9409b1c75eff",
+    "code": "soup_preparations_crema_asparagi_knorr",
+    "name": "Crema asparagi Knorr",
+    "unit": "pz",
+    "reference": "per_piece",
+    "multiplier": 1,
+    "categoryId": "soup_preparations",
+    "tags": [],
+    "nutrients": {
+      "calories": 322.5,
+      "carbs": 54.7,
+      "proteins": 13.5,
+      "fats": 4.5,
+      "fibers": 3.7,
+      "sodium": 0.0
+    }
+  }
+]

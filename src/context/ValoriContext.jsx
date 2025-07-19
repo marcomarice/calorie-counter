@@ -1,17 +1,55 @@
 import { createContext, useContext, useEffect, useState } from "react";
 
-// Crea il context
 const ValoriContext = createContext();
 
-// Provider globale da usare in App
 export function ValoriProvider({ children }) {
-  const [valori, setValori] = useState({});
+  const [valori, setValori] = useState({
+    byName: {},
+    byId: {},
+    byCode: {},
+    list: []
+  });
 
   useEffect(() => {
-    fetch("/data/alimenti.json")
+    fetch("/data/foods.json")
       .then(res => res.json())
-      .then(setValori)
-      .catch(err => console.error("Errore nel caricamento di alimenti.json", err));
+      .then(data => {
+        const byName = {};
+        const byId = {};
+        const byCode = {};
+
+        data.forEach(food => {
+          const val = {
+            cal: food.nutrients.calories,
+            carb: food.nutrients.carbs,
+            prot: food.nutrients.proteins,
+            fat: food.nutrients.fats,
+            fib: food.nutrients.fibers,
+            unita: food.unit,
+            name: food.name,
+            id: food.id,
+            code: food.code,
+            categoryId: food.categoryId,
+            tags: food.tags,
+            reference: food.reference,
+            multiplier: food.multiplier
+          };
+
+          byName[food.name] = val;
+          byId[food.id] = val;
+          byCode[food.code] = val;
+        });
+
+        setValori({
+          byName,
+          byId,
+          byCode,
+          list: data
+        });
+      })
+      .catch(err =>
+        console.error("Errore nel caricamento di foods.json", err)
+      );
   }, []);
 
   return (
@@ -21,7 +59,10 @@ export function ValoriProvider({ children }) {
   );
 }
 
-// Hook per accedere al context nei componenti
-export function useValoriPer100() {
+export function useValori() {
   return useContext(ValoriContext);
+}
+
+export function useValoriPer100() {
+  return useContext(ValoriContext).byName;
 }

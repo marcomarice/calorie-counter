@@ -8,7 +8,7 @@ export default function PastoSection({ titolo, alimenti }) {
         <ul className="text-sm text-gray-700 pl-4 list-disc space-y-1">
           {alimenti.map((al, idx) => (
             <li key={idx}>
-              {al.nome} {al.quantita}{al.unita} {al.attivo ? "👁️" : "🚫"}
+              {al.name} {al.quantity}{al.unit} {al.attivo ? "👁️" : "🚫"}
             </li>
           ))}
         </ul>

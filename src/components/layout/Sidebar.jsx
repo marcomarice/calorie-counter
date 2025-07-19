@@ -1,10 +1,9 @@
 import { useState } from "react";
 import { useAlimenti } from "../../context/AlimentiContext";
-import { useValoriPer100 } from "../../context/ValoriContext"; // ✅ Importa il context
+import { useValori } from "../../context/ValoriContext";
 
 const pasti = ["Colazione", "Spuntino", "Pranzo", "Merenda", "Cena"];
 
-// Configurazione incrementi per unità
 const incrementiPerUnita = {
   g: [100, 25, 10, 1],
   ml: [250, 125, 15, 5],
@@ -13,38 +12,39 @@ const incrementiPerUnita = {
 
 export default function Sidebar({ giorno }) {
   const { dispatch } = useAlimenti();
-  const valoriPer100 = useValoriPer100(); // ✅ Ottieni gli alimenti dal context
+  const { list: alimentiDisponibili } = useValori(); // ✅ prende la lista completa da foods.json
   const [pastoSelezionato, setPastoSelezionato] = useState("Colazione");
 
-  function aggiungiAlimento(nome, quantita, unita) {
-    if (!valoriPer100[nome]) {
-      alert(`⚠️ L'alimento "${nome}" non è presente in alimenti.json`);
-      return;
-    }
+  function aggiungiAlimento(food, quantita) {
+    const ratio = quantita / food.multiplier;
+
+    const alimento = {
+      name: food.name,
+      code: food.code,
+      unit: food.unit,
+      quantity: quantita,
+      categoryId: food.categoryId,
+      tags: food.tags || [],
+      reference: food.reference,
+      multiplier: food.multiplier,
+      nutrients: {
+        calories: food.nutrients.calories * ratio,
+        carbs:    food.nutrients.carbs    * ratio,
+        proteins: food.nutrients.proteins * ratio,
+        fats:     food.nutrients.fats     * ratio,
+        fibers:   food.nutrients.fibers   * ratio
+      },
+      attivo: true
+    };
 
     if (pastoSelezionato === "All") {
       for (let i = 0; i < 5; i++) {
-        dispatch({
-          type: "ADD_ALIMENTO",
-          payload: {
-            giorno,
-            pasto: i,
-            alimento: { nome, quantita, unita, attivo: true },
-          },
-        });
+        dispatch({ type: "ADD_ALIMENTO", payload: { giorno, pasto: i, alimento } });
       }
     } else {
       const pastoIdx = pasti.indexOf(pastoSelezionato);
       if (pastoIdx === -1) return;
-
-      dispatch({
-        type: "ADD_ALIMENTO",
-        payload: {
-          giorno,
-          pasto: pastoIdx,
-          alimento: { nome, quantita, unita, attivo: true },
-        },
-      });
+      dispatch({ type: "ADD_ALIMENTO", payload: { giorno, pasto: pastoIdx, alimento } });
     }
   }
 
@@ -52,7 +52,7 @@ export default function Sidebar({ giorno }) {
     <aside className="col-span-3 bg-white rounded-lg shadow p-4">
       <h2 className="text-xl font-semibold mb-4">Alimenti</h2>
 
-      {/* Dropdown selezione pasto */}
+      {/* Selezione pasto */}
       <div className="mb-4">
         <label className="block text-sm font-medium text-gray-700 mb-1">
           Aggiungi a:
@@ -69,19 +69,20 @@ export default function Sidebar({ giorno }) {
         </select>
       </div>
 
-      {/* Lista alimenti dal JSON */}
+      {/* Lista alimenti */}
       <div className="space-y-4">
-        {Object.entries(valoriPer100).map(([nome, info]) => {
-          const unita = info.unita || "g"; // Default a grammi se non specificato
+        {alimentiDisponibili.map((food) => {
+          const unita = food.unit || "g";
+          const incrementi = incrementiPerUnita[unita] || [];
 
           return (
-            <div key={nome} className="space-y-1">
-              <div className="font-medium">{nome}</div>
+            <div key={food.code} className="space-y-1">
+              <div className="font-medium">{food.name}</div>
               <div className="flex flex-wrap gap-2">
-                {(incrementiPerUnita[unita] || []).map((q, i) => (
+                {incrementi.map((q, i) => (
                   <button
                     key={i}
-                    onClick={() => aggiungiAlimento(nome, q, unita)}
+                    onClick={() => aggiungiAlimento(food, q)}
                     className="bg-green-200 hover:bg-green-300 px-2 py-1 text-xs rounded"
                   >
                     +{q}{unita}

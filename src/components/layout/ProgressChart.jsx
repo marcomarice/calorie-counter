@@ -1,8 +1,7 @@
 // ProgressChart.jsx
 import { useAlimenti } from "../../context/AlimentiContext";
-import { useValoriPer100 } from "../../context/ValoriContext";
 import {
-  BarChart, Bar, XAxis, YAxis, Tooltip, Legend, ResponsiveContainer, LabelList
+  BarChart, Bar, XAxis, YAxis, Tooltip, Legend, ResponsiveContainer
 } from "recharts";
 import { useMemo } from "react";
 
@@ -11,10 +10,9 @@ const pesoKg = 80;
 
 export default function ProgressChart() {
   const { settimana } = useAlimenti();
-  const valoriPer100 = useValoriPer100();
 
   const dati = useMemo(() => {
-    const lista = settimana.map((giorno) => calcolaTotali(giorno.flat().filter(a => a.attivo), valoriPer100));
+    const lista = settimana.map(giorno => calcolaTotali(giorno.flat().filter(a => a.attivo)));
 
     const tot = lista.reduce((acc, cur) => sommaTotali(acc, cur), baseTotali());
     const media = dividiTotali(tot, lista.length);
@@ -32,7 +30,7 @@ export default function ProgressChart() {
       proPct: (d.pro * 4 / d.kcalMacro) * 100,
       fatPct: (d.fat * 9 / d.kcalMacro) * 100,
     }));
-  }, [settimana, valoriPer100]);
+  }, [settimana]);
 
   return (
     <div className="w-full bg-white rounded-lg shadow p-4 mb-6">
@@ -68,7 +66,7 @@ export default function ProgressChart() {
   );
 }
 
-// Helper
+// Helpers
 function baseTotali() {
   return { kcal: 0, pro: 0, carb: 0, fat: 0, fiber: 0, kcalMacro: 1 };
 }
@@ -92,17 +90,25 @@ function dividiTotali(t, n) {
     kcalMacro: 1,
   };
 }
-function calcolaTotali(alimenti, valoriPer100) {
+function calcolaTotali(alimenti) {
   let kcal = 0, pro = 0, carb = 0, fat = 0, fiber = 0;
   for (const a of alimenti) {
-    const info = valoriPer100[a.nome];
-    if (!info) continue;
-    const q = a.quantita;
-    kcal  += info.kcal  * q / 100;
-    pro   += info.pro   * q / 100;
-    carb  += info.carb  * q / 100;
-    fat   += info.fat   * q / 100;
-    fiber += info.fiber * q / 100;
+    const { quantity = 0, multiplier = 100, nutrients } = a;
+    if (
+      !nutrients ||
+      typeof nutrients.calories !== "number" ||
+      typeof nutrients.proteins !== "number" ||
+      typeof nutrients.carbs !== "number" ||
+      typeof nutrients.fats !== "number" ||
+      typeof nutrients.fibers !== "number"
+    ) continue;
+
+    const ratio = quantity / multiplier;
+    kcal  += nutrients.calories * ratio;
+    pro   += nutrients.proteins * ratio;
+    carb  += nutrients.carbs    * ratio;
+    fat   += nutrients.fats     * ratio;
+    fiber += nutrients.fibers   * ratio;
   }
   const kcalMacro = pro * 4 + carb * 4 + fat * 9 || 1;
   return { kcal, pro, carb, fat, fiber, kcalMacro };
