@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useAlimenti } from "../../context/AlimentiContext";
 import { useValori } from "../../context/ValoriContext";
+import { useTranslation } from "react-i18next"; // ✅ import per i18n
 
 const pasti = ["Colazione", "Spuntino", "Pranzo", "Merenda", "Cena"];
 
@@ -12,8 +13,10 @@ const incrementiPerUnita = {
 
 export default function Sidebar({ giorno }) {
   const { dispatch } = useAlimenti();
-  const { list: alimentiDisponibili } = useValori(); // ✅ prende la lista completa da foods.json
+  const { list: alimentiDisponibili } = useValori();
   const [pastoSelezionato, setPastoSelezionato] = useState("Colazione");
+  const [categorieVisibili, setCategorieVisibili] = useState({});
+  const { t } = useTranslation("categories"); // ✅ inizializza traduzioni
 
   function aggiungiAlimento(food, quantita) {
     const ratio = quantita / food.multiplier;
@@ -29,24 +32,44 @@ export default function Sidebar({ giorno }) {
       multiplier: food.multiplier,
       nutrients: {
         calories: food.nutrients.calories * ratio,
-        carbs:    food.nutrients.carbs    * ratio,
+        carbs: food.nutrients.carbs * ratio,
         proteins: food.nutrients.proteins * ratio,
-        fats:     food.nutrients.fats     * ratio,
-        fibers:   food.nutrients.fibers   * ratio
+        fats: food.nutrients.fats * ratio,
+        fibers: food.nutrients.fibers * ratio,
       },
-      attivo: true
+      attivo: true,
     };
 
     if (pastoSelezionato === "All") {
       for (let i = 0; i < 5; i++) {
-        dispatch({ type: "ADD_ALIMENTO", payload: { giorno, pasto: i, alimento } });
+        dispatch({
+          type: "ADD_ALIMENTO",
+          payload: { giorno, pasto: i, alimento },
+        });
       }
     } else {
       const pastoIdx = pasti.indexOf(pastoSelezionato);
       if (pastoIdx === -1) return;
-      dispatch({ type: "ADD_ALIMENTO", payload: { giorno, pasto: pastoIdx, alimento } });
+      dispatch({
+        type: "ADD_ALIMENTO",
+        payload: { giorno, pasto: pastoIdx, alimento },
+      });
     }
   }
+
+  function toggleCategoria(cat) {
+    setCategorieVisibili((prev) => ({
+      ...prev,
+      [cat]: !prev[cat],
+    }));
+  }
+
+  const alimentiPerCategoria = alimentiDisponibili.reduce((acc, alimento) => {
+    const cat = alimento.categoryId || "other";
+    if (!acc[cat]) acc[cat] = [];
+    acc[cat].push(alimento);
+    return acc;
+  }, {});
 
   return (
     <aside className="col-span-3 bg-white rounded-lg shadow p-4">
@@ -63,35 +86,53 @@ export default function Sidebar({ giorno }) {
           className="w-full border rounded px-2 py-1 text-sm"
         >
           {pasti.map((nome, idx) => (
-            <option key={idx} value={nome}>{nome}</option>
+            <option key={idx} value={nome}>
+              {nome}
+            </option>
           ))}
           <option value="All">Tutti i pasti</option>
         </select>
       </div>
 
-      {/* Lista alimenti */}
+      {/* Lista alimenti per categoria */}
       <div className="space-y-4">
-        {alimentiDisponibili.map((food) => {
-          const unita = food.unit || "g";
-          const incrementi = incrementiPerUnita[unita] || [];
+        {Object.entries(alimentiPerCategoria)
+          .sort(([a], [b]) => a.localeCompare(b))
+          .map(([categoriaId, alimenti]) => (
+            <div key={categoriaId}>
+              <button
+                onClick={() => toggleCategoria(categoriaId)}
+                className="w-full text-left font-semibold bg-gray-100 px-2 py-1 rounded mb-1 hover:bg-gray-200"
+              >
+                {t(categoriaId, categoriaId)}{" "}
+                {categorieVisibili[categoriaId] ? "▲" : "▼"}
+              </button>
 
-          return (
-            <div key={food.code} className="space-y-1">
-              <div className="font-medium">{food.name}</div>
-              <div className="flex flex-wrap gap-2">
-                {incrementi.map((q, i) => (
-                  <button
-                    key={i}
-                    onClick={() => aggiungiAlimento(food, q)}
-                    className="bg-green-200 hover:bg-green-300 px-2 py-1 text-xs rounded"
-                  >
-                    +{q}{unita}
-                  </button>
-                ))}
-              </div>
+              {categorieVisibili[categoriaId] &&
+                alimenti.map((food) => {
+                  const unita = food.unit || "g";
+                  const incrementi = incrementiPerUnita[unita] || [];
+
+                  return (
+                    <div key={food.code} className="space-y-1 mb-2 ml-2">
+                      <div className="font-medium">{food.name}</div>
+                      <div className="flex flex-wrap gap-2">
+                        {incrementi.map((q, i) => (
+                          <button
+                            key={i}
+                            onClick={() => aggiungiAlimento(food, q)}
+                            className="bg-green-200 hover:bg-green-300 px-2 py-1 text-xs rounded"
+                          >
+                            +{q}
+                            {unita}
+                          </button>
+                        ))}
+                      </div>
+                    </div>
+                  );
+                })}
             </div>
-          );
-        })}
+          ))}
       </div>
     </aside>
   );

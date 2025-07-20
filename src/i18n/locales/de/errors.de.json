@@ -1,0 +1,13 @@
+{
+  "required": "Dieses Feld ist erforderlich.",
+  "invalidNumber": "Ungültiger Zahlenwert.",
+  "minValue": "Der Wert muss größer oder gleich {{min}} sein.",
+  "maxValue": "Der Wert muss kleiner oder gleich {{max}} sein.",
+  "invalidUnit": "Ungültige Einheit.",
+  "invalidQuantity": "Ungültige Menge.",
+  "duplicateItem": "Dieses Lebensmittel wurde bereits hinzugefügt.",
+  "notFound": "Element nicht gefunden.",
+  "loadError": "Fehler beim Laden der Daten.",
+  "saveError": "Fehler beim Speichern.",
+  "unknownError": "Ein unbekannter Fehler ist aufgetreten."
+}

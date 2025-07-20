@@ -1,0 +1,13 @@
+{
+  "required": "Ce champ est obligatoire.",
+  "invalidNumber": "Valeur numérique invalide.",
+  "minValue": "La valeur doit être supérieure ou égale à {{min}}.",
+  "maxValue": "La valeur doit être inférieure ou égale à {{max}}.",
+  "invalidUnit": "Unité invalide.",
+  "invalidQuantity": "Quantité invalide.",
+  "duplicateItem": "Cet aliment a déjà été ajouté.",
+  "notFound": "Élément introuvable.",
+  "loadError": "Erreur lors du chargement des données.",
+  "saveError": "Erreur lors de l'enregistrement.",
+  "unknownError": "Une erreur inconnue est survenue."
+}

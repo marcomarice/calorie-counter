@@ -1,0 +1,15 @@
+{
+  "required": "Questo campo è obbligatorio",
+  "invalidNumber": "Valore non valido",
+  "minValue": "Il valore minimo consentito è {{min}}",
+  "maxValue": "Il valore massimo consentito è {{max}}",
+  "invalidUnit": "Unità non riconosciuta",
+  "invalidCategory": "Categoria non valida",
+  "foodNotFound": "Alimento non trovato",
+  "alreadyExists": "Elemento già presente",
+  "serverError": "Errore del server. Riprova più tardi.",
+  "networkError": "Errore di connessione. Controlla la rete.",
+  "unauthorized": "Accesso negato. Devi accedere per continuare.",
+  "tooManyRequests": "Troppe richieste. Attendi qualche secondo.",
+  "unknownError": "Si è verificato un errore sconosciuto"
+}
