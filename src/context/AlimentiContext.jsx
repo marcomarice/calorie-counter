@@ -1,3 +1,4 @@
+import { isValidAlimento } from "../utils/validations";
 import { createContext, useReducer, useContext } from "react";
 
 // Inizializza la settimana: 7 giorni × 5 pasti
@@ -5,79 +6,22 @@ const initialSettimana = Array.from({ length: 7 }, () =>
   Array.from({ length: 5 }, () => [])
 );
 
-const initialState = {
-  settimana: initialSettimana
-};
+const initialState = { settimana: initialSettimana };
 
-function alimentiReducer(state, action) {
+export function alimentiReducer(state, action) {
   switch (action.type) {
     case "ADD_ALIMENTO": {
       const { giorno, pasto, alimento } = action.payload;
 
-      // Validazione struttura alimento
-      console.log("Aggiungo alimento:", alimento);
-      if (
-        !alimento.code ||
-        !alimento.name ||
-        typeof alimento.quantity !== "number" ||
-        !alimento.nutrients ||
-        typeof alimento.nutrients.calories !== "number" ||
-        typeof alimento.nutrients.carbs !== "number" ||
-        typeof alimento.nutrients.proteins !== "number" ||
-        typeof alimento.nutrients.fats !== "number" ||
-        typeof alimento.nutrients.fibers !== "number"
-      ) {
+      if (!isValidAlimento(alimento)) {
+        console.error("❌ Alimento NON valido:", alimento);
         throw new Error("Formato alimento non valido");
       }
 
-      const nuovaSettimana = state.settimana.map((giornoData, i) => {
-        if (i !== giorno) return giornoData;
-
-        return giornoData.map((pastoData, j) => {
-          if (j !== pasto) return pastoData;
-
-          const index = pastoData.findIndex(a => a.code === alimento.code);
-
-          if (index === -1) {
-            return [
-              ...pastoData,
-              {
-                ...alimento,
-                attivo: true
-              }
-            ];
-          } else {
-            return pastoData.map((a, idx) =>
-              idx === index
-                ? {
-                    ...a,
-                    quantity: a.quantity + alimento.quantity,
-                    attivo: true
-                  }
-                : a
-            );
-          }
-        });
-      });
-
-      return { ...state, settimana: nuovaSettimana };
-    }
-
-    case "MODIFY_QUANTITA": {
-      const { giorno, pasto, index, delta } = action.payload;
-
-      const nuovaSettimana = state.settimana.map((giornoData, i) =>
+      const nuovaSettimana = state.settimana.map((g, i) =>
         i === giorno
-          ? giornoData.map((pastoData, j) =>
-              j === pasto
-                ? pastoData.map((a, k) =>
-                    k === index
-                      ? { ...a, quantity: Math.max(a.quantity + delta, 0) }
-                      : a
-                  )
-                : pastoData
-            )
-          : giornoData
+          ? g.map((p, j) => (j === pasto ? [...p, alimento] : p))
+          : g
       );
 
       return { ...state, settimana: nuovaSettimana };
@@ -85,59 +29,49 @@ function alimentiReducer(state, action) {
 
     case "REMOVE_ALIMENTO": {
       const { giorno, pasto, index } = action.payload;
-
-      const nuovaSettimana = state.settimana.map((giornoData, i) =>
+      const nuovaSettimana = state.settimana.map((g, i) =>
         i === giorno
-          ? giornoData.map((pastoData, j) =>
-              j === pasto
-                ? pastoData.filter((_, k) => k !== index)
-                : pastoData
+          ? g.map((p, j) =>
+              j === pasto ? p.filter((_, idx) => idx !== index) : p
             )
-          : giornoData
+          : g
       );
-
       return { ...state, settimana: nuovaSettimana };
     }
 
-    case "TOGGLE_ATTIVO": {
-      const { giorno, pasto, index } = action.payload;
-
-      const nuovaSettimana = state.settimana.map((giornoData, i) =>
+    case "CHANGE_QUANTITY": {
+      const { giorno, pasto, index, nuovaQuantita } = action.payload;
+      const nuovaSettimana = state.settimana.map((g, i) =>
         i === giorno
-          ? giornoData.map((pastoData, j) =>
+          ? g.map((p, j) =>
               j === pasto
-                ? pastoData.map((a, k) =>
-                    k === index ? { ...a, attivo: !a.attivo } : a
+                ? p.map((a, idx) =>
+                    idx === index ? { ...a, quantity: nuovaQuantita } : a
                   )
-                : pastoData
+                : p
             )
-          : giornoData
+          : g
       );
-
       return { ...state, settimana: nuovaSettimana };
+    }
+
+    case "ADD_GIORNO": {
+      return {
+        ...state,
+        settimana: [...state.settimana, [[], [], [], [], []]],
+      };
     }
 
     case "DUPLICA_GIORNO": {
       const { from, to } = action.payload;
-
-      const nuovaSettimana = state.settimana.map((giornoData, idx) =>
+      const nuovaSettimana = state.settimana.map((g, idx) =>
         idx === to
-          ? state.settimana[from].map(pasto =>
-              pasto.map(al => ({ ...al }))
+          ? state.settimana[from].map((pasto) =>
+              pasto.map((al) => ({ ...al }))
             )
-          : giornoData
+          : g
       );
-
       return { ...state, settimana: nuovaSettimana };
-    }
-
-    case "RESET": {
-      return {
-        ...state,
-        settimana: Array.from({ length: 7 }, () =>
-          Array.from({ length: 5 }, () => [])
-        )
-      };
     }
 
     default:

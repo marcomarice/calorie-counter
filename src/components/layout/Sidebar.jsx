@@ -1,139 +1,144 @@
-import { useState } from "react";
-import { useAlimenti } from "../../context/AlimentiContext";
+import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 import { useValori } from "../../context/ValoriContext";
-import { useTranslation } from "react-i18next"; // ✅ import per i18n
+import { useAlimenti } from "../../context/AlimentiContext";
+import { useVisibilitaCategorie } from "../../hooks/useVisibilitaCategorie";
+import { getCategorieFromAlimenti } from "../../utils/transformations";
+import { normalizzaAlimento } from "../../utils/normalizzaAlimento";
+import FoodList from "../sidebar/FoodList";
 
-const pasti = ["Colazione", "Spuntino", "Pranzo", "Merenda", "Cena"];
-
-const incrementiPerUnita = {
-  g: [100, 25, 10, 1],
-  ml: [250, 125, 15, 5],
-  pz: [1, 0.5, 0.25],
-};
-
-export default function Sidebar({ giorno }) {
+export function Sidebar({ giorno }) {
+  const { t } = useTranslation("categories");
+  const valori = useValori();
   const { dispatch } = useAlimenti();
-  const { list: alimentiDisponibili } = useValori();
-  const [pastoSelezionato, setPastoSelezionato] = useState("Colazione");
-  const [categorieVisibili, setCategorieVisibili] = useState({});
-  const { t } = useTranslation("categories"); // ✅ inizializza traduzioni
 
-  function aggiungiAlimento(food, quantita) {
-    const ratio = quantita / food.multiplier;
+  const [filtro, setFiltro] = useState("");
+  const [pastoSelezionato, setPastoSelezionato] = useState(0); // ✅ default: Colazione
 
-    const alimento = {
-      name: food.name,
-      code: food.code,
-      unit: food.unit,
-      quantity: quantita,
-      categoryId: food.categoryId,
-      tags: food.tags || [],
-      reference: food.reference,
-      multiplier: food.multiplier,
-      nutrients: {
-        calories: food.nutrients.calories * ratio,
-        carbs: food.nutrients.carbs * ratio,
-        proteins: food.nutrients.proteins * ratio,
-        fats: food.nutrients.fats * ratio,
-        fibers: food.nutrients.fibers * ratio,
-      },
-      attivo: true,
-    };
+  const categorie = getCategorieFromAlimenti(valori.list);
+  const { categorieVisibili, toggle, collassaTutte } = useVisibilitaCategorie();
 
-    if (pastoSelezionato === "All") {
-      for (let i = 0; i < 5; i++) {
-        dispatch({
-          type: "ADD_ALIMENTO",
-          payload: { giorno, pasto: i, alimento },
-        });
-      }
-    } else {
-      const pastoIdx = pasti.indexOf(pastoSelezionato);
-      if (pastoIdx === -1) return;
-      dispatch({
-        type: "ADD_ALIMENTO",
-        payload: { giorno, pasto: pastoIdx, alimento },
-      });
-    }
-  }
-
-  function toggleCategoria(cat) {
-    setCategorieVisibili((prev) => ({
-      ...prev,
-      [cat]: !prev[cat],
-    }));
-  }
-
-  const alimentiPerCategoria = alimentiDisponibili.reduce((acc, alimento) => {
-    const cat = alimento.categoryId || "other";
-    if (!acc[cat]) acc[cat] = [];
-    acc[cat].push(alimento);
-    return acc;
-  }, {});
+  const alimentiDisponibili = valori.list.filter((al) => {
+    const testo = `${al.name} ${al.tags?.join(" ") ?? ""}`.toLowerCase();
+    return testo.includes(filtro.toLowerCase());
+  });
 
   return (
     <aside className="col-span-3 bg-white rounded-lg shadow p-4">
-      <h2 className="text-xl font-semibold mb-4">Alimenti</h2>
+      <h2 className="text-xl font-semibold mb-4">
+        {t("Alimenti", "Alimenti")}
+      </h2>
 
-      {/* Selezione pasto */}
+      {/* Campo ricerca */}
+      <input
+        type="text"
+        placeholder={t("Cerca alimenti", "Cerca alimenti")}
+        value={filtro}
+        onChange={(e) => setFiltro(e.target.value)}
+        className="w-full px-3 py-2 border rounded mb-2"
+      />
+
+      {/* Pulsante reset */}
+      <button
+        className="text-xs text-red-500 underline mb-4"
+        onClick={() => setFiltro("")}
+      >
+        {t("Reset ricerca", "Reset ricerca")}
+      </button>
+
+      {/* Selettore pasto */}
       <div className="mb-4">
-        <label className="block text-sm font-medium text-gray-700 mb-1">
-          Aggiungi a:
+        <label className="block text-sm font-medium mb-1">
+          {t("Aggiungi a:", "Aggiungi a:")}
         </label>
         <select
           value={pastoSelezionato}
-          onChange={(e) => setPastoSelezionato(e.target.value)}
-          className="w-full border rounded px-2 py-1 text-sm"
+          onChange={(e) => setPastoSelezionato(Number(e.target.value))}
+          className="w-full border rounded px-2 py-1"
         >
-          {pasti.map((nome, idx) => (
-            <option key={idx} value={nome}>
-              {nome}
-            </option>
-          ))}
-          <option value="All">Tutti i pasti</option>
+          <option value={0}>{t("Colazione", "Colazione")}</option>
+          <option value={1}>{t("Spuntino", "Spuntino")}</option>
+          <option value={2}>{t("Pranzo", "Pranzo")}</option>
+          <option value={3}>{t("Merenda", "Merenda")}</option>
+          <option value={4}>{t("Cena", "Cena")}</option>
         </select>
       </div>
 
-      {/* Lista alimenti per categoria */}
-      <div className="space-y-4">
-        {Object.entries(alimentiPerCategoria)
-          .sort(([a], [b]) => a.localeCompare(b))
-          .map(([categoriaId, alimenti]) => (
-            <div key={categoriaId}>
-              <button
-                onClick={() => toggleCategoria(categoriaId)}
-                className="w-full text-left font-semibold bg-gray-100 px-2 py-1 rounded mb-1 hover:bg-gray-200"
+      {/* Collassa tutte */}
+      <button
+        className="mb-4 text-sm text-blue-600 underline"
+        onClick={() => collassaTutte(categorie)}
+      >
+        {t("Collassa tutte", "Collassa tutte")}
+      </button>
+
+      {/* Ricerca attiva */}
+      {filtro ? (
+        <div className="border rounded-md bg-gray-50 px-3 py-2 mb-4">
+          <h3 className="font-semibold text-sm mb-2">
+            {t("Risultati ricerca", "Risultati ricerca")}
+          </h3>
+          <FoodList
+            alimenti={alimentiDisponibili}
+            filtro={filtro}
+            onAggiungi={(alimento) =>
+              dispatch({
+                type: "ADD_ALIMENTO",
+                payload: {
+                  giorno,
+                  pasto: pastoSelezionato,
+                  alimento: normalizzaAlimento(alimento),
+                },
+              })
+            }
+          />
+        </div>
+      ) : (
+        categorie.map((cat) => {
+          const visibile = categorieVisibili[cat.id];
+          const alimentiCat = valori.list.filter(
+            (a) => a.categoryId === cat.id
+          );
+
+          if (alimentiCat.length === 0) return null;
+
+          return (
+            <div
+              key={cat.id}
+              className="border rounded-md bg-gray-50 px-3 py-2 mb-4"
+            >
+              <h3
+                className="flex items-center justify-between cursor-pointer font-semibold text-sm bg-gray-100 px-2 py-1 rounded hover:bg-gray-200"
+                onClick={() => toggle(cat.id)}
               >
-                {t(categoriaId, categoriaId)}{" "}
-                {categorieVisibili[categoriaId] ? "▲" : "▼"}
-              </button>
+                <span>{t(cat.name, cat.name)}</span>
+                <span className="text-xs">{visibile ? "▾" : "▸"}</span>
+              </h3>
 
-              {categorieVisibili[categoriaId] &&
-                alimenti.map((food) => {
-                  const unita = food.unit || "g";
-                  const incrementi = incrementiPerUnita[unita] || [];
-
-                  return (
-                    <div key={food.code} className="space-y-1 mb-2 ml-2">
-                      <div className="font-medium">{food.name}</div>
-                      <div className="flex flex-wrap gap-2">
-                        {incrementi.map((q, i) => (
-                          <button
-                            key={i}
-                            onClick={() => aggiungiAlimento(food, q)}
-                            className="bg-green-200 hover:bg-green-300 px-2 py-1 text-xs rounded"
-                          >
-                            +{q}
-                            {unita}
-                          </button>
-                        ))}
-                      </div>
-                    </div>
-                  );
-                })}
+              {visibile && (
+                <div className="max-h-48 overflow-y-auto pr-1 mt-2">
+                  <FoodList
+                    alimenti={alimentiCat}
+                    filtro={filtro}
+                    onAggiungi={(alimento) =>
+                      dispatch({
+                        type: "ADD_ALIMENTO",
+                        payload: {
+                          giorno,
+                          pasto: pastoSelezionato,
+                          alimento: normalizzaAlimento(alimento),
+                        },
+                      })
+                    }
+                  />
+                </div>
+              )}
             </div>
-          ))}
-      </div>
+          );
+        })
+      )}
     </aside>
   );
 }
+
+export default Sidebar;

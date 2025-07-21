@@ -1,70 +1,7 @@
 import { useAlimenti } from "../../context/AlimentiContext";
-
-const giorni = ["Lunedì", "Martedì", "Mercoledì", "Giovedì", "Venerdì", "Sabato", "Domenica"];
-const pesoKg = 80;
-
-function calcolaTotali(alimenti) {
-  let kcal = 0, pro = 0, carb = 0, fat = 0, fiber = 0;
-  for (const a of alimenti) {
-    const { quantity = 0, multiplier = 100, nutrients } = a;
-    if (
-      !nutrients ||
-      typeof nutrients.calories !== "number" ||
-      typeof nutrients.proteins !== "number" ||
-      typeof nutrients.carbs !== "number" ||
-      typeof nutrients.fats !== "number" ||
-      typeof nutrients.fibers !== "number"
-    ) continue;
-
-    const ratio = quantity / multiplier;
-    kcal  += nutrients.calories * ratio;
-    pro   += nutrients.proteins * ratio;
-    carb  += nutrients.carbs    * ratio;
-    fat   += nutrients.fats     * ratio;
-    fiber += nutrients.fibers   * ratio;
-  }
-  const kcalMacro = pro * 4 + carb * 4 + fat * 9 || 1;
-  return { kcal, pro, carb, fat, fiber, kcalMacro };
-}
-
-function TotaliTabella({ dati, mostraGrKg = true }) {
-  const { kcal, pro, carb, fat, fiber, kcalMacro } = dati;
-
-  const righe = [
-    { nome: "Carboidrati", val: carb,   pct: (carb * 4 / kcalMacro) * 100, grkg: mostraGrKg ? carb / pesoKg : null },
-    { nome: "Proteine",    val: pro,    pct: (pro * 4 / kcalMacro) * 100, grkg: mostraGrKg ? pro / pesoKg : null },
-    { nome: "Grassi",       val: fat,    pct: (fat * 9 / kcalMacro) * 100, grkg: mostraGrKg ? fat / pesoKg : null },
-    { nome: "Fibre",        val: fiber,  pct: null,                       grkg: null },
-  ];
-
-  return (
-    <div className="space-y-2">
-      <p><strong>Calorie:</strong> {kcal.toFixed(1)} kcal</p>
-      <table className="w-full text-xs border border-gray-300">
-        <thead className="bg-gray-100 text-gray-700">
-          <tr>
-            <th className="px-2 py-1 text-left">Macro</th>
-            <th className="px-2 py-1 text-right">Quantità</th>
-            <th className="px-2 py-1 text-right">% Macro</th>
-            {mostraGrKg && <th className="px-2 py-1 text-right">gr/kg</th>}
-          </tr>
-        </thead>
-        <tbody>
-          {righe.map((r, i) => (
-            <tr key={i} className="border-t">
-              <td className="px-2 py-1">{r.nome}</td>
-              <td className="px-2 py-1 text-right">{r.val.toFixed(1)}g</td>
-              <td className="px-2 py-1 text-right">{r.pct != null ? r.pct.toFixed(1) + "%" : "—"}</td>
-              {mostraGrKg && (
-                <td className="px-2 py-1 text-right">{r.grkg != null ? r.grkg.toFixed(2) : "—"}</td>
-              )}
-            </tr>
-          ))}
-        </tbody>
-      </table>
-    </div>
-  );
-}
+import { calcolaTotali } from "../../utils/calcolo";
+import TotaliTabella from "../shared/TotaliTabella";
+import { giorni, pesoKg } from "../../utils/constants";
 
 export default function Totals({ giorno }) {
   const { settimana, dispatch } = useAlimenti();

@@ -1,12 +1,11 @@
 // ProgressChart.jsx
 import { useAlimenti } from "../../context/AlimentiContext";
+import { calcolaTotali } from "../../utils/calcolo";
+import { giorni, pesoKg } from "../../utils/constants";
 import {
   BarChart, Bar, XAxis, YAxis, Tooltip, Legend, ResponsiveContainer
 } from "recharts";
 import { useMemo } from "react";
-
-const giorni = ["Lun", "Mar", "Mer", "Gio", "Ven", "Sab", "Dom"];
-const pesoKg = 80;
 
 export default function ProgressChart() {
   const { settimana } = useAlimenti();
@@ -89,27 +88,4 @@ function dividiTotali(t, n) {
     fiber: t.fiber / n,
     kcalMacro: 1,
   };
-}
-function calcolaTotali(alimenti) {
-  let kcal = 0, pro = 0, carb = 0, fat = 0, fiber = 0;
-  for (const a of alimenti) {
-    const { quantity = 0, multiplier = 100, nutrients } = a;
-    if (
-      !nutrients ||
-      typeof nutrients.calories !== "number" ||
-      typeof nutrients.proteins !== "number" ||
-      typeof nutrients.carbs !== "number" ||
-      typeof nutrients.fats !== "number" ||
-      typeof nutrients.fibers !== "number"
-    ) continue;
-
-    const ratio = quantity / multiplier;
-    kcal  += nutrients.calories * ratio;
-    pro   += nutrients.proteins * ratio;
-    carb  += nutrients.carbs    * ratio;
-    fat   += nutrients.fats     * ratio;
-    fiber += nutrients.fibers   * ratio;
-  }
-  const kcalMacro = pro * 4 + carb * 4 + fat * 9 || 1;
-  return { kcal, pro, carb, fat, fiber, kcalMacro };
 }
