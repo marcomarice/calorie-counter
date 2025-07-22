@@ -3,7 +3,7 @@ export function calcolaTotali(alimenti = []) {
   let kcal = 0, pro = 0, carb = 0, fat = 0, fiber = 0;
 
   for (const a of alimenti) {
-    const { quantity = 0, multiplier = 100, nutrients } = a;
+    const { quantity = 0, multiplier = 100, reference = "per_100", nutrients } = a;
     if (
       !nutrients ||
       typeof nutrients.calories !== "number" ||
@@ -13,7 +13,15 @@ export function calcolaTotali(alimenti = []) {
       typeof nutrients.fibers !== "number"
     ) continue;
 
-    const ratio = quantity / multiplier;
+    let ratio = 1;
+    if (reference === "per_100" && multiplier === 100) {
+      ratio = quantity / multiplier;
+    } else if (reference === "per_100" && multiplier !== 100) {
+      ratio = quantity * (multiplier / 100);
+    } else if (reference === "per_piece") {
+      ratio = quantity * multiplier;
+    }
+
     kcal  += nutrients.calories * ratio;
     pro   += nutrients.proteins * ratio;
     carb  += nutrients.carbs    * ratio;

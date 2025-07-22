@@ -1,7 +1,6 @@
 import React from "react";
 import { createContext, useContext, useEffect, useState } from "react";
 
-// Helper to map foods array to lookup objects
 function mapFoods(data) {
   const byName = {};
   const byId = {};
@@ -40,8 +39,6 @@ const ValoriContext = createContext(defaultValori);
 
 export function ValoriProvider({ children }) {
   const [valori, setValori] = useState(defaultValori);
-  // Optionally, add loading state if needed
-  // const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     async function fetchFoods() {
@@ -49,10 +46,8 @@ export function ValoriProvider({ children }) {
         const res = await fetch("/data/foods.json");
         const data = await res.json();
         setValori(mapFoods(data));
-        // setLoading(false);
       } catch (err) {
         console.error("Errore nel caricamento di foods.json", err);
-        // setLoading(false);
       }
     }
     fetchFoods();

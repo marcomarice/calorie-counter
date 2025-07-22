@@ -18,9 +18,33 @@ export function alimentiReducer(state, action) {
         throw new Error("Formato alimento non valido");
       }
 
+      const pastoCorrente = state.settimana[giorno][pasto];
+
+      const indiceEsistente = pastoCorrente.findIndex(
+        (a) => a.code === alimento.code
+      );
+
+      let nuovoPasto;
+      if (indiceEsistente !== -1) {
+        const alimentoEsistente = pastoCorrente[indiceEsistente];
+        const quantitaTotale = alimentoEsistente.quantity + alimento.quantity;
+
+        const alimentoAggiornato = {
+          ...alimentoEsistente,
+          quantity: quantitaTotale,
+          // ✅ NON sommare i nutrienti: lasciarli come reference unit
+        };
+
+        nuovoPasto = pastoCorrente.map((a, idx) =>
+          idx === indiceEsistente ? alimentoAggiornato : a
+        );
+      } else {
+        nuovoPasto = [...pastoCorrente, alimento];
+      }
+
       const nuovaSettimana = state.settimana.map((g, i) =>
         i === giorno
-          ? g.map((p, j) => (j === pasto ? [...p, alimento] : p))
+          ? g.map((p, j) => (j === pasto ? nuovoPasto : p))
           : g
       );
 
@@ -36,6 +60,50 @@ export function alimentiReducer(state, action) {
             )
           : g
       );
+      return { ...state, settimana: nuovaSettimana };
+    }
+
+    case "MODIFY_QUANTITA": {
+      const { giorno, pasto, index, delta } = action.payload;
+      const alimento = state.settimana[giorno][pasto][index];
+
+      const nuovaQuantita = alimento.quantity + delta;
+      if (nuovaQuantita <= 0) return state;
+
+      const alimentoAggiornato = {
+        ...alimento,
+        quantity: nuovaQuantita,
+        // ✅ NON modificare i nutrienti qui
+      };
+
+      const nuovaSettimana = state.settimana.map((g, i) =>
+        i === giorno
+          ? g.map((p, j) =>
+              j === pasto
+                ? p.map((a, idx) => (idx === index ? alimentoAggiornato : a))
+                : p
+            )
+          : g
+      );
+
+      return { ...state, settimana: nuovaSettimana };
+    }
+
+    case "TOGGLE_ATTIVO": {
+      const { giorno, pasto, index } = action.payload;
+
+      const nuovaSettimana = state.settimana.map((g, i) =>
+        i === giorno
+          ? g.map((p, j) =>
+              j === pasto
+                ? p.map((a, idx) =>
+                    idx === index ? { ...a, attivo: !a.attivo } : a
+                  )
+                : p
+            )
+          : g
+      );
+
       return { ...state, settimana: nuovaSettimana };
     }
 

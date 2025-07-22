@@ -61,16 +61,7 @@ export default function Planner({ giorno, setGiorno }) {
               <ul className="text-sm text-gray-700 pl-4 space-y-3">
                 {alimenti.map((a, index) => {
                   const { name, quantity = 0, unit = "g", nutrients = {}, multiplier = 100 } = a;
-                  const { calories = 0, carbs = 0, proteins = 0, fats = 0, fibers = 0 } = nutrients;
-
-                  const ratio = quantity / multiplier;
-
-                  const kcal  = calories * ratio;
-                  const carb  = carbs    * ratio;
-                  const pro   = proteins * ratio;
-                  const fat   = fats     * ratio;
-                  const fiber = fibers   * ratio;
-
+                  const { kcal, pro, carb, fat, fiber } = calcolaTotali([a]);
                   const incrementi = incrementiPerUnita[unit] || [];
 
                   return (

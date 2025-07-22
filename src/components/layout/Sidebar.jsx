@@ -11,17 +11,28 @@ export function Sidebar({ giorno }) {
   const { t } = useTranslation("categories");
   const valori = useValori();
   const { dispatch } = useAlimenti();
-
   const [filtro, setFiltro] = useState("");
-  const [pastoSelezionato, setPastoSelezionato] = useState(0); // ✅ default: Colazione
-
+  const [pastoSelezionato, setPastoSelezionato] = useState(0);
   const categorie = getCategorieFromAlimenti(valori.list);
   const { categorieVisibili, toggle, collassaTutte } = useVisibilitaCategorie();
-
+  
   const alimentiDisponibili = valori.list.filter((al) => {
     const testo = `${al.name} ${al.tags?.join(" ") ?? ""}`.toLowerCase();
     return testo.includes(filtro.toLowerCase());
   });
+
+  const aggiungiAlimento = (alimento, quantita) => {
+    const alimentoNormalizzato = normalizzaAlimento(alimento, quantita);
+    console.log("Aggiungo alimento normalizzato:", alimentoNormalizzato);
+    dispatch({
+      type: "ADD_ALIMENTO",
+      payload: {
+        giorno,
+        pasto: pastoSelezionato,
+        alimento: alimentoNormalizzato,
+      },
+    });
+  };
 
   return (
     <aside className="col-span-3 bg-white rounded-lg shadow p-4">
@@ -29,7 +40,6 @@ export function Sidebar({ giorno }) {
         {t("Alimenti", "Alimenti")}
       </h2>
 
-      {/* Campo ricerca */}
       <input
         type="text"
         placeholder={t("Cerca alimenti", "Cerca alimenti")}
@@ -38,7 +48,6 @@ export function Sidebar({ giorno }) {
         className="w-full px-3 py-2 border rounded mb-2"
       />
 
-      {/* Pulsante reset */}
       <button
         className="text-xs text-red-500 underline mb-4"
         onClick={() => setFiltro("")}
@@ -46,7 +55,6 @@ export function Sidebar({ giorno }) {
         {t("Reset ricerca", "Reset ricerca")}
       </button>
 
-      {/* Selettore pasto */}
       <div className="mb-4">
         <label className="block text-sm font-medium mb-1">
           {t("Aggiungi a:", "Aggiungi a:")}
@@ -64,7 +72,6 @@ export function Sidebar({ giorno }) {
         </select>
       </div>
 
-      {/* Collassa tutte */}
       <button
         className="mb-4 text-sm text-blue-600 underline"
         onClick={() => collassaTutte(categorie)}
@@ -72,7 +79,6 @@ export function Sidebar({ giorno }) {
         {t("Collassa tutte", "Collassa tutte")}
       </button>
 
-      {/* Ricerca attiva */}
       {filtro ? (
         <div className="border rounded-md bg-gray-50 px-3 py-2 mb-4">
           <h3 className="font-semibold text-sm mb-2">
@@ -81,16 +87,7 @@ export function Sidebar({ giorno }) {
           <FoodList
             alimenti={alimentiDisponibili}
             filtro={filtro}
-            onAggiungi={(alimento) =>
-              dispatch({
-                type: "ADD_ALIMENTO",
-                payload: {
-                  giorno,
-                  pasto: pastoSelezionato,
-                  alimento: normalizzaAlimento(alimento),
-                },
-              })
-            }
+            onAggiungi={aggiungiAlimento}
           />
         </div>
       ) : (
@@ -120,16 +117,7 @@ export function Sidebar({ giorno }) {
                   <FoodList
                     alimenti={alimentiCat}
                     filtro={filtro}
-                    onAggiungi={(alimento) =>
-                      dispatch({
-                        type: "ADD_ALIMENTO",
-                        payload: {
-                          giorno,
-                          pasto: pastoSelezionato,
-                          alimento: normalizzaAlimento(alimento),
-                        },
-                      })
-                    }
+                    onAggiungi={aggiungiAlimento}
                   />
                 </div>
               )}
