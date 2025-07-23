@@ -72,7 +72,6 @@ export function alimentiReducer(state, action) {
       const alimentoAggiornato = {
         ...alimento,
         quantity: nuovaQuantita,
-        // ✅ NON modificare i nutrienti qui
       };
 
       const nuovaSettimana = state.settimana.map((g, i) =>
