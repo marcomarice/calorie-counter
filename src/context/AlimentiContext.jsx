@@ -32,7 +32,6 @@ export function alimentiReducer(state, action) {
         const alimentoAggiornato = {
           ...alimentoEsistente,
           quantity: quantitaTotale,
-          // ✅ NON sommare i nutrienti: lasciarli come reference unit
         };
 
         nuovoPasto = pastoCorrente.map((a, idx) =>
@@ -73,7 +72,6 @@ export function alimentiReducer(state, action) {
       const alimentoAggiornato = {
         ...alimento,
         quantity: nuovaQuantita,
-        // ✅ NON modificare i nutrienti qui
       };
 
       const nuovaSettimana = state.settimana.map((g, i) =>
@@ -140,6 +138,15 @@ export function alimentiReducer(state, action) {
           : g
       );
       return { ...state, settimana: nuovaSettimana };
+    }
+
+    case "RESET": {
+      return {
+        ...state,
+        settimana: Array.from({ length: 7 }, () =>
+          Array.from({ length: 5 }, () => [])
+        ),
+      };
     }
 
     default:
