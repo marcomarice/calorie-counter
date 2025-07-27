@@ -70,22 +70,28 @@ function baseTotali() {
   return { kcal: 0, pro: 0, carb: 0, fat: 0, fiber: 0, kcalMacro: 1 };
 }
 function sommaTotali(a, b) {
+  const pro = a.pro + b.pro;
+  const carb = a.carb + b.carb;
+  const fat = a.fat + b.fat;
   return {
     kcal: a.kcal + b.kcal,
-    pro: a.pro + b.pro,
-    carb: a.carb + b.carb,
-    fat: a.fat + b.fat,
+    pro,
+    carb,
+    fat,
     fiber: a.fiber + b.fiber,
-    kcalMacro: 1,
+    kcalMacro: pro * 4 + carb * 4 + fat * 9 || 1,
   };
 }
 function dividiTotali(t, n) {
+  const pro = t.pro / n;
+  const carb = t.carb / n;
+  const fat = t.fat / n;
   return {
     kcal: t.kcal / n,
-    pro: t.pro / n,
-    carb: t.carb / n,
-    fat: t.fat / n,
+    pro,
+    carb,
+    fat,
     fiber: t.fiber / n,
-    kcalMacro: 1,
+    kcalMacro: pro * 4 + carb * 4 + fat * 9 || 1,
   };
 }

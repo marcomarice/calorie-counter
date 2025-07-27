@@ -1,4 +1,4 @@
-import { alimentiReducer } from "../utils/Transformations"; // ✅ named import
+import { alimentiReducer } from "../context/AlimentiContext";
 import { isValidAlimento } from "../utils/validations";
 
 describe("alimentiReducer", () => {
