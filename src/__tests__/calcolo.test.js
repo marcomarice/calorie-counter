@@ -34,4 +34,27 @@ describe("calcolaTotali", () => {
     const result = calcolaTotali(invalid);
     expect(result.kcal).toBe(0);
   });
+
+  it("calcola correttamente con riferimento per pezzo e moltiplicatore personalizzato", () => {
+    const alimentoPiece = {
+      quantity: 2, // 2 pezzi
+      reference: "per_piece",
+      multiplier: 1.5, // ogni pezzo vale 1.5 unità
+      nutrients: {
+        calories: 50,
+        carbs: 5,
+        proteins: 2.5,
+        fats: 1,
+        fibers: 0.5,
+      },
+    };
+
+    const result = calcolaTotali([alimentoPiece]);
+    expect(result.kcal).toBeCloseTo(150);
+    expect(result.pro).toBeCloseTo(7.5);
+    expect(result.carb).toBeCloseTo(15);
+    expect(result.fat).toBeCloseTo(3);
+    expect(result.fiber).toBeCloseTo(1.5);
+    expect(result.kcalMacro).toBeCloseTo(7.5 * 4 + 15 * 4 + 3 * 9);
+  });
 });
