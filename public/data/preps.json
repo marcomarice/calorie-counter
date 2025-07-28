@@ -1,0 +1,271 @@
+[
+  {
+    "id": "9a2b1c34-d567-48ef-9abc-1a2b3c4d5e6f",
+    "code": "overnight_oats_proteici",
+    "name": "Overnight oats proteici",
+    "description": "Porridge freddo con avena, proteine, yogurt e frutta.",
+    "unit": "pz",
+    "reference": "per_piece",
+    "multiplier": 1,
+    "servings": 1,
+    "categoryId": "colazioni",
+    "tags": [
+      "alta_proteina",
+      "vegetariano"
+    ],
+    "ingredients": [
+      {
+        "foodId": "3fe2e560-0e3d-45a0-b07b-4f2a3a91c6d4",
+        "quantity": 50,
+        "unit": "g"
+      },
+      {
+        "foodId": "ef0f1667-5e99-4a2a-9b2b-ae5493365ee8",
+        "quantity": 30,
+        "unit": "g"
+      },
+      {
+        "foodId": "3a7b98d4-5ac2-47d4-af6a-b4655cf1da4a",
+        "quantity": 350,
+        "unit": "g"
+      },
+      {
+        "foodId": "80cdc5f1-67d3-458c-86e2-75c993a8c8a2",
+        "quantity": 150,
+        "unit": "g"
+      },
+      {
+        "foodId": "40362ad4-9fe2-4c4c-8e45-5f7c027d7b65",
+        "quantity": 10,
+        "unit": "g"
+      }
+    ]
+  },
+  {
+    "id": "f3b8a7c1-e3d4-4c6a-9e1f-8a7b9c6d1e2f",
+    "code": "insalata_greca",
+    "name": "Insalata greca",
+    "description": "Insalata fresca con pomodori, insalata mista, feta e olio EVO.",
+    "unit": "pz",
+    "reference": "per_piece",
+    "multiplier": 1,
+    "servings": 1,
+    "categoryId": "pranzi",
+    "tags": [
+      "vegetariano",
+      "low_carb"
+    ],
+    "ingredients": [
+      {
+        "foodId": "76322906-6f5b-4712-9df5-2916a0635a2b",
+        "quantity": 200,
+        "unit": "g"
+      },
+      {
+        "foodId": "13641c1e-e444-40df-a816-85701c9c3461",
+        "quantity": 150,
+        "unit": "g"
+      },
+      {
+        "foodId": "2a6ae4a0-fb03-4f99-86fc-4aa738f22630",
+        "quantity": 65,
+        "unit": "g"
+      },
+      {
+        "foodId": "fcb7441d-ebe0-46cf-ad63-114f6e0600d7",
+        "quantity": 15,
+        "unit": "ml"
+      }
+    ]
+  },
+  {
+    "id": "b7e6c5a1-d2f4-4a9e-b7c8-1d2f3a4b5c6d",
+    "code": "pollo_riso_verdure",
+    "name": "Pollo con riso e verdure",
+    "description": "Piatto bilanciato con petto di pollo, riso basmati e verdure.",
+    "unit": "pz",
+    "reference": "per_piece",
+    "multiplier": 1,
+    "servings": 1,
+    "categoryId": "cene",
+    "tags": [
+      "alta_proteina",
+      "senza_glutine"
+    ],
+    "ingredients": [
+      {
+        "foodId": "e596ab5f-1303-433c-a487-d383a3ec4f6c",
+        "quantity": 150,
+        "unit": "g"
+      },
+      {
+        "foodId": "993ca076-74d3-4004-ac28-50b7bfbe2981",
+        "quantity": 75,
+        "unit": "g"
+      },
+      {
+        "foodId": "8eae1feb-5053-4881-b2e7-7eb6b3595d68",
+        "quantity": 200,
+        "unit": "g"
+      },
+      {
+        "foodId": "fcb7441d-ebe0-46cf-ad63-114f6e0600d7",
+        "quantity": 10,
+        "unit": "ml"
+      }
+    ]
+  },
+  {
+    "id": "c2a7f8b9-3d4e-4c5a-b6a7-9c8d1e2f3b4a",
+    "code": "shake_proteico_cioccolato",
+    "name": "Shake proteico al cioccolato",
+    "description": "Bevanda proteica post-allenamento con latte e cacao.",
+    "unit": "pz",
+    "reference": "per_piece",
+    "multiplier": 1,
+    "servings": 1,
+    "categoryId": "spuntini",
+    "tags": [
+      "alta_proteina",
+      "post_workout"
+    ],
+    "ingredients": [
+      {
+        "foodId": "36c75933-4e3e-4b65-b720-d809c9667f9b",
+        "quantity": 30,
+        "unit": "g"
+      },
+      {
+        "foodId": "3d771200-1700-4f04-9f58-3ecae117992d",
+        "quantity": 250,
+        "unit": "ml"
+      },
+      {
+        "foodId": "7c87acc3-cf7e-4358-8564-55d1deedc245",
+        "quantity": 5,
+        "unit": "g"
+      }
+    ]
+  },
+  {
+    "id": "d4f7a6c2-b9e1-4f3c-8d5a-1c2b3a4e5f6g",
+    "code": "yogurt_frutta_noci",
+    "name": "Yogurt con frutta e noci",
+    "description": "Merenda fresca con yogurt, frutti di bosco e frutta secca.",
+    "unit": "pz",
+    "reference": "per_piece",
+    "multiplier": 1,
+    "servings": 1,
+    "categoryId": "merende",
+    "tags": [
+      "vegetariano",
+      "snack_sano"
+    ],
+    "ingredients": [
+      {
+        "foodId": "d8e459c3-4145-454f-8f82-bc55ca45f1e2",
+        "quantity": 200,
+        "unit": "g"
+      },
+      {
+        "foodId": "19f19718-c4d5-4e4e-8773-d009b7576709",
+        "quantity": 50,
+        "unit": "g"
+      },
+      {
+        "foodId": "e14c5751-4421-4130-ae4d-31bfecff7c0a",
+        "quantity": 50,
+        "unit": "g"
+      },
+      {
+        "foodId": "40362ad4-9fe2-4c4c-8e45-5f7c027d7b65",
+        "quantity": 15,
+        "unit": "g"
+      }
+    ]
+  },
+  {
+    "id": "e3f9a8b7-c6d4-4e5f-9b8a-1c2d3e4f5a6b",
+    "code": "caffe_latte_zucchero",
+    "name": "Caffè, latte intero 60ml, zucchero BIO 12g",
+    "description": "Caffè con latte intero (Lidl) e zucchero biologico (Carrefour).",
+    "unit": "pz",
+    "reference": "per_piece",
+    "multiplier": 1,
+    "servings": 1,
+    "categoryId": "colazioni",
+    "tags": [
+      "bevanda",
+      "colazione"
+    ],
+    "ingredients": [
+      {
+        "foodId": "8b941d52-7149-4054-8fb6-3dc26dde61cf",
+        "quantity": 60,
+        "unit": "ml"
+      },
+      {
+        "foodId": "e25e1f95-af7e-42e1-b601-a620c8f2d301",
+        "quantity": 12,
+        "unit": "g"
+      }
+    ]
+  },
+  {
+    "id": "f4a8b9c2-d3e5-4f6a-8b7c-9d0e1f2a3b4c",
+    "code": "frozen_porridge",
+    "name": "Frozen porridge",
+    "description": "Porridge freddo con avena, proteine, semi, frutta secca e Skyr.",
+    "unit": "pz",
+    "reference": "per_piece",
+    "multiplier": 1,
+    "servings": 1,
+    "categoryId": "colazioni",
+    "tags": [
+      "alta_proteina",
+      "vegetariano"
+    ],
+    "ingredients": [
+      {
+        "foodId": "3fe2e560-0e3d-45a0-b07b-4f2a3a91c6d4",
+        "quantity": 50,
+        "unit": "g"
+      },
+      {
+        "foodId": "ef0f1667-5e99-4a2a-9b2b-ae5493365ee8",
+        "quantity": 30,
+        "unit": "g"
+      },
+      {
+        "foodId": "e8b27d24-5046-4d51-a6f1-9d50dcfa7e66",
+        "quantity": 10,
+        "unit": "g"
+      },
+      {
+        "foodId": "b10758dc-1dff-4490-bea0-f4b8db56ba26",
+        "quantity": 15,
+        "unit": "g"
+      },
+      {
+        "foodId": "40362ad4-9fe2-4c4c-8e45-5f7c027d7b65",
+        "quantity": 10,
+        "unit": "g"
+      },
+      {
+        "foodId": "15b52e87-5319-4930-b526-8b309d8ff146",
+        "quantity": 1,
+        "unit": "pz"
+      },
+      {
+        "foodId": "f5eefa27-9660-4267-9700-ca70234c5b00",
+        "quantity": 10,
+        "unit": "g"
+      },
+      {
+        "foodId": "302e9370-180d-447e-8492-a145d3a697f7",
+        "quantity": 50,
+        "unit": "g"
+      }
+    ]
+  }
+]

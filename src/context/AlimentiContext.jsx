@@ -1,7 +1,6 @@
 import { isValidAlimento } from "../utils/validations";
 import { createContext, useReducer, useContext } from "react";
 
-// Inizializza la settimana: 7 giorni × 5 pasti
 const initialSettimana = Array.from({ length: 7 }, () =>
   Array.from({ length: 5 }, () => [])
 );
@@ -20,31 +19,34 @@ export function alimentiReducer(state, action) {
 
       const pastoCorrente = state.settimana[giorno][pasto];
 
-      const indiceEsistente = pastoCorrente.findIndex(
-        (a) => a.code === alimento.code
-      );
+      // Cerca alimento esistente: per prep usa type + id
+      let indiceEsistente = -1;
+      if (alimento.type === "prep") {
+        indiceEsistente = pastoCorrente.findIndex(
+          (a) => a.type === "prep" && a.id === alimento.id
+        );
+      } else {
+        indiceEsistente = pastoCorrente.findIndex(
+          (a) => a.code === alimento.code
+        );
+      }
 
       let nuovoPasto;
       if (indiceEsistente !== -1) {
-        const alimentoEsistente = pastoCorrente[indiceEsistente];
-        const quantitaTotale = alimentoEsistente.quantity + alimento.quantity;
-
-        const alimentoAggiornato = {
-          ...alimentoEsistente,
-          quantity: quantitaTotale,
+        const esistente = pastoCorrente[indiceEsistente];
+        const aggiornata = {
+          ...esistente,
+          quantity: esistente.quantity + alimento.quantity,
         };
-
         nuovoPasto = pastoCorrente.map((a, idx) =>
-          idx === indiceEsistente ? alimentoAggiornato : a
+          idx === indiceEsistente ? aggiornata : a
         );
       } else {
         nuovoPasto = [...pastoCorrente, alimento];
       }
 
       const nuovaSettimana = state.settimana.map((g, i) =>
-        i === giorno
-          ? g.map((p, j) => (j === pasto ? nuovoPasto : p))
-          : g
+        i === giorno ? g.map((p, j) => (j === pasto ? nuovoPasto : p)) : g
       );
 
       return { ...state, settimana: nuovaSettimana };
@@ -65,14 +67,9 @@ export function alimentiReducer(state, action) {
     case "MODIFY_QUANTITA": {
       const { giorno, pasto, index, delta } = action.payload;
       const alimento = state.settimana[giorno][pasto][index];
-
       const nuovaQuantita = alimento.quantity + delta;
       if (nuovaQuantita <= 0) return state;
-
-      const alimentoAggiornato = {
-        ...alimento,
-        quantity: nuovaQuantita,
-      };
+      const alimentoAggiornato = { ...alimento, quantity: nuovaQuantita };
 
       const nuovaSettimana = state.settimana.map((g, i) =>
         i === giorno
@@ -83,13 +80,11 @@ export function alimentiReducer(state, action) {
             )
           : g
       );
-
       return { ...state, settimana: nuovaSettimana };
     }
 
     case "TOGGLE_ATTIVO": {
       const { giorno, pasto, index } = action.payload;
-
       const nuovaSettimana = state.settimana.map((g, i) =>
         i === giorno
           ? g.map((p, j) =>
@@ -101,7 +96,6 @@ export function alimentiReducer(state, action) {
             )
           : g
       );
-
       return { ...state, settimana: nuovaSettimana };
     }
 

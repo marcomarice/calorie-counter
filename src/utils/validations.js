@@ -1,8 +1,20 @@
 // src/utils/validations.js
 
 export function isValidAlimento(alimento) {
+  if (!alimento) return false;
+
+  // Se è una preparazione, validazione semplificata
+  if (alimento.type === "prep") {
+    return (
+      typeof alimento.id === "string" &&
+      typeof alimento.name === "string" &&
+      typeof alimento.quantity === "number" &&
+      alimento.unit === "pz"
+    );
+  }
+
+  // Alimento normale
   return (
-    alimento &&
     typeof alimento.code === "string" &&
     typeof alimento.name === "string" &&
     typeof alimento.quantity === "number" &&

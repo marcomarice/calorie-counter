@@ -1,13 +1,15 @@
 import { useAlimenti } from "../../context/AlimentiContext";
+import { useValori } from "../../context/ValoriContext"; // NEW
 import { calcolaTotali } from "../../utils/calcolo";
 import TotaliTabella from "../shared/TotaliTabella";
-import { giorni, pesoKg } from "../../utils/constants";
+import { giorni } from "../../utils/constants";
 
 export default function Totals({ giorno }) {
   const { settimana, dispatch } = useAlimenti();
+  const valori = useValori(); // NEW
 
   const totaliGiornalieri = settimana.map(g =>
-    calcolaTotali(g.flat().filter(a => a.attivo))
+    calcolaTotali(g.flat().filter(a => a.attivo), valori) // FIX
   );
 
   const giorniValidi = totaliGiornalieri.filter(t => t.kcal > 0);
@@ -30,8 +32,8 @@ export default function Totals({ giorno }) {
     mediaFinale.kcalMacro = mediaFinale.pro * 4 + mediaFinale.carb * 4 + mediaFinale.fat * 9 || 1;
   }
 
-  const totSettimana = calcolaTotali(settimana.flat(2).filter(a => a.attivo));
-  const totGiorno = calcolaTotali(settimana[giorno].flat().filter(a => a.attivo));
+  const totSettimana = calcolaTotali(settimana.flat(2).filter(a => a.attivo), valori); // FIX
+  const totGiorno = calcolaTotali(settimana[giorno].flat().filter(a => a.attivo), valori); // FIX
 
   return (
     <aside className="col-span-3 bg-white rounded-lg shadow p-4 text-sm space-y-6">

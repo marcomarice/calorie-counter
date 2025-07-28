@@ -1,7 +1,7 @@
-// ProgressChart.jsx
 import { useAlimenti } from "../../context/AlimentiContext";
+import { useValori } from "../../context/ValoriContext";
 import { calcolaTotali } from "../../utils/calcolo";
-import { giorni, pesoKg } from "../../utils/constants";
+import { giorni } from "../../utils/constants";
 import {
   BarChart, Bar, XAxis, YAxis, Tooltip, Legend, ResponsiveContainer
 } from "recharts";
@@ -9,13 +9,12 @@ import { useMemo } from "react";
 
 export default function ProgressChart() {
   const { settimana } = useAlimenti();
+  const valori = useValori();
 
   const dati = useMemo(() => {
-    const lista = settimana.map(giorno => calcolaTotali(giorno.flat().filter(a => a.attivo)));
-
+    const lista = settimana.map(giorno => calcolaTotali(giorno.flat().filter(a => a.attivo), valori)); // FIX
     const tot = lista.reduce((acc, cur) => sommaTotali(acc, cur), baseTotali());
     const media = dividiTotali(tot, lista.length);
-
     const tutti = [...lista, tot, media];
 
     return tutti.map((d, idx) => ({
@@ -29,18 +28,16 @@ export default function ProgressChart() {
       proPct: (d.pro * 4 / d.kcalMacro) * 100,
       fatPct: (d.fat * 9 / d.kcalMacro) * 100,
     }));
-  }, [settimana]);
+  }, [settimana, valori]); // aggiunto valori
 
   return (
     <div className="w-full bg-white rounded-lg shadow p-4 mb-6">
-      <h2 className="text-lg font-semibold mb-4">Andamento settimanale</h2>
       <ResponsiveContainer width="100%" height={300}>
         <BarChart data={dati} margin={{ top: 20, right: 20, left: 0, bottom: 30 }}>
           <XAxis dataKey="nome" />
           <YAxis />
           <Tooltip />
           <Legend verticalAlign="top" height={36}/>
-
           <Bar dataKey="fiber" stackId="stack" fill="#a3e635" name="Fibre" />
           <Bar dataKey="fat" stackId="stack" fill="#f87171" name="Grassi" />
           <Bar dataKey="pro" stackId="stack" fill="#60a5fa" name="Proteine" />
@@ -65,7 +62,6 @@ export default function ProgressChart() {
   );
 }
 
-// Helpers
 function baseTotali() {
   return { kcal: 0, pro: 0, carb: 0, fat: 0, fiber: 0, kcalMacro: 1 };
 }
@@ -82,6 +78,7 @@ function sommaTotali(a, b) {
     kcalMacro: pro * 4 + carb * 4 + fat * 9 || 1,
   };
 }
+
 function dividiTotali(t, n) {
   const pro = t.pro / n;
   const carb = t.carb / n;

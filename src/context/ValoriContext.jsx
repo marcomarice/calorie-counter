@@ -32,7 +32,8 @@ const defaultValori = {
   byName: {},
   byId: {},
   byCode: {},
-  list: []
+  list: [],
+  preps: [] // NEW: preparazioni
 };
 
 const ValoriContext = createContext(defaultValori);
@@ -41,16 +42,26 @@ export function ValoriProvider({ children }) {
   const [valori, setValori] = useState(defaultValori);
 
   useEffect(() => {
-    async function fetchFoods() {
+    async function fetchData() {
       try {
-        const res = await fetch("/data/foods.json");
-        const data = await res.json();
-        setValori(mapFoods(data));
+        // Carica alimenti
+        const foodsRes = await fetch("/data/foods.json");
+        const foodsData = await foodsRes.json();
+        const mappedFoods = mapFoods(foodsData);
+
+        // Carica preparazioni
+        const prepsRes = await fetch("/data/preps.json");
+        const prepsData = await prepsRes.json();
+
+        setValori({
+          ...mappedFoods,
+          preps: prepsData // NEW: aggiungi preps
+        });
       } catch (err) {
-        console.error("Errore nel caricamento di foods.json", err);
+        console.error("Errore nel caricamento dei dati", err);
       }
     }
-    fetchFoods();
+    fetchData();
   }, []);
 
   return (
