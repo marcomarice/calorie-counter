@@ -1,52 +1,82 @@
-// src/utils/calcolo.js
-export function calcolaTotali(alimenti = [], valori) {
-  if (!valori) return { kcal: 0, pro: 0, carb: 0, fat: 0, fiber: 0, kcalMacro: 1 };
-  let kcal = 0, pro = 0, carb = 0, fat = 0, fiber = 0;
+export function calcolaTotali(alimenti, valori) {
+  let kcal = 0,
+      carb = 0,
+      prot = 0,
+      fat = 0,
+      fiber = 0,
+      price = 0;
 
-  for (const a of alimenti) {
-    if (!a.attivo) continue;
+  alimenti.forEach((a) => {
+    const processAlimento = (alimento, quantity, multiplier = alimento.multiplier, pezzi = 1) => {
+      if (!alimento) return;
+      const ratio = alimento.reference === "per_100"
+        ? quantity / multiplier
+        : alimento.reference === "per_piece"
+          ? quantity * multiplier
+          : 0;
 
-    // Se è una preparazione
+      const nutrients = alimento.nutrients || {};
+
+      kcal   += (nutrients.calories  || 0) * ratio;
+      carb   += (nutrients.carbs     || 0) * ratio;
+      prot   += (nutrients.proteins  || 0) * ratio;
+      fat    += (nutrients.fats      || 0) * ratio;
+      fiber  += (nutrients.fibers    || 0) * ratio;
+
+      const itemPrice = alimento.price ?? 0;
+      const packageSize = alimento.packageSize ?? 1;
+      price += (itemPrice / packageSize) * quantity * pezzi;
+    };
+
     if (a.type === "prep") {
-      const prep = valori.preps.find(p => p.id === a.id);
-      if (!prep) continue;
-
+      const prep = valori.prepsById[a.id];
+      if (!prep) return;
       const pezzi = a.quantity || 1;
-
-      for (const ing of prep.ingredients) {
+      prep.ingredients.forEach((ing) => {
         const alimento = valori.byId[ing.foodId];
-        if (!alimento) continue;
-
-        const ingQ = (ing.quantity / alimento.multiplier) * pezzi;
-        kcal  += (alimento.cal || 0)  * ingQ;
-        pro   += (alimento.prot || 0) * ingQ;
-        carb  += (alimento.carb || 0) * ingQ;
-        fat   += (alimento.fat || 0)  * ingQ;
-        fiber += (alimento.fib || 0)  * ingQ;
-      }
-      continue;
+        processAlimento(alimento, ing.quantity, alimento?.multiplier, pezzi);
+      });
+    } else {
+      const alimento = valori.byId[a.id];
+      processAlimento(alimento, a.quantity || 0);
     }
+  });
 
-    // Alimento normale
-    const { quantity = 0, multiplier = 100, reference = "per_100", nutrients } = a;
-    if (!nutrients) continue;
+  return { kcal, carb, prot, fat, fiber, price };
+}
 
-    let ratio = 1;
-    if (reference === "per_100" && multiplier === 100) {
-      ratio = quantity / multiplier;
-    } else if (reference === "per_100" && multiplier !== 100) {
-      ratio = quantity * (multiplier / 100);
-    } else if (reference === "per_piece") {
-      ratio = quantity * multiplier;
+/**
+ * Calcola la media giornaliera su più giorni
+ * @param {Array} settimana - Array con i dati della settimana (giorni -> pasti -> alimenti)
+ * @param {Object} valori - Context dei valori nutrizionali
+ * @returns {Object} { media, numeroGiorniValidi }
+ */
+export function calcolaMediaGiornaliera(settimana, valori) {
+  const totaliGiornalieri = settimana.map(g =>
+    calcolaTotali(g.flat().filter(a => a.attivo), valori)
+  );
+
+  const giorniValidi = totaliGiornalieri.filter(t => t.kcal > 0);
+  const numeroGiorniValidi = giorniValidi.length;
+
+  const media = { kcal: 0, prot: 0, carb: 0, fat: 0, fiber: 0, price: 0, kcalMacro: 1 };
+  if (numeroGiorniValidi > 0) {
+    for (const g of giorniValidi) {
+      media.kcal  += g.kcal;
+      media.prot  += g.prot;
+      media.carb  += g.carb;
+      media.fat   += g.fat;
+      media.fiber += g.fiber;
+      media.price += g.price;
     }
-
-    kcal  += nutrients.calories * ratio;
-    pro   += nutrients.proteins * ratio;
-    carb  += nutrients.carbs    * ratio;
-    fat   += nutrients.fats     * ratio;
-    fiber += nutrients.fibers   * ratio;
+    media.kcal  /= numeroGiorniValidi;
+    media.prot  /= numeroGiorniValidi;
+    media.carb  /= numeroGiorniValidi;
+    media.fat   /= numeroGiorniValidi;
+    media.fiber /= numeroGiorniValidi;
+    media.price /= numeroGiorniValidi;
+    media.kcalMacro = media.prot * 4 + media.carb * 4 + media.fat * 9 || 1;
   }
 
-  const kcalMacro = pro * 4 + carb * 4 + fat * 9 || 1;
-  return { kcal, pro, carb, fat, fiber, kcalMacro };
+  return { media, numeroGiorniValidi };
 }

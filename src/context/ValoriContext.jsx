@@ -1,80 +1,86 @@
-import React from "react";
-import { createContext, useContext, useEffect, useState } from "react";
+import React, { createContext, useContext, useState, useEffect } from "react";
 
-function mapFoods(data) {
-  const byName = {};
-  const byId = {};
-  const byCode = {};
-  data.forEach(food => {
-    const val = {
-      cal: food.nutrients.calories,
-      carb: food.nutrients.carbs,
-      prot: food.nutrients.proteins,
-      fat: food.nutrients.fats,
-      fib: food.nutrients.fibers,
-      unita: food.unit,
-      name: food.name,
-      id: food.id,
-      code: food.code,
-      categoryId: food.categoryId,
-      tags: food.tags,
-      reference: food.reference,
-      multiplier: food.multiplier
-    };
-    byName[food.name] = val;
-    byId[food.id] = val;
-    byCode[food.code] = val;
+const ValoriContext = createContext();
+
+export const ValoriProvider = ({ children }) => {
+  const [valori, setValori] = useState({
+    list: [],
+    byId: {},
+    byName: {},
+    preps: [],
+    prepsById: {}
   });
-  return { byName, byId, byCode, list: data };
-}
-
-const defaultValori = {
-  byName: {},
-  byId: {},
-  byCode: {},
-  list: [],
-  preps: [] // NEW: preparazioni
-};
-
-const ValoriContext = createContext(defaultValori);
-
-export function ValoriProvider({ children }) {
-  const [valori, setValori] = useState(defaultValori);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
-    async function fetchData() {
+    async function loadData() {
       try {
-        // Carica alimenti
-        const foodsRes = await fetch("/data/foods.json");
-        const foodsData = await foodsRes.json();
-        const mappedFoods = mapFoods(foodsData);
+        const [foodsRes, prepsRes] = await Promise.all([
+          fetch("/data/foods.json"),
+          fetch("/data/preps.json")
+        ]);
 
-        // Carica preparazioni
-        const prepsRes = await fetch("/data/preps.json");
+        if (!foodsRes.ok || !prepsRes.ok) {
+          throw new Error("Errore nel caricamento dei dati");
+        }
+
+        const foodsData = await foodsRes.json();
         const prepsData = await prepsRes.json();
 
+        // Normalizzazione alimenti
+        const foods = foodsData.map(food => ({
+          ...food,
+          nutrients: { ...food.nutrients },
+          reference: food.reference || "per_100",
+          multiplier: food.multiplier || 100,
+          price: food.price ?? 0,
+          packageSize: food.packageSize ?? 1
+        }));
+
+        const byId = {};
+        const byName = {};
+        foods.forEach(food => {
+          byId[food.id] = food;
+          byName[food.name.toLowerCase()] = food;
+        });
+
+        // Normalizzazione preparazioni
+        const preps = prepsData.map(prep => ({
+          ...prep,
+          reference: prep.reference || "per_piece",
+          multiplier: prep.multiplier || 1
+        }));
+
+        const prepsById = {};
+        preps.forEach(prep => {
+          prepsById[prep.id] = prep;
+        });
+
+        // Settiamo tutto nel contesto
         setValori({
-          ...mappedFoods,
-          preps: prepsData // NEW: aggiungi preps
+          list: foods,
+          byId,
+          byName,
+          preps,
+          prepsById
         });
       } catch (err) {
-        console.error("Errore nel caricamento dei dati", err);
+        console.error("Errore nel caricamento dei dati:", err);
+        setError(err.message);
+      } finally {
+        setLoading(false);
       }
     }
-    fetchData();
+
+    loadData();
   }, []);
 
   return (
-    <ValoriContext.Provider value={valori}>
+    <ValoriContext.Provider value={{ ...valori, loading, error }}>
       {children}
     </ValoriContext.Provider>
   );
-}
+};
 
-export function useValori() {
-  return useContext(ValoriContext);
-}
-
-export function useValoriPer100() {
-  return useContext(ValoriContext).byName;
-}
+export const useValori = () => useContext(ValoriContext);

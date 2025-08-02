@@ -1,6 +1,6 @@
 import { useAlimenti } from "../../context/AlimentiContext";
 import { useValori } from "../../context/ValoriContext";
-import { calcolaTotali } from "../../utils/calcolo";
+import { calcolaTotali, calcolaMediaGiornaliera } from "../../utils/calcolo";
 import { giorni } from "../../utils/constants";
 import {
   BarChart, Bar, XAxis, YAxis, Tooltip, Legend, ResponsiveContainer
@@ -12,23 +12,35 @@ export default function ProgressChart() {
   const valori = useValori();
 
   const dati = useMemo(() => {
-    const lista = settimana.map(giorno => calcolaTotali(giorno.flat().filter(a => a.attivo), valori)); // FIX
-    const tot = lista.reduce((acc, cur) => sommaTotali(acc, cur), baseTotali());
-    const media = dividiTotali(tot, lista.length);
+    // Totali giornalieri
+    const lista = settimana.map(giorno =>
+      calcolaTotali(giorno.flat().filter(a => a.attivo), valori)
+    );
+
+    // Totale settimana
+    const tot = calcolaTotali(settimana.flat(2).filter(a => a.attivo), valori);
+
+    // Media giornaliera
+    const { media } = calcolaMediaGiornaliera(settimana, valori);
+
+    // Combina tutti i dati
     const tutti = [...lista, tot, media];
 
-    return tutti.map((d, idx) => ({
-      nome: giorni[idx] || (idx === 7 ? "Tot" : "Media"),
-      kcal: d.kcal,
-      carb: d.carb,
-      pro: d.pro,
-      fat: d.fat,
-      fiber: d.fiber,
-      carbPct: (d.carb * 4 / d.kcalMacro) * 100,
-      proPct: (d.pro * 4 / d.kcalMacro) * 100,
-      fatPct: (d.fat * 9 / d.kcalMacro) * 100,
-    }));
-  }, [settimana, valori]); // aggiunto valori
+    return tutti.map((d, idx) => {
+      const kcalMacro = (d.prot * 4 + d.carb * 4 + d.fat * 9) || 1;
+      return {
+        nome: giorni[idx] || (idx === 7 ? "Tot" : "Media"),
+        kcal: d.kcal,
+        carb: d.carb,
+        prot: d.prot,
+        fat: d.fat,
+        fiber: d.fiber,
+        carbPct: (d.carb * 4 / kcalMacro) * 100,
+        protPct: (d.prot * 4 / kcalMacro) * 100,
+        fatPct: (d.fat * 9 / kcalMacro) * 100,
+      };
+    });
+  }, [settimana, valori]);
 
   return (
     <div className="w-full bg-white rounded-lg shadow p-4 mb-6">
@@ -40,7 +52,7 @@ export default function ProgressChart() {
           <Legend verticalAlign="top" height={36}/>
           <Bar dataKey="fiber" stackId="stack" fill="#a3e635" name="Fibre" />
           <Bar dataKey="fat" stackId="stack" fill="#f87171" name="Grassi" />
-          <Bar dataKey="pro" stackId="stack" fill="#60a5fa" name="Proteine" />
+          <Bar dataKey="prot" stackId="stack" fill="#60a5fa" name="Proteine" />
           <Bar dataKey="carb" stackId="stack" fill="#facc15" name="Carboidrati" />
         </BarChart>
       </ResponsiveContainer>
@@ -51,7 +63,7 @@ export default function ProgressChart() {
           <div key={i} className="flex flex-col items-center">
             <div className="w-full h-4 flex rounded overflow-hidden">
               <div style={{ width: `${d.carbPct}%` }} className="bg-yellow-300" />
-              <div style={{ width: `${d.proPct}%` }} className="bg-blue-400" />
+              <div style={{ width: `${d.protPct}%` }} className="bg-blue-400" />
               <div style={{ width: `${d.fatPct}%` }} className="bg-red-400" />
             </div>
             <div className="mt-1">{d.nome}</div>
@@ -60,35 +72,4 @@ export default function ProgressChart() {
       </div>
     </div>
   );
-}
-
-function baseTotali() {
-  return { kcal: 0, pro: 0, carb: 0, fat: 0, fiber: 0, kcalMacro: 1 };
-}
-function sommaTotali(a, b) {
-  const pro = a.pro + b.pro;
-  const carb = a.carb + b.carb;
-  const fat = a.fat + b.fat;
-  return {
-    kcal: a.kcal + b.kcal,
-    pro,
-    carb,
-    fat,
-    fiber: a.fiber + b.fiber,
-    kcalMacro: pro * 4 + carb * 4 + fat * 9 || 1,
-  };
-}
-
-function dividiTotali(t, n) {
-  const pro = t.pro / n;
-  const carb = t.carb / n;
-  const fat = t.fat / n;
-  return {
-    kcal: t.kcal / n,
-    pro,
-    carb,
-    fat,
-    fiber: t.fiber / n,
-    kcalMacro: pro * 4 + carb * 4 + fat * 9 || 1,
-  };
 }

@@ -3,11 +3,16 @@ import { getMacroRows } from "../../utils/macroTableRows";
 import { pesoKg } from "../../utils/constants";
 
 export default function TotaliTabella({ dati, mostraGrKg = true, totaliGiorno = null }) {
+  // Se i dati non sono pronti, evita il rendering
+  if (!dati || dati.kcal == null) {
+    return <div className="text-xs text-gray-500">Calcolo in corso...</div>;
+  }
+
   const righe = getMacroRows(dati, pesoKg, totaliGiorno, mostraGrKg);
 
   return (
     <div className="space-y-2">
-      <p><strong>Calorie:</strong> {dati.kcal.toFixed(1)} kcal</p>
+      <p><strong>Calorie:</strong> {(dati.kcal ?? 0).toFixed(1)} kcal</p>
       <table className="w-full text-xs border border-gray-300">
         <thead className="bg-gray-100 text-gray-700">
           <tr>
@@ -22,7 +27,7 @@ export default function TotaliTabella({ dati, mostraGrKg = true, totaliGiorno = 
           {righe.map((r, i) => (
             <tr key={i} className="border-t">
               <td className="px-2 py-1">{r.nome}</td>
-              <td className="px-2 py-1 text-right">{r.val.toFixed(1)}g</td>
+              <td className="px-2 py-1 text-right">{(r.val ?? 0).toFixed(1)}g</td>
               <td className="px-2 py-1 text-right">{r.pct != null ? r.pct.toFixed(1) + "%" : "—"}</td>
               {mostraGrKg && (
                 <td className="px-2 py-1 text-right">
@@ -38,6 +43,13 @@ export default function TotaliTabella({ dati, mostraGrKg = true, totaliGiorno = 
           ))}
         </tbody>
       </table>
+
+      {/* BLOCCO COSTO */}
+      {dati.price !== undefined && (
+        <div className="mt-4 p-3 bg-yellow-200 border-2 border-yellow-500 rounded text-lg font-extrabold text-yellow-900 text-center shadow-md">
+          Costo totale: {(dati.price ?? 0).toFixed(2)} €
+        </div>
+      )}
     </div>
   );
 }

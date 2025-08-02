@@ -7,6 +7,12 @@ import { giorni, pasti, incrementiPerUnita } from "../../utils/constants";
 export default function Planner({ giorno, setGiorno }) {
   const { settimana, dispatch } = useAlimenti();
   const valori = useValori();
+
+  // Se i dati non sono ancora caricati
+  if (valori.loading) {
+    return <div className="p-4 text-gray-500 text-sm">Caricamento dati...</div>;
+  }
+
   const alimentiGiorno = settimana[giorno] || [];
   const totGiorno = calcolaTotali(settimana[giorno].flat().filter(a => a.attivo), valori);
 
@@ -77,7 +83,7 @@ export default function Planner({ giorno, setGiorno }) {
                           {`${a.name}${a.quantity > 1 ? " x" + a.quantity : ""}`}
                         </span>
                         <span className="text-xs font-mono text-right text-gray-500">
-                          {`${kcal.toFixed(1)}  ${carb.toFixed(1)}  ${pro.toFixed(1)}  ${fat.toFixed(1)}  ${fiber.toFixed(1)}`}
+                          {`${(kcal ?? 0).toFixed(1)}  ${(carb ?? 0).toFixed(1)}  ${(pro ?? 0).toFixed(1)}  ${(fat ?? 0).toFixed(1)}  ${(fiber ?? 0).toFixed(1)}`}
                         </span>
                         <div className="flex gap-2 items-center">
                           <button

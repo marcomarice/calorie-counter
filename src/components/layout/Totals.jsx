@@ -1,39 +1,16 @@
 import { useAlimenti } from "../../context/AlimentiContext";
-import { useValori } from "../../context/ValoriContext"; // NEW
-import { calcolaTotali } from "../../utils/calcolo";
+import { useValori } from "../../context/ValoriContext";
+import { calcolaTotali, calcolaMediaGiornaliera } from "../../utils/calcolo";
 import TotaliTabella from "../shared/TotaliTabella";
 import { giorni } from "../../utils/constants";
 
 export default function Totals({ giorno }) {
   const { settimana, dispatch } = useAlimenti();
-  const valori = useValori(); // NEW
+  const valori = useValori();
 
-  const totaliGiornalieri = settimana.map(g =>
-    calcolaTotali(g.flat().filter(a => a.attivo), valori) // FIX
-  );
-
-  const giorniValidi = totaliGiornalieri.filter(t => t.kcal > 0);
-  const numeroGiorniValidi = giorniValidi.length;
-
-  const mediaFinale = { kcal: 0, pro: 0, carb: 0, fat: 0, fiber: 0, kcalMacro: 1 };
-  if (numeroGiorniValidi > 0) {
-    for (const g of giorniValidi) {
-      mediaFinale.kcal  += g.kcal;
-      mediaFinale.pro   += g.pro;
-      mediaFinale.carb  += g.carb;
-      mediaFinale.fat   += g.fat;
-      mediaFinale.fiber += g.fiber;
-    }
-    mediaFinale.kcal  /= numeroGiorniValidi;
-    mediaFinale.pro   /= numeroGiorniValidi;
-    mediaFinale.carb  /= numeroGiorniValidi;
-    mediaFinale.fat   /= numeroGiorniValidi;
-    mediaFinale.fiber /= numeroGiorniValidi;
-    mediaFinale.kcalMacro = mediaFinale.pro * 4 + mediaFinale.carb * 4 + mediaFinale.fat * 9 || 1;
-  }
-
-  const totSettimana = calcolaTotali(settimana.flat(2).filter(a => a.attivo), valori); // FIX
-  const totGiorno = calcolaTotali(settimana[giorno].flat().filter(a => a.attivo), valori); // FIX
+  const { media, numeroGiorniValidi } = calcolaMediaGiornaliera(settimana, valori);
+  const totSettimana = calcolaTotali(settimana.flat(2).filter(a => a.attivo), valori);
+  const totGiorno = calcolaTotali(settimana[giorno].flat().filter(a => a.attivo), valori);
 
   return (
     <aside className="col-span-3 bg-white rounded-lg shadow p-4 text-sm space-y-6">
@@ -45,7 +22,7 @@ export default function Totals({ giorno }) {
             <h3 className="text-sm font-semibold text-gray-600 mb-1">
               Media giornaliera ({numeroGiorniValidi} giorni)
             </h3>
-            <TotaliTabella dati={mediaFinale} mostraGrKg={true} />
+            <TotaliTabella dati={media} mostraGrKg={true} />
           </div>
         )}
       </section>

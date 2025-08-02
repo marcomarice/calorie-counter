@@ -15,7 +15,9 @@
       "fats": 1.2,
       "fibers": 3.5,
       "sodium": 0.0
-    }
+    },
+    "price": 0.65,
+    "packageSize": 500
   },
   {
     "id": "2b86f04e-b423-4297-85cb-3cd19640feaa",
@@ -33,7 +35,9 @@
       "fats": 3.3,
       "fibers": 3.4,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "8cef7c83-252b-4678-bdd9-62d90a8de797",
@@ -51,7 +55,9 @@
       "fats": 2.0,
       "fibers": 0.0,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "8a15c505-a6b1-4d2d-bd8c-cfefdf606b45",
@@ -69,7 +75,9 @@
       "fats": 0.1,
       "fibers": 2.0,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "2d390eda-7bd7-4630-a255-048b5750788c",
@@ -87,7 +95,9 @@
       "fats": 1.4,
       "fibers": 0.0,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "4f6269b0-9704-49a2-91f7-82affb1a4850",
@@ -105,7 +115,9 @@
       "fats": 2.6,
       "fibers": 0.0,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "281e3a6a-0767-4f3c-abb3-d1289c39aea2",
@@ -123,7 +135,9 @@
       "fats": 2.2,
       "fibers": 1.8,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "0ce34839-15df-4aef-af87-495ec901569f",
@@ -141,7 +155,9 @@
       "fats": 3.3,
       "fibers": 2.5,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "993ca076-74d3-4004-ac28-50b7bfbe2981",
@@ -159,7 +175,9 @@
       "fats": 0.4,
       "fibers": 0.0,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "e841d7f2-cfbe-4538-952d-d6e696a519e1",
@@ -177,7 +195,9 @@
       "fats": 0.8,
       "fibers": 0.0,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "cfb01c21-1253-4b05-8aaa-a3c89998b98d",
@@ -195,7 +215,9 @@
       "fats": 0.5,
       "fibers": 0.0,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "5e35bb91-3ab2-4e5f-af9c-b0dd72da4e12",
@@ -213,7 +235,9 @@
       "fats": 0.6,
       "fibers": 0.0,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "5726a915-a417-4ee7-9664-0275ce70756d",
@@ -231,7 +255,9 @@
       "fats": 0.6,
       "fibers": 0.0,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "70b5ce14-a313-47d6-8ec9-f5d5ed93d9c6",
@@ -249,7 +275,9 @@
       "fats": 0.6,
       "fibers": 0.0,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "5f48ca64-4410-4790-b041-4d380455e257",
@@ -267,7 +295,9 @@
       "fats": 0.4,
       "fibers": 0.0,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "f802082a-b624-45ac-9995-3f7ee5ff6629",
@@ -285,7 +315,9 @@
       "fats": 2.2,
       "fibers": 3.4,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "ae71e852-7f2b-4a39-90f5-a7dd755b8316",
@@ -303,7 +335,9 @@
       "fats": 3.2,
       "fibers": 3.3,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "618137d1-94c4-425a-bb37-cca652d96264",
@@ -321,7 +355,9 @@
       "fats": 1.2,
       "fibers": 1.9,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "c6aaf553-2493-4a3b-ad09-0a170c5edc85",
@@ -339,7 +375,9 @@
       "fats": 2.0,
       "fibers": 5.6,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "26292edd-5534-4b2b-9a8f-79b08c39d5b2",
@@ -357,7 +395,9 @@
       "fats": 1.2,
       "fibers": 11.0,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "7a2935c0-e5db-4348-a60e-7932e211b92d",
@@ -375,7 +415,9 @@
       "fats": 4.5,
       "fibers": 15.0,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "3fe2e560-0e3d-45a0-b07b-4f2a3a91c6d4",
@@ -393,7 +435,9 @@
       "fats": 7.0,
       "fibers": 10.0,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "0dc7acb1-5c3b-4f24-985e-4e78ca08a298",
@@ -411,7 +455,9 @@
       "fats": 0.9,
       "fibers": 0.0,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "02ce1089-bc8c-4ebc-ab58-1a7ea5d79b45",
@@ -429,7 +475,9 @@
       "fats": 1.0,
       "fibers": 1.5,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "d3da7d58-30f6-46c7-bab4-4a721cf692b1",
@@ -447,7 +495,9 @@
       "fats": 7.0,
       "fibers": 3.2,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "889e64c1-b7f4-4315-8640-2ad21bbb6370",
@@ -465,7 +515,9 @@
       "fats": 6.6,
       "fibers": 9.0,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "d161c980-2d92-4af1-970c-0d32358713c2",
@@ -483,7 +535,9 @@
       "fats": 1.0,
       "fibers": 3.6,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "e9a322c6-2ee3-47c9-b31e-2bd07385f8f8",
@@ -501,7 +555,9 @@
       "fats": 1.0,
       "fibers": 3.1,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "4a7bf455-e6dd-4412-aefc-7aef23cefaad",
@@ -519,7 +575,9 @@
       "fats": 1.0,
       "fibers": 3.6,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "2aeccc07-5502-403c-b774-b7ce8bebc3e9",
@@ -537,7 +595,9 @@
       "fats": 1.2,
       "fibers": 5.0,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "bcf159ee-801f-473b-ab22-4387b572286b",
@@ -555,7 +615,9 @@
       "fats": 1.9,
       "fibers": 4.1,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "f3d299d9-2ad2-4177-966c-c68285b61988",
@@ -573,7 +635,9 @@
       "fats": 0.8,
       "fibers": 3.3,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "dccfdf49-9b07-4626-be5e-146ea1647b0d",
@@ -591,7 +655,9 @@
       "fats": 2.0,
       "fibers": 15.5,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "f7c4f96b-0873-4f46-b121-c30d68eabdcc",
@@ -609,7 +675,9 @@
       "fats": 4.2,
       "fibers": 33.0,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "87d84a0e-ce86-45a8-ae6a-823559557e07",
@@ -627,7 +695,9 @@
       "fats": 4.0,
       "fibers": 38.0,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "b5495a26-bb2c-4cf3-b122-8c6a306920e9",
@@ -645,7 +715,9 @@
       "fats": 2.4,
       "fibers": 14.4,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "e27b7503-84d6-4511-bcbc-5c09f34739f5",
@@ -663,7 +735,9 @@
       "fats": 2.0,
       "fibers": 17.3,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "11912866-c0d2-411a-a579-b94b5e1c4419",
@@ -681,7 +755,9 @@
       "fats": 1.4,
       "fibers": 12.7,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "bdc4b904-9572-4333-8706-1bcf3738461a",
@@ -699,7 +775,9 @@
       "fats": 1.1,
       "fibers": 11.0,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "04f651ba-4eb0-4928-9acc-e3a0ac489990",
@@ -717,7 +795,9 @@
       "fats": 2.0,
       "fibers": 18.9,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "2e48cf27-2da4-47fa-9049-dc1b0a5b6006",
@@ -735,7 +815,9 @@
       "fats": 3.0,
       "fibers": 7.0,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "2d13f095-aca2-4201-aa39-5cb8429f18e3",
@@ -753,7 +835,9 @@
       "fats": 1.8,
       "fibers": 16.3,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "4844ffee-4be7-4fdf-abe6-b5df22796882",
@@ -771,7 +855,9 @@
       "fats": 6.3,
       "fibers": 14.0,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "a61797df-7035-4e1c-a8b9-838acc63054b",
@@ -789,7 +875,9 @@
       "fats": 0.5,
       "fibers": 12.7,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "3a7b98d4-5ac2-47d4-af6a-b4655cf1da4a",
@@ -807,7 +895,9 @@
       "fats": 0.2,
       "fibers": 0.0,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "d8e459c3-4145-454f-8f82-bc55ca45f1e2",
@@ -825,7 +915,9 @@
       "fats": 0.0,
       "fibers": 0.0,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "f8ca001d-7f90-4933-b083-854ebbf4b9b1",
@@ -843,7 +935,9 @@
       "fats": 10.9,
       "fibers": 0.0,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "c76453f0-6f2c-4225-a17b-7e573687cd54",
@@ -861,7 +955,9 @@
       "fats": 11.5,
       "fibers": 0.0,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "485202e4-9a4d-4ade-ae66-45b7e7e89b7b",
@@ -879,7 +975,9 @@
       "fats": 9.0,
       "fibers": 0.0,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "23d48d29-2915-47d4-9616-cb5201cf3aa2",
@@ -897,7 +995,9 @@
       "fats": 23.4,
       "fibers": 0.0,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "43244d8b-1ade-4305-95b0-d784f8b40a9e",
@@ -915,7 +1015,9 @@
       "fats": 20.0,
       "fibers": 0.0,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "2a6ae4a0-fb03-4f99-86fc-4aa738f22630",
@@ -933,7 +1035,9 @@
       "fats": 26.0,
       "fibers": 0.0,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "df12492d-468e-4393-a0d1-7693f51a1eac",
@@ -951,7 +1055,9 @@
       "fats": 23.0,
       "fibers": 0.0,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "9b521f3e-1538-482f-8caa-5b8c4c3d8649",
@@ -969,7 +1075,9 @@
       "fats": 25.0,
       "fibers": 0.0,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "4347869e-9127-4089-8f30-cb2a2b26ea7e",
@@ -987,7 +1095,9 @@
       "fats": 28.0,
       "fibers": 0.0,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "81fe5576-fcca-49fd-8da7-a75a67bd2693",
@@ -1005,7 +1115,9 @@
       "fats": 30.0,
       "fibers": 0.0,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "0a2e21a6-259a-4efa-a799-17f91440efeb",
@@ -1023,7 +1135,9 @@
       "fats": 29.0,
       "fibers": 0.0,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "6bf0b3fd-9bd7-4b05-ba67-061c292f8dda",
@@ -1041,7 +1155,9 @@
       "fats": 29.0,
       "fibers": 0.0,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "6a428f61-ff5d-4df5-9f4a-3e7dd35224f5",
@@ -1059,7 +1175,9 @@
       "fats": 23.0,
       "fibers": 0.0,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "4bb74b3b-70c7-4a55-a6ca-f1952aa5f120",
@@ -1077,7 +1195,9 @@
       "fats": 8.4,
       "fibers": 0.0,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "cccc299f-013b-43d0-9f26-f18e5d7a6fa7",
@@ -1095,7 +1215,9 @@
       "fats": 0.0,
       "fibers": 0.0,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "c547cea7-ec5c-4252-a0c3-e0d12154ee10",
@@ -1113,7 +1235,9 @@
       "fats": 0.4,
       "fibers": 1.8,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "c613eb47-be21-4e47-8c7f-93a038fe8f09",
@@ -1131,7 +1255,9 @@
       "fats": 0.5,
       "fibers": 2.1,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "14af30f4-809f-430f-99d7-1f5f0fed977d",
@@ -1149,7 +1275,9 @@
       "fats": 0.0,
       "fibers": 1.3,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "a2a91d8a-a2bd-49bf-b509-ca82a4a2ad7f",
@@ -1167,7 +1295,9 @@
       "fats": 0.1,
       "fibers": 0.8,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "2c3427e8-dca4-41b3-a0b3-cd3c88d6e568",
@@ -1185,7 +1315,9 @@
       "fats": 0.0,
       "fibers": 2.5,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "542c9ef3-ebf0-465a-a488-7acfd78d80e6",
@@ -1203,7 +1335,9 @@
       "fats": 0.2,
       "fibers": 3.1,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "98bcd005-15d4-4aa6-89d8-a2e53f95e426",
@@ -1221,7 +1355,9 @@
       "fats": 0.0,
       "fibers": 2.2,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "0b0ecb5a-1ceb-444f-a249-88a81080e498",
@@ -1239,7 +1375,9 @@
       "fats": 0.1,
       "fibers": 2.9,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "460d2af0-f56d-4c3e-a2f0-c92112020619",
@@ -1257,7 +1395,9 @@
       "fats": 0.3,
       "fibers": 2.0,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "8eae1feb-5053-4881-b2e7-7eb6b3595d68",
@@ -1275,7 +1415,9 @@
       "fats": 0.3,
       "fibers": 1.0,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "2d1937e3-1a2c-44f2-af1d-6db5ab5baab1",
@@ -1293,7 +1435,9 @@
       "fats": 0.3,
       "fibers": 0.9,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "13641c1e-e444-40df-a816-85701c9c3461",
@@ -1311,7 +1455,9 @@
       "fats": 0.2,
       "fibers": 1.2,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "ff15d73f-7cf2-4814-ace7-dd16682bbf16",
@@ -1329,7 +1475,9 @@
       "fats": 0.3,
       "fibers": 1.0,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "7e705293-bfe6-4ac1-8f19-18cad2b8a27e",
@@ -1347,7 +1495,9 @@
       "fats": 0.1,
       "fibers": 0.0,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "5293b7b8-0bd3-4cb2-b02e-dbda3df572ee",
@@ -1365,7 +1515,9 @@
       "fats": 0.3,
       "fibers": 0.0,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "9ca665d0-c322-4ca5-a28d-267bd2db0ac8",
@@ -1383,7 +1535,9 @@
       "fats": 0.3,
       "fibers": 0.0,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "10de01d4-1bf5-42ae-9c53-1b080bd5b53a",
@@ -1401,7 +1555,9 @@
       "fats": 0.6,
       "fibers": 1.1,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "5df12ebf-95ec-4a27-8549-8f69c40ef136",
@@ -1419,7 +1575,9 @@
       "fats": 1.0,
       "fibers": 0.6,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "f80f26a0-d9f3-4159-b2b4-c3595160353b",
@@ -1437,7 +1595,9 @@
       "fats": 0.1,
       "fibers": 1.7,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "80cdc5f1-67d3-458c-86e2-75c993a8c8a2",
@@ -1455,7 +1615,9 @@
       "fats": 0.2,
       "fibers": 1.7,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "01afd74c-a38d-43d9-a2cc-ff88a64a71ac",
@@ -1473,7 +1635,9 @@
       "fats": 0.2,
       "fibers": 1.9,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "8ba994e0-82b5-4ef0-beee-7943c4eaec1b",
@@ -1491,7 +1655,9 @@
       "fats": 0.4,
       "fibers": 2.3,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "60d0923e-0dda-4b50-ac6a-95db4801bc12",
@@ -1509,7 +1675,9 @@
       "fats": 0.2,
       "fibers": 2.2,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "2da97a9b-2ba6-4544-8657-c06cef4e0e91",
@@ -1527,7 +1695,9 @@
       "fats": 0.1,
       "fibers": 2.8,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "57e6baf8-92ad-4a59-a266-db4095c7d83d",
@@ -1545,7 +1715,9 @@
       "fats": 0.2,
       "fibers": 0.7,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "19b3fafa-3aff-4f36-a629-e5976edf76e5",
@@ -1563,7 +1735,9 @@
       "fats": 0.6,
       "fibers": 0.1,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "ae6e2ed5-d1e6-46b3-a343-e2bbffc2fe47",
@@ -1581,7 +1755,9 @@
       "fats": 0.1,
       "fibers": 0.9,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "c7f24873-2cee-4388-8fe1-b63baafde3dc",
@@ -1599,7 +1775,9 @@
       "fats": 0.3,
       "fibers": 1.5,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "bba4d97d-5664-4e6c-847b-569679cccd47",
@@ -1617,7 +1795,9 @@
       "fats": 0.3,
       "fibers": 1.4,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "6caa28ed-fc7f-4577-b80b-a39aa84e49bc",
@@ -1635,7 +1815,9 @@
       "fats": 0.4,
       "fibers": 1.8,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "19f19718-c4d5-4e4e-8773-d009b7576709",
@@ -1653,7 +1835,9 @@
       "fats": 0.3,
       "fibers": 2.4,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "e596ab5f-1303-433c-a487-d383a3ec4f6c",
@@ -1671,7 +1855,9 @@
       "fats": 0.8,
       "fibers": 0.0,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "d4d22bf1-04ef-440d-9510-1797f3ecdaa1",
@@ -1689,7 +1875,9 @@
       "fats": 1.2,
       "fibers": 0.0,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "092bf566-6dab-414c-bd8b-1fdaee59d19f",
@@ -1707,7 +1895,9 @@
       "fats": 6.9,
       "fibers": 0.0,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "38ca8fc7-22e9-46cf-839b-e21e47da5da4",
@@ -1725,7 +1915,9 @@
       "fats": 2.0,
       "fibers": 0.0,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "11873768-4813-4683-91bd-14acf5ccd29d",
@@ -1743,7 +1935,9 @@
       "fats": 32.5,
       "fibers": 7.1,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "7aac78a1-acec-48a1-9aff-83e14a984ede",
@@ -1761,7 +1955,9 @@
       "fats": 56.0,
       "fibers": 11.2,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "40362ad4-9fe2-4c4c-8e45-5f7c027d7b65",
@@ -1779,7 +1975,9 @@
       "fats": 62.0,
       "fibers": 6.3,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "21d6f0df-1cd0-4c33-8524-36503b47edbc",
@@ -1797,7 +1995,9 @@
       "fats": 71.4,
       "fibers": 10.0,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "581b5f73-4fc1-48bb-902c-793c754d6670",
@@ -1815,7 +2015,9 @@
       "fats": 66.5,
       "fibers": 9.9,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "8fa45e45-9f58-47cb-8380-45c53f86b0ff",
@@ -1833,7 +2035,9 @@
       "fats": 47.6,
       "fibers": 5.2,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "4cc41188-d629-4aac-8b5a-e03b3a27803b",
@@ -1851,7 +2055,9 @@
       "fats": 62.9,
       "fibers": 10.2,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "4b524c05-cf3c-46e5-8bc0-cd6e0e8611f2",
@@ -1869,7 +2075,9 @@
       "fats": 61.8,
       "fibers": 6.8,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "b90940d8-ec0a-438f-9a54-840611325fb9",
@@ -1887,7 +2095,9 @@
       "fats": 66.7,
       "fibers": 7.0,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "ba3abd0c-d246-4f42-ac2e-0307facf5cb4",
@@ -1905,7 +2115,9 @@
       "fats": 64.1,
       "fibers": 8.0,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "d2525f35-b011-4fce-9229-91aa1e12d8ef",
@@ -1923,7 +2135,9 @@
       "fats": 53.0,
       "fibers": 11.4,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "9ea56978-85b0-43c8-a8be-eb198e514bee",
@@ -1941,7 +2155,9 @@
       "fats": 0.1,
       "fibers": 8.8,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "5e0920ae-a00e-4549-a0e1-6e4b3dddfdc3",
@@ -1959,7 +2175,9 @@
       "fats": 0.4,
       "fibers": 3.5,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "173c3393-b62f-4b29-89f2-fe2e57376146",
@@ -1977,7 +2195,9 @@
       "fats": 0.0,
       "fibers": 1.0,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "b9015118-a3ce-466f-9928-5a58de8f7f88",
@@ -1995,7 +2215,9 @@
       "fats": 57.0,
       "fibers": 7.7,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "dfeb8263-c1da-4f20-a61d-da3f2bf50675",
@@ -2013,7 +2235,9 @@
       "fats": 41.0,
       "fibers": 25.0,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "b10758dc-1dff-4490-bea0-f4b8db56ba26",
@@ -2031,7 +2255,9 @@
       "fats": 36.0,
       "fibers": 29.0,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "404c7a08-74be-4fd2-a446-173a36e2a996",
@@ -2049,7 +2275,9 @@
       "fats": 53.0,
       "fibers": 9.8,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "2e00b327-e58f-451c-97a6-d6a5fe344e26",
@@ -2067,7 +2295,9 @@
       "fats": 46.0,
       "fibers": 5.8,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "e8b27d24-5046-4d51-a6f1-9d50dcfa7e66",
@@ -2085,7 +2315,9 @@
       "fats": 34.0,
       "fibers": 30.0,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "7c87acc3-cf7e-4358-8564-55d1deedc245",
@@ -2103,7 +2335,9 @@
       "fats": 21.0,
       "fibers": 31.0,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "f5eefa27-9660-4267-9700-ca70234c5b00",
@@ -2121,7 +2355,9 @@
       "fats": 29.4,
       "fibers": 0.0,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "c1e8b215-c0cc-49b9-a721-d78e28a83d53",
@@ -2139,7 +2375,9 @@
       "fats": 0.1,
       "fibers": 0.0,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "9a841aea-e177-4015-949b-51ee09378183",
@@ -2157,7 +2395,9 @@
       "fats": 0.7,
       "fibers": 4.0,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "a88787ea-49fb-47d1-8da6-9fc98073fc1e",
@@ -2175,7 +2415,9 @@
       "fats": 2.1,
       "fibers": 6.0,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "0e2e8337-89fa-4985-8ae7-0a8191b721c0",
@@ -2193,7 +2435,9 @@
       "fats": 6.2,
       "fibers": 0.0,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "68e65266-ce09-4344-837f-a7ef1a1bb203",
@@ -2211,7 +2455,9 @@
       "fats": 1.1,
       "fibers": 0.0,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "67c80c44-982a-4d3b-95c2-bb7361040a17",
@@ -2229,7 +2475,9 @@
       "fats": 4.6,
       "fibers": 0.0,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "2e3d098f-f45d-4a9f-a722-089b6a637397",
@@ -2247,7 +2495,9 @@
       "fats": 1.1,
       "fibers": 6.0,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "43805b13-4536-42cb-9f81-1bfbfd099a39",
@@ -2265,7 +2515,9 @@
       "fats": 4.3,
       "fibers": 0.0,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "7dd0681e-5582-49ac-8a1f-dca53f9e969d",
@@ -2283,7 +2535,9 @@
       "fats": 3.0,
       "fibers": 3.0,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "4f8bbfa2-0284-4b57-b380-56b49412e350",
@@ -2301,7 +2555,9 @@
       "fats": 4.0,
       "fibers": 3.0,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "6574ea6f-6bf1-419d-8700-907a1bd3f01e",
@@ -2319,7 +2575,9 @@
       "fats": 1.6,
       "fibers": 4.0,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "6c41ff9f-f791-4dbb-b511-ff87ceb7530e",
@@ -2337,7 +2595,9 @@
       "fats": 12.0,
       "fibers": 2.4,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "3052cc93-7a0b-43a7-bf91-166decfc8a56",
@@ -2355,7 +2615,9 @@
       "fats": 5.6,
       "fibers": 3.2,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "fcb7441d-ebe0-46cf-ad63-114f6e0600d7",
@@ -2373,7 +2635,9 @@
       "fats": 91.6,
       "fibers": 0.0,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "b7de9089-70af-43d9-aebd-664cb0f6a3d2",
@@ -2391,7 +2655,9 @@
       "fats": 100.0,
       "fibers": 0.0,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "78c9601b-4692-47de-92d6-90e8663ddb22",
@@ -2409,7 +2675,9 @@
       "fats": 82.5,
       "fibers": 0.0,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "26983bce-5f7e-4b42-9f0e-7f4cb1a91b2e",
@@ -2427,7 +2695,9 @@
       "fats": 82.5,
       "fibers": 0.0,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "efe0af9c-9361-4703-8976-930ef81af896",
@@ -2445,7 +2715,9 @@
       "fats": 29.5,
       "fibers": 13.5,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "8479d438-709d-475e-a367-be2ea5d72ca4",
@@ -2463,7 +2735,9 @@
       "fats": 21.8,
       "fibers": 10.0,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "e25e1f95-af7e-42e1-b601-a620c8f2d301",
@@ -2481,7 +2755,9 @@
       "fats": 0.0,
       "fibers": 0.0,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "ea67952d-6911-45ce-901c-39ad33d848b9",
@@ -2499,7 +2775,9 @@
       "fats": 0.0,
       "fibers": 0.0,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "3a210953-f0b3-4beb-9bc5-40c421a83d4a",
@@ -2517,7 +2795,9 @@
       "fats": 0.0,
       "fibers": 0.0,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "dbb1a79a-0173-46d1-984c-557d73faba57",
@@ -2535,7 +2815,9 @@
       "fats": 0.0,
       "fibers": 0.0,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "fa516b0a-578b-42ac-9cd9-ff9c5e0dd081",
@@ -2553,7 +2835,9 @@
       "fats": 0.0,
       "fibers": 0.0,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "1f47a727-cceb-43c8-81ea-3f88de4d5b30",
@@ -2571,7 +2855,9 @@
       "fats": 0.0,
       "fibers": 0.0,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "0104701d-8aca-4ffc-a023-a67b10d1a07c",
@@ -2589,7 +2875,9 @@
       "fats": 0.0,
       "fibers": 0.0,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "65f67bf2-e52f-4ffe-93a2-ea45839bf5b6",
@@ -2607,7 +2895,9 @@
       "fats": 4.5,
       "fibers": 2.6,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "6d9b24c1-ce5d-4a4d-b420-1139ce14876b",
@@ -2625,7 +2915,9 @@
       "fats": 6.5,
       "fibers": 6.0,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "2ca0acbb-6a19-4170-9df5-03e0a51c3fd2",
@@ -2643,7 +2935,9 @@
       "fats": 6.6,
       "fibers": 6.0,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "3cdc4de3-15b3-4a01-8d75-2cccd42b47c0",
@@ -2661,7 +2955,9 @@
       "fats": 0.6,
       "fibers": 2.4,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "b609928e-7916-4b4c-b28b-3e13c8604c7d",
@@ -2679,7 +2975,9 @@
       "fats": 0.0,
       "fibers": 2.9,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "e2e8f47e-b683-4165-8855-db82b427018a",
@@ -2697,7 +2995,9 @@
       "fats": 1.0,
       "fibers": 7.3,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "768495ec-f8f1-4115-9df0-8c13f6c7b792",
@@ -2715,7 +3015,9 @@
       "fats": 0.0,
       "fibers": 3.6,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "302e9370-180d-447e-8492-a145d3a697f7",
@@ -2733,7 +3035,9 @@
       "fats": 0.2,
       "fibers": 1.5,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "e14c5751-4421-4130-ae4d-31bfecff7c0a",
@@ -2751,7 +3055,9 @@
       "fats": 0.3,
       "fibers": 6.7,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "7c0c854e-c652-48dc-884e-d51adbbab692",
@@ -2769,7 +3075,9 @@
       "fats": 0.5,
       "fibers": 1.0,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "c38b3535-f23c-43b8-8edb-c23b8f8e9b47",
@@ -2787,7 +3095,9 @@
       "fats": 1.4,
       "fibers": 0.0,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "be1064e4-1bd0-4e0e-99a6-80860c434647",
@@ -2805,7 +3115,9 @@
       "fats": 1.3,
       "fibers": 0.0,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "9e304035-096b-4e81-9f66-87c00333b6d4",
@@ -2823,7 +3135,9 @@
       "fats": 0.5,
       "fibers": 1.0,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "ef0f1667-5e99-4a2a-9b2b-ae5493365ee8",
@@ -2841,7 +3155,9 @@
       "fats": 1.4,
       "fibers": 0.0,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "36c75933-4e3e-4b65-b720-d809c9667f9b",
@@ -2859,7 +3175,9 @@
       "fats": 1.4,
       "fibers": 0.0,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "30ec04e2-7815-49be-8abb-9ef6f4d60851",
@@ -2877,7 +3195,9 @@
       "fats": 1.0,
       "fibers": 2.9,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "8f9787d8-b67b-405b-a014-791c60093f41",
@@ -2895,7 +3215,9 @@
       "fats": 91.6,
       "fibers": 0.0,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "3bca9b4e-4639-4f19-a1c4-8c85100d902c",
@@ -2913,7 +3235,9 @@
       "fats": 90.7,
       "fibers": 0.0,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "8e1a71f3-595b-490e-a549-31923e6812be",
@@ -2931,7 +3255,9 @@
       "fats": 0.0,
       "fibers": 0.0,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "d7073319-da1a-481f-a7f0-02cdbeac1bdf",
@@ -2949,7 +3275,9 @@
       "fats": 5.7,
       "fibers": 0.0,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "df5178d7-cfbe-4fa0-a9db-9fb22826c16c",
@@ -2967,7 +3295,9 @@
       "fats": 7.3,
       "fibers": 0.0,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "3d771200-1700-4f04-9f58-3ecae117992d",
@@ -2985,7 +3315,9 @@
       "fats": 0.5,
       "fibers": 0.0,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "c9157f8c-f53d-408d-a6a6-db2179317a08",
@@ -3003,7 +3335,9 @@
       "fats": 0.5,
       "fibers": 0.0,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "8b941d52-7149-4054-8fb6-3dc26dde61cf",
@@ -3021,7 +3355,9 @@
       "fats": 3.6,
       "fibers": 0.0,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "3a1977ca-6ae9-4b32-8c3b-d1a88c9eb760",
@@ -3039,7 +3375,9 @@
       "fats": 3.6,
       "fibers": 0.0,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "d8c17397-8d36-4c30-b652-cd1b8c8924b9",
@@ -3057,7 +3395,9 @@
       "fats": 1.7,
       "fibers": 0.0,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "64eb822e-fec2-4444-ae5e-47d286153a36",
@@ -3075,7 +3415,9 @@
       "fats": 1.8,
       "fibers": 0.4,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "1d7e5bdb-c462-4e33-b1d5-4b2ef5e0fdf8",
@@ -3093,7 +3435,9 @@
       "fats": 0.9,
       "fibers": 0.0,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "778b881b-a40e-4d17-bed3-54595190be77",
@@ -3111,7 +3455,9 @@
       "fats": 0.0,
       "fibers": 0.0,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "d71b57c0-7ae3-4a47-bce5-9ec98e166b8f",
@@ -3129,7 +3475,9 @@
       "fats": 0.0,
       "fibers": 0.0,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "76322906-6f5b-4712-9df5-2916a0635a2b",
@@ -3147,7 +3495,9 @@
       "fats": 0.0,
       "fibers": 2.9,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 200
   },
   {
     "id": "10b57af6-64ff-46ba-9798-ca81b45dc31b",
@@ -3165,7 +3515,9 @@
       "fats": 0.0,
       "fibers": 1.9,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 150
   },
   {
     "id": "9c5fe0dc-7968-4b50-9c46-9a20a6e16367",
@@ -3183,7 +3535,9 @@
       "fats": 0.0,
       "fibers": 3.0,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 200
   },
   {
     "id": "6f8cb0df-0350-41c2-8cae-ccc7e3b78140",
@@ -3201,7 +3555,9 @@
       "fats": 0.0,
       "fibers": 1.5,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 125
   },
   {
     "id": "cb52ccf3-e09f-45ac-954a-8fa65e62f465",
@@ -3219,7 +3575,9 @@
       "fats": 0.5,
       "fibers": 0.9,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 125
   },
   {
     "id": "8a8a0e3c-7e46-40b2-bcfc-51ee0caa9d70",
@@ -3237,7 +3595,9 @@
       "fats": 0.6,
       "fibers": 1.1,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 125
   },
   {
     "id": "c0513635-b712-4ebf-b1df-a366496f4c77",
@@ -3255,7 +3615,9 @@
       "fats": 6.1,
       "fibers": 0.0,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 73
   },
   {
     "id": "69068375-f6d1-47d5-9513-0d85a2daa83a",
@@ -3273,7 +3635,9 @@
       "fats": 0.5,
       "fibers": 0.0,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 400
   },
   {
     "id": "0d31f300-d5e7-404f-928d-614a9b54f2d9",
@@ -3291,7 +3655,9 @@
       "fats": 0.2,
       "fibers": 0.0,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 400
   },
   {
     "id": "fe8545c4-f037-43e1-9295-7c1e10c9d511",
@@ -3309,7 +3675,9 @@
       "fats": 0.2,
       "fibers": 0.0,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 400
   },
   {
     "id": "1b8ba2c5-8e90-41a9-b3a3-78779ac18091",
@@ -3327,7 +3695,9 @@
       "fats": 0.2,
       "fibers": 0.0,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 440
   },
   {
     "id": "ec8c4803-1c75-4162-a80c-86132ddff1f0",
@@ -3345,7 +3715,9 @@
       "fats": 0.4,
       "fibers": 0.0,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 170
   },
   {
     "id": "9d98003c-8ead-4ea0-9ba5-efb2dcfa51d5",
@@ -3363,7 +3735,9 @@
       "fats": 6.1,
       "fibers": 0.0,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 180
   },
   {
     "id": "15b52e87-5319-4930-b526-8b309d8ff146",
@@ -3381,7 +3755,9 @@
       "fats": 0.2,
       "fibers": 0.0,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 350
   },
   {
     "id": "a53455a3-e1ea-4b5c-a54e-f541ea1ee08b",
@@ -3399,7 +3775,9 @@
       "fats": 0.0,
       "fibers": 0.0,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 200
   },
   {
     "id": "76a1b43e-ce2a-462a-83a1-4501cb5ee592",
@@ -3417,7 +3795,9 @@
       "fats": 26.0,
       "fibers": 0.0,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 65
   },
   {
     "id": "6c78cfa5-837d-47ce-af2e-ab94a9a5172f",
@@ -3435,7 +3815,9 @@
       "fats": 0.8,
       "fibers": 0.0,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 200
   },
   {
     "id": "bcce678e-42d1-4f76-b61f-2c172884f928",
@@ -3453,7 +3835,9 @@
       "fats": 4.5,
       "fibers": 0.0,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 200
   },
   {
     "id": "0a6271b2-8c35-46db-96d4-09cf9d3fee71",
@@ -3471,7 +3855,9 @@
       "fats": 2.2,
       "fibers": 0.0,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 200
   },
   {
     "id": "c3cf2778-27ce-49cc-a885-85973e3a61f0",
@@ -3489,7 +3875,9 @@
       "fats": 0.2,
       "fibers": 0.0,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 250
   },
   {
     "id": "33192d31-0797-4528-8e4f-6ee55edd98d0",
@@ -3507,7 +3895,9 @@
       "fats": 0.0,
       "fibers": 1.0,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 70
   },
   {
     "id": "078b3508-3783-4ffb-9e84-1e3d41c00d64",
@@ -3525,7 +3915,9 @@
       "fats": 2.1,
       "fibers": 6.0,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 60
   },
   {
     "id": "e6900b01-1d44-4427-9233-001136c23f31",
@@ -3543,7 +3935,9 @@
       "fats": 1.1,
       "fibers": 0.0,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 60
   },
   {
     "id": "92e6ea39-6979-4b8c-8687-6d6fdce4648f",
@@ -3561,7 +3955,9 @@
       "fats": 12.0,
       "fibers": 2.4,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 25
   },
   {
     "id": "0e37c5fa-f71c-4a1f-a94b-77600d03ecef",
@@ -3579,7 +3975,9 @@
       "fats": 5.6,
       "fibers": 3.2,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "74e0bc82-43c9-47aa-b8f4-e9027c5444c1",
@@ -3597,7 +3995,9 @@
       "fats": 1.3,
       "fibers": 0.0,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 150
   },
   {
     "id": "1f29c6d7-7a19-4cd9-bdcd-8f8cd2ab0060",
@@ -3615,7 +4015,9 @@
       "fats": 0.0,
       "fibers": 0.0,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 140
   },
   {
     "id": "f3743f69-e338-46b1-b962-fa9826e3d421",
@@ -3633,7 +4035,9 @@
       "fats": 11.3,
       "fibers": 0.0,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 90
   },
   {
     "id": "57b9c496-c08f-440c-a722-f6ed92bf9bca",
@@ -3651,7 +4055,9 @@
       "fats": 15.4,
       "fibers": 0.0,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 125
   },
   {
     "id": "64dbcfb8-c2a4-4db8-9e49-81d064cb1091",
@@ -3669,7 +4075,9 @@
       "fats": 26.2,
       "fibers": 0.0,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 125
   },
   {
     "id": "e59c9fe6-a25d-4221-adec-431ef7f1cea8",
@@ -3687,7 +4095,9 @@
       "fats": 4.5,
       "fibers": 0.0,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 104
   },
   {
     "id": "bdc310ca-e78c-4b22-ac1f-0c1c2c7948e9",
@@ -3705,7 +4115,9 @@
       "fats": 9.3,
       "fibers": 0.0,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 125
   },
   {
     "id": "6f47732b-8023-46ed-9f88-a1a5b46bbd7d",
@@ -3723,7 +4135,9 @@
       "fats": 14.0,
       "fibers": 0.0,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 43
   },
   {
     "id": "850b38e1-0ca2-4eb6-9762-9a07b49822bf",
@@ -3741,7 +4155,9 @@
       "fats": 38.7,
       "fibers": 0.0,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 80
   },
   {
     "id": "87b818c7-007b-4638-b1b3-39c081ea16ed",
@@ -3759,7 +4175,9 @@
       "fats": 1.8,
       "fibers": 0.0,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 65
   },
   {
     "id": "c6116db2-b088-42cf-b048-0bbcd0ea3415",
@@ -3777,7 +4195,9 @@
       "fats": 2.0,
       "fibers": 0.0,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "9d95c721-7d52-47aa-bdd5-834da9cae243",
@@ -3795,7 +4215,9 @@
       "fats": 2.5,
       "fibers": 2.5,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "f19c00f8-4135-4905-b682-2338422bf105",
@@ -3813,7 +4235,9 @@
       "fats": 2.5,
       "fibers": 2.5,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "16d496ec-8518-4cbb-ab8c-76c8d10c313d",
@@ -3831,7 +4255,9 @@
       "fats": 2.5,
       "fibers": 2.5,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "4a021cd8-b6c3-4196-bdec-31770df87bb3",
@@ -3849,7 +4275,9 @@
       "fats": 20.0,
       "fibers": 0.2,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 10
   },
   {
     "id": "9bd4dd29-1ac2-452b-8695-827717fa4962",
@@ -3867,7 +4295,9 @@
       "fats": 23.0,
       "fibers": 1.0,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 10
   },
   {
     "id": "fef472aa-9edb-4caf-bc2a-bc90dfff9cdb",
@@ -3885,7 +4315,9 @@
       "fats": 11.0,
       "fibers": 0.3,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 10
   },
   {
     "id": "82af9538-429a-415b-a946-b202913336f2",
@@ -3903,7 +4335,9 @@
       "fats": 0.3,
       "fibers": 0.0,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "70800e3d-b63c-4370-a32a-a4d43062d5f4",
@@ -3921,7 +4355,9 @@
       "fats": 5.1,
       "fibers": 0.0,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 11
   },
   {
     "id": "e41c94c4-80f1-4ff4-a62c-7e0f18c8da63",
@@ -3939,7 +4375,9 @@
       "fats": 15.0,
       "fibers": 3.7,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   },
   {
     "id": "c0995804-e060-4cfc-9eed-9409b1c75eff",
@@ -3957,6 +4395,8 @@
       "fats": 4.5,
       "fibers": 3.7,
       "sodium": 0.0
-    }
+    },
+    "price": 1.0,
+    "packageSize": 100
   }
 ]
