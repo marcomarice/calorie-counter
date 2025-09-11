@@ -12,24 +12,22 @@ export default function ProgressChart() {
   const valori = useValori();
 
   const dati = useMemo(() => {
-    // Totali giornalieri
+    // 1) Totali giornalieri (7 barre)
     const lista = settimana.map(giorno =>
       calcolaTotali(giorno.flat().filter(a => a.attivo), valori)
     );
 
-    // Totale settimana
-    const tot = calcolaTotali(settimana.flat(2).filter(a => a.attivo), valori);
-
-    // Media giornaliera
+    // 2) Media giornaliera (1 barra) — manteniamo solo questa, via il "Tot"
     const { media } = calcolaMediaGiornaliera(settimana, valori);
 
-    // Combina tutti i dati
-    const tutti = [...lista, tot, media];
+    // 3) Costruzione dataset: 7 giorni + Media (NO Totale)
+    const tutti = [...lista, media];
 
     return tutti.map((d, idx) => {
       const kcalMacro = (d.prot * 4 + d.carb * 4 + d.fat * 9) || 1;
+      const isDailyAverage = idx === 7; // pos. 8: dopo i 7 giorni
       return {
-        nome: giorni[idx] || (idx === 7 ? "Tot" : "Media"),
+        nome: isDailyAverage ? "media giornaliera" : giorni[idx],
         kcal: d.kcal,
         carb: d.carb,
         prot: d.prot,
@@ -51,20 +49,20 @@ export default function ProgressChart() {
           <Tooltip />
           <Legend verticalAlign="top" height={36}/>
           <Bar dataKey="fiber" stackId="stack" fill="#a3e635" name="Fibre" />
-          <Bar dataKey="fat" stackId="stack" fill="#f87171" name="Grassi" />
-          <Bar dataKey="prot" stackId="stack" fill="#60a5fa" name="Proteine" />
-          <Bar dataKey="carb" stackId="stack" fill="#facc15" name="Carboidrati" />
+          <Bar dataKey="fat"   stackId="stack" fill="#f87171" name="Grassi" />
+          <Bar dataKey="prot"  stackId="stack" fill="#60a5fa" name="Proteine" />
+          <Bar dataKey="carb"  stackId="stack" fill="#facc15" name="Carboidrati" />
         </BarChart>
       </ResponsiveContainer>
 
-      {/* Barre % macro */}
-      <div className="grid grid-cols-9 gap-2 mt-6 text-xs text-center">
+      {/* Barre % macro (7 giorni + Media => 8 colonne) */}
+      <div className="grid grid-cols-8 gap-2 mt-6 text-xs text-center">
         {dati.map((d, i) => (
           <div key={i} className="flex flex-col items-center">
             <div className="w-full h-4 flex rounded overflow-hidden">
               <div style={{ width: `${d.carbPct}%` }} className="bg-yellow-300" />
               <div style={{ width: `${d.protPct}%` }} className="bg-blue-400" />
-              <div style={{ width: `${d.fatPct}%` }} className="bg-red-400" />
+              <div style={{ width: `${d.fatPct}%` }}  className="bg-red-400" />
             </div>
             <div className="mt-1">{d.nome}</div>
           </div>
